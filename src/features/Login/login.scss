@@ -1,5 +1,14 @@
 .login {
+  background: #363833;
+  height: 100vh;
   &__inner {
+    color: #fff;
     background: #eee;
+  }
+  &__left {
+    background: #000;
+  }
+  &__right {
+    background: #232323;
   }
 }

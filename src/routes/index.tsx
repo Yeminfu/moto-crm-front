@@ -1,20 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Login } from "../features/Login/index";
 
 export const Routes = () => (
   <>
     <Router>
       <div>
-        <nav>
-          <ul>
-            {[{ link: "/", label: "Home" }].map((x, i) => (
-              <li>
-                <Link to={x.link}>{x.label}</Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
         <Switch>
           <Route path="/about">
             <About />
