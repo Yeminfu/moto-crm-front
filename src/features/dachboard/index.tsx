@@ -1,6 +1,6 @@
 import React from "react";
 import "./dashboard.scss";
-import { Row, Col, Nav } from "react-bootstrap";
+import { Row, Col, Nav, InputGroup, FormControl } from "react-bootstrap";
 import { Table } from "../Table";
 import { Pagination } from "../Pagination";
 import { Filter } from "../Filter";
@@ -30,6 +30,12 @@ export const Dashboard = () => (
       </Col>
       <Col>
         <Filter />
+        <InputGroup className="mb-3">
+          <InputGroup.Append>
+            <InputGroup.Text id="basic-addon2">Продано</InputGroup.Text>
+          </InputGroup.Append>
+          <InputGroup.Checkbox aria-label="Checkbox for following text input" />
+        </InputGroup>
         <Table />
         <Pagination />
       </Col>
