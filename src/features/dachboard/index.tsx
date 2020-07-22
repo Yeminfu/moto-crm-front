@@ -1,6 +1,6 @@
 import React from "react";
 import "./dashboard.scss";
-import { Row, Col, Nav, InputGroup, FormControl } from "react-bootstrap";
+import { Row, Col, Nav, InputGroup } from "react-bootstrap";
 import { Table } from "../Table";
 import { Pagination } from "../Pagination";
 import { Filter } from "../Filter";
