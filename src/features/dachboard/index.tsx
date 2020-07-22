@@ -1,7 +1,8 @@
 import React from "react";
 import "./dashboard.scss";
 import { Row, Col, Nav } from "react-bootstrap";
-import { Table } from "../Table/index";
+import { Table } from "../Table";
+import { Pagination } from "../Pagination";
 
 export const Dashboard = () => (
   <div className="container-fluid">
@@ -28,6 +29,7 @@ export const Dashboard = () => (
       </Col>
       <Col>
         <Table />
+        <Pagination />
       </Col>
     </Row>
   </div>

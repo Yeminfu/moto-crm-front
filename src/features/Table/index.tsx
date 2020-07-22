@@ -5,60 +5,70 @@ import "dayjs/locale/ru";
 dayjs.locale("ru");
 
 interface headcolType {
+  id: string;
   name: string;
   rowSpan: number;
   colSpan: number;
-  sub_a?: Array<{
-    name: string;
-    colSpan: number;
-  }>;
-  sub_b?: Array<{
-    name: string;
-  }>;
+  hidden?: boolean;
+  sub_a?: Array<{ id: string; name: string; colSpan: number }>;
+  sub_b?: Array<{ id: string; name: string }>;
 }
 
-const headcols: headcolType[] = [
-  { name: "Примечание", rowSpan: 3, colSpan: 1 },
-  { name: "Код товара", rowSpan: 3, colSpan: 1 },
+const headcolsA: headcolType[] = [
+  { id: "note", name: "Примечание", rowSpan: 3, colSpan: 1 },
+  { id: "code", name: "Код товара", rowSpan: 3, colSpan: 1 },
+  { id: "photo", name: "Фото", rowSpan: 3, colSpan: 1 },
+  { id: "name", name: "Наименование", rowSpan: 3, colSpan: 1 },
   {
+    id: "count",
     name: "Количество",
     rowSpan: 2,
     colSpan: 2,
     sub_b: [
       {
+        id: "count_khv",
         name: "Хаб",
       },
       {
+        id: "count_bir",
         name: "Бир",
       },
     ],
   },
   {
+    id: "retail_price",
     name: "Цена розница",
     rowSpan: 2,
     colSpan: 2,
     sub_b: [
       {
+        id: "retail_price_khv",
         name: "Хаб",
       },
       {
+        id: "retail_price_bir",
         name: "Бир",
       },
     ],
   },
   {
+    id: "sold",
     name: "Продано",
     rowSpan: 1,
     colSpan: 24,
     sub_a: Array.from({ length: 12 }).map((_, i) => ({
+      id: `sold_in_month_${i + 1}`,
       name: dayjs(`${i + 1}`, "mm").format("MMM"),
       colSpan: 2,
     })),
     sub_b: (() => {
       const arr = [];
-      const cities = Array.from({ length: 12 }, () => [
-        { name: "Хаб" },
-        { name: "Бир" },
+      const cities = Array.from({ length: 12 }, (_, i) => [
+        {
+          id: `sold_in_month_${i}_khv`,
+          name: "Хаб",
+        },
+        { id: `sold_in_month_${i}_bir`, name: "Бир" },
       ]);
       for (let index = 0; index < cities.length; index++) {
         const city = cities[index];
@@ -67,10 +77,10 @@ const headcols: headcolType[] = [
       return arr;
     })(),
   },
-  { name: "Закупочная цена", rowSpan: 3, colSpan: 1 },
-  { name: "Себестоймость", rowSpan: 3, colSpan: 1 },
-  { name: "Сумма в товаре", rowSpan: 3, colSpan: 1 },
-  { name: "", rowSpan: 3, colSpan: 1 },
+  { id: "purchase_price", name: "Закупочная цена", rowSpan: 3, colSpan: 1 },
+  { id: "coste_price", name: "Себестоимость", rowSpan: 3, colSpan: 1 },
+  { id: "amount_in_goods", name: "Сумма в товаре", rowSpan: 3, colSpan: 1 },
+  { id: "cart", name: "", rowSpan: 3, colSpan: 1 },
 ];
 
 const tBody = [
@@ -83,11 +93,34 @@ const tBody = [
     text: "0xj3",
   },
   {
+    id: "img",
+    text:
+      "https://мотохит27.рф/wp-content/uploads/2020/05/prodracerendurol150rc15023x_3-1.jpg",
+  },
+  {
     id: "name",
     text: "APEX 10",
   },
-  { id: "count_hab", text: "1" },
+  { id: "count_hab", text: "кол хаб 1" },
+  { id: "count_bir", text: "кол бир 1" },
+  { id: "retail_price_khv", text: "розн цена хаб1" },
+  { id: "retail_price_bir", text: "розн цена бир 1" },
+  ...Array.from({
+    length: 24,
+  }).map((product, i) => ({ id: `x_${i}`, text: `x_${i}` })),
+  { id: "purchase_price", text: "Закупочная цена 1 р" },
+  { id: "cost_price", text: "Себестоимость 1 р" },
+  { id: "amount_in_goods", text: "Сумма в товаре 1 р" },
 ];
+
+interface productType {
+  id: string;
+  text: string;
+}
+
+const products: productType[][] = Array.from({ length: 100 }, () => tBody);
+
+const headcols = headcolsA.filter((x) => !x.hidden);
 
 export const Table = () => (
   <div style={{ overflowX: "scroll" }}>
@@ -124,19 +157,25 @@ export const Table = () => (
         </tr>
       </thead>
       <tbody>
-        <tr>
-          {tBody.map((x) => (
-            <td>{x.text}</td>
-          ))}
-          {Array.from({
-            length: 29,
-          }).map((x, i) => (
-            <td>{i}</td>
-          ))}
-          <td>
-            <Cart />
-          </td>
-        </tr>
+        {products.map((product, i) => (
+          <tr>
+            {tBody.map((x) => (
+              <td className="text-left">
+                {((id) => {
+                  switch (id) {
+                    case "img":
+                      return <img src={x.text} alt="" />;
+                    default:
+                      return x.text;
+                  }
+                })(x.id)}
+              </td>
+            ))}
+            <td>
+              <Cart />
+            </td>
+          </tr>
+        ))}
       </tbody>
     </Btable>
   </div>

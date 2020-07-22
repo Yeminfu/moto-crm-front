@@ -1,3 +1,11 @@
 .dashboard {
   height: 100vh;
+  td,
+  th {
+    text-align: center;
+  }
+
+  .table td {
+    text-align: center;
+  }
 }
