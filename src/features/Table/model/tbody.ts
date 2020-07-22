@@ -22,7 +22,7 @@ export const tBody = [
   { id: "retail_price_bir", text: "розн цена бир 1" },
   ...Array.from({
     length: 24,
-  }).map((_, i) => ({ id: `x_${i}`, text: `x_${i}` })),
+  }).map((_, i) => ({ id: `x_${i}`, text: i })),
   { id: "purchase_price", text: "Закупочная цена 1 р" },
   { id: "cost_price", text: "Себестоимость 1 р" },
   { id: "amount_in_goods", text: "Сумма в товаре 1 р" },
@@ -30,7 +30,7 @@ export const tBody = [
 
 interface productType {
   id: string;
-  text: string;
+  text: string | number;
 }
 
 export const products: productType[][] = Array.from(

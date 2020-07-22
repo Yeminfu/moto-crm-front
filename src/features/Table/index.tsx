@@ -46,9 +46,14 @@ export const Table = () => (
                 {((id) => {
                   switch (id) {
                     case "img":
-                      return <img src={x.text} alt="" />;
+                      return (
+                        <img
+                          src={typeof x.text === "string" ? x.text : ""}
+                          alt=""
+                        />
+                      );
                     default:
-                      return `${x.text}/${x.id}`;
+                      return x.text;
                   }
                 })(x.id)}
               </td>
