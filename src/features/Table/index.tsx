@@ -1,68 +1,66 @@
 import React from "react";
 import { Table as Btable } from "react-bootstrap";
 import { Cart } from "./atoms/cart";
-import { headcols } from "./model/thead";
-import { products } from "./model/tbody";
+import { data } from "./model/index";
 
 export const Table = () => (
   <div style={{ overflowX: "scroll" }}>
     <Btable striped bordered hover size="sm">
       <thead style={{ whiteSpace: "nowrap" }}>
         <tr>
-          {headcols.map((x, i) => (
-            <th colSpan={x.colSpan} rowSpan={x.rowSpan}>
-              {x.name}
-            </th>
-          ))}
+          {data.map((x) =>
+            x.head_rows[0].map((y) => (
+              <th colSpan={y.colSpan} rowSpan={y.rowSpan}>
+                {y.text}
+              </th>
+            ))
+          )}
+          <th rowSpan={3} />
         </tr>
         <tr>
-          {headcols
-            .filter((x) => x.sub_a)
-            .map((x) => (
-              <>
-                {x.sub_a?.map((s) => (
-                  <th colSpan={s.colSpan}>{s.name}</th>
-                ))}
-              </>
-            ))}
+          {data.map((x) =>
+            x.head_rows[1].map((y) => (
+              <th colSpan={y.colSpan} rowSpan={y.rowSpan}>
+                {y.text}
+              </th>
+            ))
+          )}
         </tr>
         <tr>
-          {headcols
-            .filter((x) => x.sub_b)
-            .map((x) => (
-              <>
-                {x.sub_b?.map((s) => (
-                  <th>{s.name}</th>
-                ))}
-              </>
-            ))}
+          {data.map((x) =>
+            x.head_rows[2].map((y) => (
+              <th colSpan={y.colSpan} rowSpan={y.rowSpan}>
+                {y.text}
+              </th>
+            ))
+          )}
         </tr>
       </thead>
       <tbody>
-        {products.map((product, i) => (
-          <tr>
-            {product.map((x) => (
-              <td className="text-left">
-                {((id) => {
-                  switch (id) {
-                    case "img":
+        <tr>
+          {data.map((x) =>
+            x.body_cols.map((y) => (
+              <td>
+                {((type) => {
+                  switch (type) {
+                    case "image":
                       return (
                         <img
-                          src={typeof x.text === "string" ? x.text : ""}
+                          src={typeof y.data === "string" ? y.data : ""}
                           alt=""
                         />
                       );
                     default:
-                      return x.text;
+                      return y.data;
                   }
-                })(x.id)}
+                })(y.type)}
               </td>
-            ))}
-            <td>
-              <Cart />
-            </td>
-          </tr>
-        ))}
+            ))
+          )}
+          <td>
+            <Cart />
+          </td>
+        </tr>
       </tbody>
     </Btable>
   </div>
