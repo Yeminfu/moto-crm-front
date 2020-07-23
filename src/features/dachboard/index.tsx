@@ -1,32 +1,34 @@
 import React from "react";
 import "./dashboard.scss";
-import { Row, Col, Nav, InputGroup } from "react-bootstrap";
+import { Row, Col, InputGroup } from "react-bootstrap";
 import { Table } from "../Table";
 import { Pagination } from "../Pagination";
 import { Filter } from "../Filter";
-
+import { Link } from "react-router-dom";
 export const Dashboard = () => (
   <div className="container-fluid">
     <Row className="dashboard">
       <Col className="bg-dark col-md-auto">
-        <Nav
-          defaultActiveKey="/home"
-          className="flex-column navbar align-items-start"
-        >
+        <ul className="nav flex-column navbar align-items-start">
           {[
-            { text: "Лодки" },
-            { text: "ЗИП Лодки" },
-            { text: "ЗИП Лодки" },
-            { text: "ПЛМ" },
-            { text: "ЗИП ПЛМ" },
-            { text: "Мото" },
-            { text: "ЗИП Мото" },
+            { text: "Лодки", href: "/boats" },
+            { text: "Главная", href: "/" },
+            { text: "Создать товар", href: "/create-product" },
+            // { text: "Лодки", href: "/boats" },
+            // { text: "ЗИП Лодки" },
+            // { text: "ЗИП Лодки" },
+            // { text: "ПЛМ" },
+            // { text: "ЗИП ПЛМ" },
+            // { text: "Мото" },
+            // { text: "ЗИП Мото" },
           ].map((x) => (
-            <Nav.Link href="/home" className="text-white bg-dark">
-              {x.text}
-            </Nav.Link>
+            <li className="nav-item">
+              <Link to={x.href} className="text-white bg-dark nav-link active">
+                {x.text}
+              </Link>
+            </li>
           ))}
-        </Nav>
+        </ul>
       </Col>
       <Col>
         <Filter />
