@@ -9,23 +9,24 @@ import {
   InputGroup,
   FormControl,
   Spinner,
+  Form as Bform,
 } from "react-bootstrap";
 import { Form, Field } from "react-final-form";
 // import axios from "axios";
 import { API } from "../../api";
 
-export const Login = () => {
+export const Report = () => {
   const [response, setResponse] = useState<any>({
     loading: false,
     data: null,
     status: null,
   });
-  const onSubmit = ({ login, password }: any) => {
+  const onSubmit = (values: any) => {
     setResponse({
       ...response,
       loading: true,
     });
-    API.login(login, password)
+    API.report(values)
       .then((x) => {
         setResponse({
           loading: false,
@@ -64,12 +65,12 @@ export const Login = () => {
           <h2>Admin API: Sessions</h2>
           <div>
             <div>Login</div>
-            <Badge variant="info">POST</Badge> /api/login
+            <Badge variant="info">GET</Badge> /api/report
           </div>
           <div className="mt-3">
             <MyForm onSubmit={onSubmit} setResponse={setResponse} />
             {response.data && (
-              <pre>
+              <pre className="reponse-view">
                 {JSON.stringify({ response: response.data }, null, " ")}
               </pre>
             )}
@@ -91,6 +92,29 @@ const MyForm = ({ onSubmit }: any) => (
       <form onSubmit={handleSubmit}>
         <Row>
           <Col sm="4">
+            <Field name="category">
+              {(props) => (
+                <Bform.Group controlId="exampleForm.SelectCustom">
+                  <Bform.Control as="select" custom {...props.input}>
+                    <option>Выберите категорию</option>
+                    {[
+                      {
+                        label: "лодки",
+                        value: "boats",
+                      },
+                      {
+                        label: "моторы",
+                        value: "motors",
+                      },
+                    ].map((x, i) => (
+                      <option value={x.value} key={i}>
+                        {x.label}
+                      </option>
+                    ))}
+                  </Bform.Control>
+                </Bform.Group>
+              )}
+            </Field>
             <Field name="login">
               {(props) => (
                 <InputGroup>

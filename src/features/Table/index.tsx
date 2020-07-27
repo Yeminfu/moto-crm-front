@@ -1,16 +1,16 @@
 import React from "react";
 import { Table as Btable } from "react-bootstrap";
 import { Cart } from "./atoms/cart";
-import { data } from "./model/index";
 
-export const Table = () => (
+export const Table = ({ reportData }: any) => (
   <div style={{ overflowX: "scroll" }}>
+    {/* <pre>{JSON.stringify({ reportData }, null, " ")}</pre> */}
     <Btable striped bordered hover size="sm">
       <thead style={{ whiteSpace: "nowrap" }}>
         <tr>
-          {data.map((x) =>
-            x.head_rows[0].map((y) => (
-              <th colSpan={y.colSpan} rowSpan={y.rowSpan}>
+          {reportData.map((x: any) =>
+            x.head_rows[0].map((y: any, i: number) => (
+              <th colSpan={y.colSpan} rowSpan={y.rowSpan} key={i}>
                 {y.text}
               </th>
             ))
@@ -18,18 +18,18 @@ export const Table = () => (
           <th rowSpan={3} />
         </tr>
         <tr>
-          {data.map((x) =>
-            x.head_rows[1].map((y) => (
-              <th colSpan={y.colSpan} rowSpan={y.rowSpan}>
+          {reportData.map((x: any) =>
+            x.head_rows[1].map((y: any, i: number) => (
+              <th colSpan={y.colSpan} rowSpan={y.rowSpan} key={i}>
                 {y.text}
               </th>
             ))
           )}
         </tr>
         <tr>
-          {data.map((x) =>
-            x.head_rows[2].map((y) => (
-              <th colSpan={y.colSpan} rowSpan={y.rowSpan}>
+          {reportData.map((x: any) =>
+            x.head_rows[2].map((y: any, i: number) => (
+              <th colSpan={y.colSpan} rowSpan={y.rowSpan} key={i}>
                 {y.text}
               </th>
             ))
@@ -38,9 +38,9 @@ export const Table = () => (
       </thead>
       <tbody>
         <tr>
-          {data.map((x) =>
-            x.body_cols.map((y) => (
-              <td>
+          {reportData.map((x: any) =>
+            x.body_cols.map((y: any, i: number) => (
+              <td key={i}>
                 {((type) => {
                   switch (type) {
                     case "image":

@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Login } from "../features/Login";
-import { Dashboard } from "../features/dachboard";
+import { YearReport } from "../features/year-report";
 import { ApiChecker } from "../features/ApiChecker";
 import { CreateProduct } from "../features/CreateProduct";
 
@@ -13,8 +13,8 @@ export const Routes = () => (
           <Route exact path="/">
             <Login />
           </Route>
-          <Route path="/dashboard">
-            <Dashboard />
+          <Route path="/report/:id">
+            <YearReport />
           </Route>
           <Route path="/api-checker">
             <ApiChecker />

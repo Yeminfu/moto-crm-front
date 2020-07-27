@@ -18,7 +18,7 @@ export const CreateProduct = () => (
 );
 
 const onSubmit = (values: any) => {
-  axios.get("http://10.0.0.31:3001/api/login").then((x) => console.log("x", x));
+  // axios.get("http://10.0.0.31:3001/api/login").then((x) => console.log("x", x));
 };
 
 const MyForm = () => (
@@ -103,8 +103,10 @@ const MyForm = () => (
                         label: "моторы",
                         value: "motors",
                       },
-                    ].map((x) => (
-                      <option value={x.value}>{x.label}</option>
+                    ].map((x, i) => (
+                      <option value={x.value} key={i}>
+                        {x.label}
+                      </option>
                     ))}
                   </Bform.Control>
                 </Bform.Group>
