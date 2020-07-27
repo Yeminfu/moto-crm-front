@@ -7,4 +7,5 @@ export const API = {
     axios.post(baseUrl + "login", { login, password }),
   report: (params: { category: "boats" }) =>
     axios.get(baseUrl + "report", { params: params }),
+  add_products: (params: any) => axios.post(baseUrl + "add-products", params),
 };
