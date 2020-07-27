@@ -90,7 +90,8 @@ const MyForm = ({ onSubmit }: any) => (
     initialValues={{
       name: "asd",
       code: "asd",
-      category: "fix",
+      cost_type: "fix",
+      cost_value: "1000",
       purchase_price: "asdasd",
     }}
     render={({ handleSubmit, values }) => (
