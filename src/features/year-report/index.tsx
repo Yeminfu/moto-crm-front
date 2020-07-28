@@ -11,7 +11,7 @@ export const YearReport = (props: any) => {
   let { id } = useParams();
   const [reportData, setReportData] = useState([]);
   useEffect(() => {
-    API.report({ category: id }).then((x) => {
+    API.report({ category: id, year: "2020" }).then((x) => {
       setReportData(x.data.data.products);
     });
   }, [id]);
