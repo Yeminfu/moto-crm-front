@@ -2,18 +2,14 @@ import React, { useState } from "react";
 import {
   Row,
   Col,
-  Card,
   Button,
-  ListGroup,
-  Badge,
   InputGroup,
   FormControl,
-  Spinner,
   Form as Bform,
 } from "react-bootstrap";
 import { Form, Field } from "react-final-form";
-// import axios from "axios";
 import { API } from "../../api";
+import { Wrapper } from "./wrapper";
 
 export const AddSale = () => {
   const [response, setResponse] = useState<any>({
@@ -26,8 +22,6 @@ export const AddSale = () => {
       ...response,
       loading: true,
     });
-    // const formData = new FormData();
-    // console.log("values", values);
 
     API.add_sale(values)
       .then((x) => {
@@ -51,44 +45,15 @@ export const AddSale = () => {
       });
   };
   return (
-    <>
-      <Row>
-        <Col sm={2}>
-          <Card style={{ width: "18rem" }}>
-            <Card.Body>
-              <Card.Title>Admin API: Add Sale</Card.Title>
-              <ListGroup>
-                <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-              </ListGroup>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col>
-          <h2>Admin API: Add Sale</h2>
-          <div>
-            <div>Add sale</div>
-            <Badge variant="info">POST</Badge> /api/add-sale
-          </div>
-          <div className="mt-3">
-            <MyForm onSubmit={onSubmit} setResponse={setResponse} />
-            {response.data && (
-              <pre>
-                {JSON.stringify({ response: response.data }, null, " ")}
-              </pre>
-            )}
-          </div>
-        </Col>
-      </Row>
-    </>
+    <Wrapper
+      title="Add Sale"
+      method={"POST"}
+      api_url="/api/add-sale"
+      form={<MyForm onSubmit={onSubmit} setResponse={setResponse} />}
+      response_data={response.data}
+    />
   );
 };
-
-// "id": 2,
-// "product_id": 1,
-// "shop_id": 1,
-// "saler_id": 1,
-// "time": 1595898330434
 
 const MyForm = ({ onSubmit }: any) => (
   <Form
@@ -110,7 +75,6 @@ const MyForm = ({ onSubmit }: any) => (
                 <InputGroup>
                   <FormControl
                     placeholder="Название"
-                    // aria-label="Username"
                     aria-describedby="basic-addon1"
                     {...props.input}
                   />
@@ -122,7 +86,6 @@ const MyForm = ({ onSubmit }: any) => (
                 <InputGroup>
                   <FormControl
                     placeholder="Код"
-                    // aria-label="Username"
                     aria-describedby="basic-addon1"
                     {...props.input}
                   />
@@ -158,26 +121,14 @@ const MyForm = ({ onSubmit }: any) => (
                 <InputGroup>
                   <FormControl
                     placeholder="Размер наценки"
-                    // aria-label="Username"
                     aria-describedby="basic-addon1"
                     {...props.input}
                   />
                 </InputGroup>
               )}
             </Field>
-            <Button
-              variant="primary"
-              // disabled
-              type="submit"
-            >
+            <Button variant="primary" type="submit">
               Try it
-              <Spinner
-                as="span"
-                animation="grow"
-                size="sm"
-                role="status"
-                aria-hidden="true"
-              />
             </Button>
           </Col>
         </Row>
