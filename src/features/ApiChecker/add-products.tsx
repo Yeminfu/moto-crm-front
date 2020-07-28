@@ -56,7 +56,7 @@ export const AddProducts = () => {
         <Col sm={2}>
           <Card style={{ width: "18rem" }}>
             <Card.Body>
-              <Card.Title>Admin API: Products</Card.Title>
+              <Card.Title>Admin API: Add products</Card.Title>
               <ListGroup>
                 <ListGroup.Item>Cras justo odio</ListGroup.Item>
                 <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
@@ -65,7 +65,7 @@ export const AddProducts = () => {
           </Card>
         </Col>
         <Col>
-          <h2>Admin API: Sessions</h2>
+          <h2>Admin API: Add products</h2>
           <div>
             <div>Add product</div>
             <Badge variant="info">POST</Badge> /api/product

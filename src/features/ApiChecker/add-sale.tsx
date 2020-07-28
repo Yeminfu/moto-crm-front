@@ -15,7 +15,7 @@ import { Form, Field } from "react-final-form";
 // import axios from "axios";
 import { API } from "../../api";
 
-export const Report = () => {
+export const AddSale = () => {
   const [response, setResponse] = useState<any>({
     loading: false,
     data: null,
@@ -26,7 +26,10 @@ export const Report = () => {
       ...response,
       loading: true,
     });
-    API.report(values)
+    // const formData = new FormData();
+    // console.log("values", values);
+
+    API.add_sale(values)
       .then((x) => {
         setResponse({
           loading: false,
@@ -53,7 +56,7 @@ export const Report = () => {
         <Col sm={2}>
           <Card style={{ width: "18rem" }}>
             <Card.Body>
-              <Card.Title>Admin API: Year Report</Card.Title>
+              <Card.Title>Admin API: Add Sale</Card.Title>
               <ListGroup>
                 <ListGroup.Item>Cras justo odio</ListGroup.Item>
                 <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
@@ -62,15 +65,15 @@ export const Report = () => {
           </Card>
         </Col>
         <Col>
-          <h2>Admin API: Year Report</h2>
+          <h2>Admin API: Add Sale</h2>
           <div>
-            <div>Login</div>
-            <Badge variant="info">GET</Badge> /api/report
+            <div>Add sale</div>
+            <Badge variant="info">POST</Badge> /api/add-sale
           </div>
           <div className="mt-3">
             <MyForm onSubmit={onSubmit} setResponse={setResponse} />
             {response.data && (
-              <pre className="reponse-view">
+              <pre>
                 {JSON.stringify({ response: response.data }, null, " ")}
               </pre>
             )}
@@ -81,30 +84,65 @@ export const Report = () => {
   );
 };
 
+// "id": 2,
+// "product_id": 1,
+// "shop_id": 1,
+// "saler_id": 1,
+// "time": 1595898330434
+
 const MyForm = ({ onSubmit }: any) => (
   <Form
     onSubmit={onSubmit}
     initialValues={{
-      login: "kolyan",
-      password: "bill geits loh",
+      product_id: 1,
+      shop_id: 1,
+      saler_id: 1,
+      count: 1,
+      sum: 100500,
     }}
     render={({ handleSubmit, values }) => (
       <form onSubmit={handleSubmit}>
+        <pre>{JSON.stringify({ values }, null, " ")}</pre>
         <Row>
           <Col sm="4">
-            <Field name="category">
+            <Field name="name">
+              {(props) => (
+                <InputGroup>
+                  <FormControl
+                    placeholder="Название"
+                    // aria-label="Username"
+                    aria-describedby="basic-addon1"
+                    {...props.input}
+                  />
+                </InputGroup>
+              )}
+            </Field>
+            <Field name="code">
+              {(props) => (
+                <InputGroup>
+                  <FormControl
+                    placeholder="Код"
+                    // aria-label="Username"
+                    aria-describedby="basic-addon1"
+                    {...props.input}
+                  />
+                </InputGroup>
+              )}
+            </Field>
+
+            <Field name="cost_type">
               {(props) => (
                 <Bform.Group controlId="exampleForm.SelectCustom">
                   <Bform.Control as="select" custom {...props.input}>
-                    <option>Выберите категорию</option>
+                    <option>Выберите тип наценки</option>
                     {[
                       {
-                        label: "лодки",
-                        value: "boats",
+                        label: "фиксированная",
+                        value: "fix",
                       },
                       {
-                        label: "моторы",
-                        value: "motors",
+                        label: "процент",
+                        value: "percent",
                       },
                     ].map((x, i) => (
                       <option value={x.value} key={i}>
@@ -115,33 +153,18 @@ const MyForm = ({ onSubmit }: any) => (
                 </Bform.Group>
               )}
             </Field>
-            <Field name="login">
+            <Field name="cost_value">
               {(props) => (
                 <InputGroup>
                   <FormControl
-                    placeholder="Login"
-                    aria-label="Username"
+                    placeholder="Размер наценки"
+                    // aria-label="Username"
                     aria-describedby="basic-addon1"
                     {...props.input}
                   />
                 </InputGroup>
               )}
             </Field>
-            <Field name="password">
-              {(props) => (
-                <InputGroup>
-                  <FormControl
-                    placeholder="Password"
-                    aria-label="Username"
-                    aria-describedby="basic-addon1"
-                    {...props.input}
-                  />
-                </InputGroup>
-              )}
-            </Field>
-            {/* <Button variant="outline-primary" type="submit" size="sm">
-              send
-            </Button> */}
             <Button
               variant="primary"
               // disabled
