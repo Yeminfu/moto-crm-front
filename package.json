@@ -1,5 +1,6 @@
 {
   "name": "moto-crm-front",
+  "homepage": "/moto-crm-front/build",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

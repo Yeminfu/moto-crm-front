@@ -7,7 +7,7 @@ import { CreateProduct } from "../features/CreateProduct";
 
 export const Routes = () => (
   <>
-    <Router>
+    <Router basename={process.env.REACT_APP_ROUTER_BASE || ""}>
       <div>
         <Switch>
           <Route exact path="/">

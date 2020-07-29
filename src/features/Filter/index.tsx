@@ -1,6 +1,7 @@
 import React from "react";
-import { Form as FinalForm } from "react-final-form";
+import { Form as FinalForm, Field } from "react-final-form";
 import {
+  Form as Bform,
   InputGroup,
   FormControl,
   Row,
@@ -27,6 +28,36 @@ const MyForm = () => (
     onSubmit={onSubmit}
     render={({ handleSubmit }) => (
       <form onSubmit={handleSubmit}>
+        <div className="d-flex">
+          {[2019, 2020].map((year) => (
+            <Button key={year} className="mr-2" size="sm">
+              {year}
+            </Button>
+          ))}
+        </div>
+        <Field name="cost_type">
+          {(props) => (
+            <Bform.Group controlId="exampleForm.SelectCustom">
+              <Bform.Control as="select" custom {...props.input}>
+                <option>Категория</option>
+                {[
+                  {
+                    label: "лодки",
+                    value: "boats",
+                  },
+                  {
+                    label: "мотоциклы",
+                    value: "moto",
+                  },
+                ].map((x, i) => (
+                  <option value={x.value} key={i}>
+                    {x.label}
+                  </option>
+                ))}
+              </Bform.Control>
+            </Bform.Group>
+          )}
+        </Field>
         <Row>
           <Col sm={1}>
             <InputGroup size="sm">

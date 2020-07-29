@@ -15,7 +15,6 @@ export const Table = ({ reportData }: any) => (
                 </th>
               ))
             )}
-            <th rowSpan={3} />
           </tr>
           <tr>
             {reportData[0].map((x: any) =>
@@ -58,9 +57,6 @@ export const Table = ({ reportData }: any) => (
                   </td>
                 ))
               )}
-              <td>
-                <Cart />
-              </td>
             </tr>
           ))}
         </tbody>
