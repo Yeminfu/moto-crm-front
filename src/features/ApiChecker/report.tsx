@@ -22,7 +22,7 @@ export const Report = () => {
       ...response,
       loading: true,
     });
-    API.report(values)
+    API.get_report(values)
       .then((x) => {
         setResponse({
           loading: false,
@@ -58,8 +58,8 @@ const MyForm = ({ onSubmit }: any) => (
   <Form
     onSubmit={onSubmit}
     initialValues={{
-      login: "kolyan",
-      password: "bill geits loh",
+      year: "2020",
+      category: "boats",
     }}
     render={({ handleSubmit, values }) => (
       <form onSubmit={handleSubmit}>
@@ -88,23 +88,11 @@ const MyForm = ({ onSubmit }: any) => (
                 </Bform.Group>
               )}
             </Field>
-            <Field name="login">
+            <Field name="year">
               {(props) => (
                 <InputGroup>
                   <FormControl
-                    placeholder="Login"
-                    aria-label="Username"
-                    aria-describedby="basic-addon1"
-                    {...props.input}
-                  />
-                </InputGroup>
-              )}
-            </Field>
-            <Field name="password">
-              {(props) => (
-                <InputGroup>
-                  <FormControl
-                    placeholder="Password"
+                    placeholder="Год"
                     aria-label="Username"
                     aria-describedby="basic-addon1"
                     {...props.input}

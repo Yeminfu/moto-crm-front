@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  Row,
-  Col,
-  Button,
-  InputGroup,
-  FormControl,
-  Form as Bform,
-} from "react-bootstrap";
+import { Row, Col, Button, InputGroup, FormControl } from "react-bootstrap";
 import { Form, Field } from "react-final-form";
 import { API } from "../../api";
 import { Wrapper } from "./wrapper";
@@ -60,7 +53,7 @@ const MyForm = ({ onSubmit }: any) => (
     onSubmit={onSubmit}
     initialValues={{
       product_id: 1,
-      shop_id: 1,
+      shop_id: "khv",
       saler_id: 1,
       count: 1,
       sum: 100500,
@@ -70,22 +63,33 @@ const MyForm = ({ onSubmit }: any) => (
         <pre>{JSON.stringify({ values }, null, " ")}</pre>
         <Row>
           <Col sm="4">
-            <Field name="name">
+            <Field name="product_id">
               {(props) => (
                 <InputGroup>
                   <FormControl
-                    placeholder="Название"
+                    placeholder="product_id"
                     aria-describedby="basic-addon1"
                     {...props.input}
                   />
                 </InputGroup>
               )}
             </Field>
-            <Field name="code">
+            <Field name="shop_id">
               {(props) => (
                 <InputGroup>
                   <FormControl
-                    placeholder="Код"
+                    placeholder="shop_id"
+                    aria-describedby="basic-addon1"
+                    {...props.input}
+                  />
+                </InputGroup>
+              )}
+            </Field>
+            <Field name="count">
+              {(props) => (
+                <InputGroup>
+                  <FormControl
+                    placeholder="count"
                     aria-describedby="basic-addon1"
                     {...props.input}
                   />
@@ -93,40 +97,6 @@ const MyForm = ({ onSubmit }: any) => (
               )}
             </Field>
 
-            <Field name="cost_type">
-              {(props) => (
-                <Bform.Group controlId="exampleForm.SelectCustom">
-                  <Bform.Control as="select" custom {...props.input}>
-                    <option>Выберите тип наценки</option>
-                    {[
-                      {
-                        label: "фиксированная",
-                        value: "fix",
-                      },
-                      {
-                        label: "процент",
-                        value: "percent",
-                      },
-                    ].map((x, i) => (
-                      <option value={x.value} key={i}>
-                        {x.label}
-                      </option>
-                    ))}
-                  </Bform.Control>
-                </Bform.Group>
-              )}
-            </Field>
-            <Field name="cost_value">
-              {(props) => (
-                <InputGroup>
-                  <FormControl
-                    placeholder="Размер наценки"
-                    aria-describedby="basic-addon1"
-                    {...props.input}
-                  />
-                </InputGroup>
-              )}
-            </Field>
             <Button variant="primary" type="submit">
               Try it
             </Button>

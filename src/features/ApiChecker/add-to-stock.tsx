@@ -5,7 +5,7 @@ import { API } from "../../api";
 
 import { Wrapper } from "./wrapper";
 
-export const AddUser = () => {
+export const AddToStock = () => {
   const [response, setResponse] = useState<any>({
     loading: false,
     data: null,
@@ -17,7 +17,7 @@ export const AddUser = () => {
       loading: true,
     });
 
-    API.add_user(values)
+    API.add_to_stock(values)
       .then((x) => {
         setResponse({
           loading: false,
@@ -41,9 +41,9 @@ export const AddUser = () => {
   return (
     <>
       <Wrapper
-        title="Add user"
+        title="Add to stock"
         method="POST"
-        api_url="/api/add_user"
+        api_url="/api/add_to_stock"
         form={<MyForm onSubmit={onSubmit} setResponse={setResponse} />}
         response_data={response.data}
       />
@@ -55,20 +55,20 @@ const MyForm = ({ onSubmit }: any) => (
   <Form
     onSubmit={onSubmit}
     initialValues={{
-      name: "Вася Пупкин",
-      password: "123321",
-      role: "manager",
+      shop_id: "khv",
+      product_id: "1",
+      count: "10",
     }}
     render={({ handleSubmit, values }) => (
       <form onSubmit={handleSubmit}>
         <pre>{JSON.stringify({ values }, null, " ")}</pre>
         <Row>
           <Col sm="4">
-            <Field name="id">
+            <Field name="shop_id">
               {(props) => (
                 <InputGroup>
                   <FormControl
-                    placeholder="ID"
+                    placeholder="shop_id"
                     // aria-label="Username"
                     aria-describedby="basic-addon1"
                     {...props.input}
@@ -76,11 +76,23 @@ const MyForm = ({ onSubmit }: any) => (
                 </InputGroup>
               )}
             </Field>
-            <Field name="name">
+            <Field name="product_id">
               {(props) => (
                 <InputGroup>
                   <FormControl
-                    placeholder="Название"
+                    placeholder="product_id"
+                    // aria-label="Username"
+                    aria-describedby="basic-addon1"
+                    {...props.input}
+                  />
+                </InputGroup>
+              )}
+            </Field>
+            <Field name="count">
+              {(props) => (
+                <InputGroup>
+                  <FormControl
+                    placeholder="count"
                     // aria-label="Username"
                     aria-describedby="basic-addon1"
                     {...props.input}

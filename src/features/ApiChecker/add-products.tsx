@@ -66,6 +66,7 @@ const MyForm = ({ onSubmit }: any) => (
       code: "asd",
       cost_type: "procent",
       cost_value: 0.3,
+      category_id: "boats",
       purchase_price: 1000,
     }}
     render={({ handleSubmit, values }) => (
@@ -125,6 +126,7 @@ const MyForm = ({ onSubmit }: any) => (
               {(props) => (
                 <InputGroup>
                   <FormControl
+                    type="number"
                     placeholder="Размер наценки"
                     aria-describedby="basic-addon1"
                     {...props.input}

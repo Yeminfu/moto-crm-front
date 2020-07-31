@@ -15,8 +15,8 @@ export const Wrapper = ({
   response_data: any;
 }) => (
   <>
-    <Row>
-      <Col sm={2}>
+    <Row className="mb-3">
+      <Col sm={4}>
         <Card style={{ width: "18rem" }}>
           <Card.Body>
             <Card.Title>Admin API: {title}</Card.Title>
