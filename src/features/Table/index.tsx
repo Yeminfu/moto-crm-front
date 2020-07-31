@@ -1,6 +1,6 @@
 import React from "react";
 import { Table as Btable } from "react-bootstrap";
-import { Cart } from "./atoms/cart";
+// import { Cart } from "./atoms/cart";
 
 export const Table = ({ reportData }: any) => (
   <div style={{ overflowX: "scroll" }}>

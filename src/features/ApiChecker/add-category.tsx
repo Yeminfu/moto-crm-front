@@ -12,7 +12,7 @@ import { API } from "../../api";
 
 import { Wrapper } from "./wrapper";
 
-export const AddProducts = () => {
+export const AddCategory = () => {
   const [response, setResponse] = useState<any>({
     loading: false,
     data: null,
@@ -24,7 +24,7 @@ export const AddProducts = () => {
       loading: true,
     });
 
-    API.add_products(values)
+    API.add_category(values)
       .then((x) => {
         setResponse({
           loading: false,
@@ -48,9 +48,9 @@ export const AddProducts = () => {
   return (
     <>
       <Wrapper
-        title="Add products"
+        title="Add category"
         method="POST"
-        api_url="/api/product"
+        api_url="/api/add_category"
         form={<MyForm onSubmit={onSubmit} setResponse={setResponse} />}
         response_data={response.data}
       />
@@ -62,70 +62,32 @@ const MyForm = ({ onSubmit }: any) => (
   <Form
     onSubmit={onSubmit}
     initialValues={{
-      name: "asd",
-      code: "asd",
-      cost_type: "procent",
-      cost_value: 0.3,
-      purchase_price: 1000,
+      id: "boat",
+      name: "Лодки",
     }}
     render={({ handleSubmit, values }) => (
       <form onSubmit={handleSubmit}>
         <pre>{JSON.stringify({ values }, null, " ")}</pre>
         <Row>
           <Col sm="4">
+            <Field name="id">
+              {(props) => (
+                <InputGroup>
+                  <FormControl
+                    placeholder="ID"
+                    // aria-label="Username"
+                    aria-describedby="basic-addon1"
+                    {...props.input}
+                  />
+                </InputGroup>
+              )}
+            </Field>
             <Field name="name">
               {(props) => (
                 <InputGroup>
                   <FormControl
                     placeholder="Название"
                     // aria-label="Username"
-                    aria-describedby="basic-addon1"
-                    {...props.input}
-                  />
-                </InputGroup>
-              )}
-            </Field>
-            <Field name="code">
-              {(props) => (
-                <InputGroup>
-                  <FormControl
-                    placeholder="Код"
-                    // aria-label="Username"
-                    aria-describedby="basic-addon1"
-                    {...props.input}
-                  />
-                </InputGroup>
-              )}
-            </Field>
-
-            <Field name="cost_type">
-              {(props) => (
-                <Bform.Group controlId="exampleForm.SelectCustom">
-                  <Bform.Control as="select" custom {...props.input}>
-                    <option>Выберите тип наценки</option>
-                    {[
-                      {
-                        label: "фиксированная",
-                        value: "fix",
-                      },
-                      {
-                        label: "процент",
-                        value: "percent",
-                      },
-                    ].map((x, i) => (
-                      <option value={x.value} key={i}>
-                        {x.label}
-                      </option>
-                    ))}
-                  </Bform.Control>
-                </Bform.Group>
-              )}
-            </Field>
-            <Field name="cost_value">
-              {(props) => (
-                <InputGroup>
-                  <FormControl
-                    placeholder="Размер наценки"
                     aria-describedby="basic-addon1"
                     {...props.input}
                   />
