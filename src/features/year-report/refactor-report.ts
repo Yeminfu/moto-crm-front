@@ -3,7 +3,6 @@ require("dayjs/locale/ru");
 dayjs.locale("ru");
 
 export const refactorReport = (data: any) => {
-  console.log("product", data);
   const { products, sales, shops, stock } = data;
   return products.map((product: any) => [
     {
@@ -263,13 +262,6 @@ export const refactorReport = (data: any) => {
         {
           type: "text",
           data: (() => {
-            console.log(
-              "себестоимость",
-              Number(product.purchase_price),
-              product.cost_type,
-              product.cost_value
-            );
-
             switch (product.cost_type) {
               case "fix":
                 return (
