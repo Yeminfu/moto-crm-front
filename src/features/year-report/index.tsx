@@ -13,10 +13,12 @@ export const YearReport = (props: any) => {
   const [reportData, setReportData] = useState<any[]>([]);
   const [disableMonth, setDisableMonth] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
+  const [categories, setCategories] = useState<any>([]);
 
   useEffect(() => {
     setLoading(true);
     API.get_report({ category, year: "2020" }).then((x) => {
+      setCategories(x.data.data.categories);
       setReportData(refactorReport(x.data.data));
       setLoading(false);
     });
@@ -30,6 +32,15 @@ export const YearReport = (props: any) => {
       return true;
     })
   );
+
+  const filterHandle = (values: any) => {
+    setLoading(true);
+    API.get_report(values).then((x) => {
+      setReportData(refactorReport(x.data.data));
+      setLoading(false);
+    });
+    // alert(JSON.stringify(values));
+  };
 
   return (
     <div className="container-fluid">
@@ -71,21 +82,26 @@ export const YearReport = (props: any) => {
           </ul>
         </Col>
         <Col>
+          <h1>asd</h1>
+          <Filter
+            filterHandle={filterHandle}
+            reportData={reportData}
+            categories={categories}
+          />
+          <InputGroup className="mb-3">
+            <Button
+              variant={disableMonth ? "primary" : "outline-primary"}
+              onClick={() => setDisableMonth(!disableMonth)}
+            >
+              Продажи/Мес
+            </Button>
+          </InputGroup>
           {loading ? (
             <Spinner animation="border" role="status">
               <span className="sr-only">Loading...</span>
             </Spinner>
           ) : (
             <>
-              <Filter />
-              <InputGroup className="mb-3">
-                <Button
-                  variant={disableMonth ? "primary" : "outline-primary"}
-                  onClick={() => setDisableMonth(!disableMonth)}
-                >
-                  Продажи/Мес
-                </Button>
-              </InputGroup>
               <Table reportData={view} />
             </>
           )}
