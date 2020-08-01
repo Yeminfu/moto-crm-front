@@ -4,6 +4,7 @@ import { Login } from "../features/Login";
 import { YearReport } from "../features/year-report";
 import { ApiChecker } from "../features/ApiChecker";
 import { CreateProduct } from "../features/CreateProduct";
+import { Products } from "../features/products";
 
 export const Routes = () => (
   <>
@@ -21,6 +22,9 @@ export const Routes = () => (
           </Route>
           <Route path="/create-product">
             <CreateProduct />
+          </Route>
+          <Route path="/products/:id">
+            <Products />
           </Route>
         </Switch>
       </div>

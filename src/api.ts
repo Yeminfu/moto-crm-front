@@ -7,6 +7,9 @@ export const API = {
     axios.post(baseUrl + "login", { login, password }),
   get_report: (params: any) =>
     axios.get(baseUrl + "report", { params: params }),
+  get_categories: () => axios.get(baseUrl + "get_categories"),
+  get_products: (params: { category: string }) =>
+    axios.get(baseUrl + "get_products", { params: params }),
   add_products: (params: any) =>
     axios.post(baseUrl + "add_products", params, {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
