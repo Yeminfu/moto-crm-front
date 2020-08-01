@@ -186,13 +186,27 @@ export const refactorReport = (data: any) => {
               const shop = shops[index];
               arr.push({
                 type: "text",
-                data: sales.filter((sale: any) => {
-                  return (
-                    sale.product_id === product.id &&
-                    sale.shop_id === shop.id &&
-                    dayjs(sale.time, "D.M.YYYY").format("M") === month
-                  );
-                }).length,
+                data: (() => {
+                  const array = sales
+                    .filter((sale: any) => {
+                      return (
+                        sale.product_id === product.id &&
+                        sale.shop_id === shop.id &&
+                        dayjs(sale.time, "D.M.YYYY").format("M") === month
+                      );
+                    })
+                    .map((x: any) => Number(x.count));
+                  // console.log(
+                  //   ">>>",
+                  //   array.length
+                  //     ? array.reduce((sum: any, val: any) => sum + val)
+                  //     : 0
+                  // );
+                  // return 123123;
+                  return array.length
+                    ? array.reduce((sum: any, val: any) => sum + val)
+                    : 0;
+                })(),
               });
             }
           });
