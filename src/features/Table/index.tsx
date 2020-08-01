@@ -8,6 +8,7 @@ export const Table = ({ reportData }: any) => (
       <Btable striped bordered hover size="sm">
         <thead style={{ whiteSpace: "nowrap" }}>
           <tr>
+            {console.log("reportData", reportData)}
             {reportData[0].map((x: any) =>
               x.head_rows[0].map((y: any, i: number) => (
                 <th colSpan={y.colSpan} rowSpan={y.rowSpan} key={i}>

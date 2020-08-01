@@ -64,10 +64,11 @@ const MyForm = ({ onSubmit }: any) => (
     initialValues={{
       name: "asd",
       code: "asd",
-      cost_type: "procent",
-      cost_value: 0.3,
+      cost_type: "percent",
+      cost_value: "1.3",
       category_id: "boats",
       purchase_price: 1000,
+      note: "bla bla bla",
     }}
     render={({ handleSubmit, values }) => (
       <form onSubmit={handleSubmit}>

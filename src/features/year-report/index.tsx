@@ -6,15 +6,19 @@ import { Pagination } from "../Pagination";
 import { Filter } from "../Filter";
 import { Link, useParams } from "react-router-dom";
 import { API } from "../../api";
+import { refactorReport } from "./refactor-report";
 
 export const YearReport = (props: any) => {
   let { id } = useParams();
-  const [reportData, setReportData] = useState([]);
+  const [reportData, setReportData] = useState<any[]>([]);
   useEffect(() => {
     API.get_report({ category: id, year: "2020" }).then((x) => {
-      setReportData(x.data.data.products);
+      // console.log("response", x.data.data);
+      refactorReport(x.data.data);
+      setReportData(refactorReport(x.data.data));
     });
   }, [id]);
+  // console.log("reportData", reportData);
 
   return (
     <div className="container-fluid">
@@ -26,13 +30,6 @@ export const YearReport = (props: any) => {
               { text: "Мотоциклы", href: "/report/moto" },
               { text: "Главная", href: "/" },
               { text: "Создать товар", href: "/create-product" },
-              // { text: "Лодки", href: "/boats" },
-              // { text: "ЗИП Лодки" },
-              // { text: "ЗИП Лодки" },
-              // { text: "ПЛМ" },
-              // { text: "ЗИП ПЛМ" },
-              // { text: "Мото" },
-              // { text: "ЗИП Мото" },
             ].map((x, i) => (
               <li className="nav-item" key={i}>
                 <Link
