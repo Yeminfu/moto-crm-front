@@ -9,7 +9,7 @@ export const refactorReport = (data: any) => {
       head_rows: [
         [
           {
-            text: product.note,
+            text: "Заметки",
             colSpan: 1,
             rowSpan: 3,
           },
@@ -143,6 +143,7 @@ export const refactorReport = (data: any) => {
       ],
     },
     {
+      id: "saled_per_month",
       head_rows: [
         [
           {

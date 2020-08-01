@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./style.scss";
-import { Row, Col, InputGroup } from "react-bootstrap";
+import { Row, Col, InputGroup, Button, Spinner, Modal } from "react-bootstrap";
 import { Table } from "../Table";
-import { Pagination } from "../Pagination";
+// import { Pagination } from "../Pagination";
 import { Filter } from "../Filter";
 import { Link, useParams } from "react-router-dom";
 import { API } from "../../api";
@@ -10,15 +10,27 @@ import { refactorReport } from "./refactor-report";
 
 export const YearReport = (props: any) => {
   let { id } = useParams();
+
   const [reportData, setReportData] = useState<any[]>([]);
+  const [disableMonth, setDisableMonth] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(false);
+
   useEffect(() => {
+    setLoading(true);
     API.get_report({ category: id, year: "2020" }).then((x) => {
-      // console.log("response", x.data.data);
-      refactorReport(x.data.data);
       setReportData(refactorReport(x.data.data));
+      setLoading(false);
     });
   }, [id]);
-  // console.log("reportData", reportData);
+
+  const view = reportData.map((x, i) =>
+    x.filter((x: any, i: any) => {
+      if (i === 6) {
+        return disableMonth;
+      }
+      return true;
+    })
+  );
 
   return (
     <div className="container-fluid">
@@ -43,15 +55,24 @@ export const YearReport = (props: any) => {
           </ul>
         </Col>
         <Col>
-          <Filter />
-          <InputGroup className="mb-3">
-            <InputGroup.Append>
-              <InputGroup.Text id="basic-addon2">Продано</InputGroup.Text>
-            </InputGroup.Append>
-            <InputGroup.Checkbox aria-label="Checkbox for following text input" />
-          </InputGroup>
-          <Table reportData={reportData} />
-          <Pagination />
+          {loading ? (
+            <Spinner animation="border" role="status">
+              <span className="sr-only">Loading...</span>
+            </Spinner>
+          ) : (
+            <>
+              <Filter />
+              <InputGroup className="mb-3">
+                <Button
+                  variant={disableMonth ? "primary" : "outline-primary"}
+                  onClick={() => setDisableMonth(!disableMonth)}
+                >
+                  Продажи/Мес
+                </Button>
+              </InputGroup>
+              <Table reportData={view} />
+            </>
+          )}
         </Col>
       </Row>
     </div>
