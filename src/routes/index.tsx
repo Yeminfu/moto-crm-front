@@ -13,7 +13,7 @@ export const Routes = () => (
           <Route exact path="/">
             <Login />
           </Route>
-          <Route path="/report/:id">
+          <Route path="/report">
             <YearReport />
           </Route>
           <Route path="/api-checker">
