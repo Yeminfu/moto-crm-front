@@ -46,7 +46,7 @@ export const Template = ({
           <ul className="nav flex-column navbar align-items-start">
             {[
               { text: "Годовой отчет", href: "/report" },
-              { text: "Товары", href: "/products" },
+              // { text: "Товары", href: "/products" },
             ].map((x, i) => (
               <li className="nav-item" key={i}>
                 <Link

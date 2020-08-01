@@ -152,16 +152,8 @@ const AddSale = ({ modal, setModal, responseData }: any): any => {
                               price.product_id === modal?.product?.id &&
                               price.shop_id === shop_id
                           )?.sum;
-                          form.mutators.setPrice(val ? val : 0);
-                          console.log(
-                            responseData?.prices?.find(
-                              (price: { product_id: any; shop_id: any }) =>
-                                price.product_id === modal?.product?.id &&
-                                price.shop_id === shop_id
-                            )?.sum,
-                            "value, previous",
-                            shop_id,
-                            responseData?.prices
+                          form.mutators.setPrice(
+                            val ? Number(val) * Number(values.count) : 0
                           );
                         }}
                       </OnChange>
@@ -178,6 +170,16 @@ const AddSale = ({ modal, setModal, responseData }: any): any => {
                         type="number"
                         {...props.input}
                       />
+                      <OnChange name="count">
+                        {(value) => {
+                          const price = responseData?.prices?.find(
+                            (price: { product_id: any; shop_id: any }) =>
+                              price.product_id === modal?.product?.id &&
+                              price.shop_id === values.shop_id
+                          )?.sum;
+                          form.mutators.setPrice(Number(price) * Number(value));
+                        }}
+                      </OnChange>
                     </BForm.Group>
                   )}
                 </Field>
@@ -190,6 +192,7 @@ const AddSale = ({ modal, setModal, responseData }: any): any => {
                         aria-describedby="basic-addon1"
                         type="number"
                         {...props.input}
+                        readOnly
                       />
                     </BForm.Group>
                   )}
