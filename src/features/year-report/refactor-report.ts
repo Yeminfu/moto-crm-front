@@ -196,13 +196,6 @@ export const refactorReport = (data: any) => {
                       );
                     })
                     .map((x: any) => Number(x.count));
-                  // console.log(
-                  //   ">>>",
-                  //   array.length
-                  //     ? array.reduce((sum: any, val: any) => sum + val)
-                  //     : 0
-                  // );
-                  // return 123123;
                   return array.length
                     ? array.reduce((sum: any, val: any) => sum + val)
                     : 0;
@@ -235,10 +228,17 @@ export const refactorReport = (data: any) => {
       body_cols: [
         ...shops.map((shop: any) => ({
           type: "text",
-          data: sales.filter(
-            (sale: any) =>
-              sale.shop_id === shop.id && sale.product_id === product.id
-          ).length,
+          data: (() => {
+            const array = sales
+              .filter(
+                (sale: any) =>
+                  sale.shop_id === shop.id && sale.product_id === product.id
+              )
+              .map((x: any) => Number(x.count));
+            return array.length
+              ? array.reduce((sum: any, val: any) => sum + val)
+              : 0;
+          })(),
         })),
       ],
     },
