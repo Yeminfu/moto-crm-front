@@ -11,6 +11,13 @@ export const categories = createStore<any>(null).on<any>(
   (_, v) => v
 );
 
+const setShops = createEvent<any>();
+export const shops = createStore<any>(null).on<any>(setShops, (_, v) => v);
+API.get_shops().then((response) => {
+  setShops(response.data.shops);
+  // console.log("response", response);
+});
+
 interface categoryType {
   id: string;
   name: string;
@@ -67,6 +74,7 @@ export const Template = ({
           <ul className="nav flex-column navbar align-items-start">
             {[
               { text: "Годовой отчет", href: "/report" },
+              { text: "Создать товар", href: "/create-product" },
               // { text: "Товары", href: "/products" },
             ].map((x, i) => (
               <li className="nav-item" key={i}>
@@ -83,30 +91,6 @@ export const Template = ({
         <Col>
           <h1>{title}</h1>
           {children}
-
-          {/* <h1>asd</h1>
-  <Filter
-    filterHandle={filterHandle}
-    reportData={reportData}
-    categories={categories}
-  />
-  <InputGroup className="mb-3">
-    <Button
-      variant={disableMonth ? "primary" : "outline-primary"}
-      onClick={() => setDisableMonth(!disableMonth)}
-    >
-      Продажи/Мес
-    </Button>
-  </InputGroup>
-  {loading ? (
-    <Spinner animation="border" role="status">
-      <span className="sr-only">Loading...</span>
-    </Spinner>
-  ) : (
-    <>
-      <Table reportData={view} />
-    </>
-  )} */}
         </Col>
       </Row>
     </div>

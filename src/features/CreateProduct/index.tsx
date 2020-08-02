@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Form, Field } from "react-final-form";
 import {
   Row,
@@ -7,139 +7,127 @@ import {
   FormControl,
   Button,
   //   Label,
-  Form as Bform,
+  Form as BForm,
 } from "react-bootstrap";
 import { API } from "../../api";
+import { Template, shops as sho, categories as cats } from "../template";
+import { useStore } from "effector-react";
+import { FieldArray } from "react-final-form-arrays";
+import arrayMutators from "final-form-arrays";
 
-export const CreateProduct = () => (
-  <>
-    <MyForm />
-  </>
-);
+const required = (value: any) => (value ? undefined : "Required");
 
-const onSubmit = (values: any) => {
-  // axios.get("http://10.0.0.31:3001/api/login").then((x) => console.log("x", x));
-  API.add_products([values]).then((x) => console.log("x", x));
-};
-
-const MyForm = () => (
-  <Form
-    onSubmit={onSubmit}
-    initialValues={
-      {
-        //   login: "loginasda",
-        //   password: "passwordasda",
-      }
-    }
-    render={({ handleSubmit, values }) => (
-      <form onSubmit={handleSubmit}>
-        <h2>Создать товар</h2>
-        {/* <pre>{JSON.stringify(values, null, " ")}</pre> */}
-        <Row>
-          <Col xs="6">
-            <Field name="name">
-              {(props) => (
-                <Bform.Group controlId="exampleForm.SelectCustom">
-                  <Bform.Label>Название товара </Bform.Label>
-                  <InputGroup>
-                    <FormControl
-                      placeholder="Название товара"
-                      aria-label="Username"
-                      aria-describedby="basic-addon1"
-                      {...props.input}
-                    />
-                  </InputGroup>
-                </Bform.Group>
-              )}
-            </Field>
-            <Field name="code">
-              {(props) => (
-                <Bform.Group controlId="exampleForm.SelectCustom">
-                  <Bform.Label>Код товара </Bform.Label>
-                  <InputGroup>
-                    <FormControl
-                      placeholder="Код товара"
-                      aria-label="Username"
-                      aria-describedby="basic-addon1"
-                      {...props.input}
-                    />
-                  </InputGroup>
-                </Bform.Group>
-              )}
-            </Field>
-            {/* <Field name="photo">
-              {(props) => (
-                <Bform.Group controlId="exampleForm.SelectCustom">
-                  <Bform.Label>Изображение товара </Bform.Label>
-                  <InputGroup>
-                    <div className="custom-file">
-                      <input
-                        type="file"
-                        className="custom-file-input"
-                        id="validatedCustomFile"
-                        // required
+export const CreateProduct = () => {
+  useEffect(() => {}, []);
+  const shops = useStore(sho);
+  const categories = useStore(cats);
+  const onSubmit = (values: any) => {
+    console.log(values);
+  };
+  return (
+    <>
+      <Template title="Создать товар">
+        <Form
+          onSubmit={onSubmit}
+          // validate={(values) => {
+          //   const errors: any = {};
+          //   if (!values.name) {
+          //     errors.name = "Required";
+          //   }
+          //   // if (!values.password) {
+          //   //   errors.password = "Required";
+          //   // }
+          //   // if (!values.confirm) {
+          //   //   errors.confirm = "Required";
+          //   // } else if (values.confirm !== values.password) {
+          //   //   errors.confirm = "Must match";
+          //   // }
+          //   return errors;
+          // }}
+          initialValues={{
+            // name: "asd",
+            // code: "asd",
+            // cost_type: "percent",
+            // cost_value: "1.3",
+            // category_id: "boats",
+            // purchase_price: 1000,
+            // note: "bla bla bla",
+            retail_prices: shops ? shops : [],
+          }}
+          mutators={{
+            setPrice: (args, state, utils) => {
+              utils.changeValue(state, "sum", () => args);
+            },
+            ...arrayMutators,
+          }}
+          render={({ form, handleSubmit, values, errors, touched }) => (
+            <BForm
+              onSubmit={handleSubmit}
+              noValidate
+              // validated={true}
+            >
+              {/* <pre>
+                {JSON.stringify({ values, errors, touched }, null, " ")}
+              </pre> */}
+              <Row>
+                <BForm.Group controlId="name" as={Col}>
+                  <BForm.Label>Наименование</BForm.Label>
+                  <Field name="name" validate={required}>
+                    {(props) => (
+                      <BForm.Control
+                        aria-describedby="basic-addon1"
+                        {...props.input}
                       />
-                      <label
-                        className="custom-file-label"
-                        htmlFor="validatedCustomFile"
-                      >
-                        Выберите файл...
-                      </label>
-                      <div className="invalid-feedback">
-                        Example invalid custom file feedback
-                      </div>
-                    </div>
-                  </InputGroup>
-                </Bform.Group>
-              )}
-            </Field> */}
-            <Field name="category_id">
-              {(props) => (
-                <Bform.Group controlId="exampleForm.SelectCustom">
-                  <Bform.Label>Категория товара </Bform.Label>
-                  <Bform.Control as="select" custom {...props.input}>
-                    <option>Выберите категорию</option>
-                    {[
-                      {
-                        label: "лодки",
-                        value: "boats",
-                      },
-                      {
-                        label: "моторы",
-                        value: "motors",
-                      },
-                    ].map((x, i) => (
-                      <option value={x.value} key={i}>
-                        {x.label}
-                      </option>
-                    ))}
-                  </Bform.Control>
-                </Bform.Group>
-              )}
-            </Field>
-            <Field name="purchase_price">
-              {(props) => (
-                <Bform.Group controlId="exampleForm.SelectCustom">
-                  <Bform.Label>Закупочная цена</Bform.Label>
-                  <InputGroup>
+                    )}
+                  </Field>
+                </BForm.Group>
+                <BForm.Group as={Col}>
+                  <BForm.Label>Код товара</BForm.Label>
+                  <Field name="code" validate={required}>
+                    {(props) => (
+                      <FormControl
+                        placeholder="Код товара"
+                        aria-describedby="basic-addon1"
+                        {...props.input}
+                      />
+                    )}
+                  </Field>
+                </BForm.Group>
+                <BForm.Group controlId="exampleForm.SelectCustom" as={Col}>
+                  <BForm.Label>Категория товара</BForm.Label>
+                  <Field name="category_id" validate={required}>
+                    {(props) => (
+                      <BForm.Control as="select" custom {...props.input}>
+                        <option />
+                        {categories?.map((category: any) => (
+                          <option value={category.id} key={category.id}>
+                            {category.name}
+                          </option>
+                        ))}
+                      </BForm.Control>
+                    )}
+                  </Field>
+                </BForm.Group>
+              </Row>
+              <Field name="cost_value" validate={required}>
+                {(props) => (
+                  <BForm.Group>
+                    <BForm.Label>Закупочная цена</BForm.Label>
                     <FormControl
-                      placeholder="Наценка"
-                      aria-label="Username"
                       aria-describedby="basic-addon1"
+                      type="number"
                       {...props.input}
                     />
-                  </InputGroup>
-                </Bform.Group>
-              )}
-            </Field>
-            <Row className="align-items-end">
-              <Col>
-                <Field name="cost_type">
-                  {(props) => (
-                    <Bform.Group controlId="exampleForm.SelectCustom">
-                      <Bform.Label>Себестоимость </Bform.Label>
-                      <Bform.Control as="select" custom {...props.input}>
-                        <option value={""}>Тип наценки</option>
+                  </BForm.Group>
+                )}
+              </Field>
+              <Row>
+                <BForm.Group controlId="exampleForm.SelectCustom" as={Col}>
+                  <BForm.Label>Себестоимость (тип)</BForm.Label>
+                  <Field name="cost_type" validate={required}>
+                    {(props) => (
+                      <BForm.Control as="select" custom {...props.input}>
+                        <option />
                         {[
                           {
                             label: "фиксированная",
@@ -154,53 +142,63 @@ const MyForm = () => (
                             {x.label}
                           </option>
                         ))}
-                      </Bform.Control>
-                    </Bform.Group>
-                  )}
-                </Field>
-              </Col>
-              <Col>
-                <Field name="cost_value">
+                      </BForm.Control>
+                    )}
+                  </Field>
+                </BForm.Group>
+                <BForm.Group as={Col}>
+                  <BForm.Label>Себестоимость (значение)</BForm.Label>
+                  <Field name="cost_value" validate={required}>
+                    {(props) => (
+                      <FormControl
+                        aria-describedby="basic-addon1"
+                        type="number"
+                        {...props.input}
+                      />
+                    )}
+                  </Field>
+                </BForm.Group>
+              </Row>
+              <Row>
+                <FieldArray name="retail_prices">
+                  {({ fields }) =>
+                    fields.map((name, index) => (
+                      <BForm.Group as={Col} key={index}>
+                        <BForm.Label>Р цена {shops[index].name}</BForm.Label>
+                        <Field name={`${name}.cost_value`} validate={required}>
+                          {(props) => (
+                            <FormControl
+                              aria-describedby="basic-addon1"
+                              type="number"
+                              {...props.input}
+                            />
+                          )}
+                        </Field>
+                      </BForm.Group>
+                    ))
+                  }
+                </FieldArray>
+              </Row>
+
+              <BForm.Group>
+                <BForm.Label>Заметки</BForm.Label>
+                <Field name="note" validate={required}>
                   {(props) => (
-                    <Bform.Group controlId="exampleForm.SelectCustom">
-                      {/* <Bform.Label>Наценка</Bform.Label> */}
-                      <InputGroup>
-                        <FormControl
-                          placeholder="Наценка"
-                          aria-label="Username"
-                          aria-describedby="basic-addon1"
-                          {...props.input}
-                        />
-                      </InputGroup>
-                    </Bform.Group>
-                  )}
-                </Field>
-              </Col>
-            </Row>
-            <Field name="note">
-              {(props) => (
-                <Bform.Group controlId="exampleForm.SelectCustom">
-                  <Bform.Label>Название товара </Bform.Label>
-                  <InputGroup>
                     <FormControl
-                      placeholder="Название товара"
-                      aria-label="Username"
                       aria-describedby="basic-addon1"
                       as="textarea"
                       {...props.input}
                     />
-                  </InputGroup>
-                </Bform.Group>
-              )}
-            </Field>
-
-            <Button variant="outline-primary" type="submit" size="sm">
-              Сохранить
-            </Button>
-          </Col>
-        </Row>
-        {/* <pre>{JSON.stringify(values, null, " ")}</pre> */}
-      </form>
-    )}
-  />
-);
+                  )}
+                </Field>
+              </BForm.Group>
+              <Button variant="primary" type="submit">
+                Сохранить
+              </Button>
+            </BForm>
+          )}
+        />
+      </Template>
+    </>
+  );
+};
