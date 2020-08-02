@@ -3,7 +3,7 @@ require("dayjs/locale/ru");
 dayjs.locale("ru");
 
 export const refactorReport = (data: any) => {
-  const { products, sales, shops, stock } = data;
+  const { products, sales, shops, stock, prices } = data;
   return products.map((product: any) => [
     {
       head_rows: [
@@ -132,14 +132,16 @@ export const refactorReport = (data: any) => {
         ],
       ],
       body_cols: [
-        {
-          type: "text",
-          data: "100000",
-        },
-        {
-          type: "text",
-          data: "100000",
-        },
+        ...shops.map((shop: any) => {
+          const val = prices.find(
+            (price: any) =>
+              price.product_id === product.id && price.shop_id === shop.id
+          )?.sum;
+          return {
+            type: "text",
+            data: `${val ? val : 0}`,
+          };
+        }),
       ],
     },
     {

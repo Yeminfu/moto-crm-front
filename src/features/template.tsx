@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { API } from "../api";
@@ -30,7 +30,7 @@ const Nav = createComponent(categories, (props: any, state: any) => {
         setCategories(response.data.categories);
       });
     }
-  }, []);
+  }, [state]);
   return (
     <>
       <ul className="nav flex-column navbar align-items-start">
@@ -58,7 +58,7 @@ export const Template = ({
   children: any;
   title: string;
 }) => {
-  const [categories, setCategories] = useState<categoryType[]>([]);
+  // const [categories, setCategories] = useState<categoryType[]>([]);
   useEffect(() => {
     API.get_categories().then((response) => {
       setCategories(response.data.categories);
