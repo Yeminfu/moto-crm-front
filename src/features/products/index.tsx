@@ -8,6 +8,7 @@ import {
   Modal,
   Form as BForm,
   FormControl,
+  Spinner,
 } from "react-bootstrap";
 import { OnChange } from "react-final-form-listeners";
 import { Form, Field } from "react-final-form";
@@ -18,75 +19,89 @@ export const Products = () => {
   const [products, setProducts] = useState<any>([]);
   const [responseData, setResponseData] = useState<any>([]);
   const [modal, setModal] = useState<any>();
+  const [loading, setLoading] = useState<any>();
   const categories = useStore(cats);
   useEffect(() => {
+    setLoading(true);
     API.get_products({ category: id }).then((response) => {
       setProducts(response.data.products);
       setResponseData(response.data);
+      setLoading(false);
     });
   }, [id]);
+  const table = (
+    <Btable striped bordered hover size="sm" className="table-striped w-auto">
+      <thead style={{ whiteSpace: "nowrap" }}>
+        <tr>
+          <th rowSpan={2}>Фото</th>
+          <th rowSpan={2}>Наименование</th>
+          <th rowSpan={2}>Код товара</th>
+          <th colSpan={responseData?.shops?.length}>Розничная цена</th>
+          <th rowSpan={2} />
+        </tr>
+        <tr>
+          {responseData?.shops?.map((shop: { name: string }) => (
+            <th key={shop.name}>{shop.name}</th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {products.map(
+          (
+            product: {
+              photo: string;
+              name: string;
+              code: string;
+              id: any;
+            },
+            i: number
+          ) => (
+            <tr key={i}>
+              <td>{product.photo}</td>
+              <td>{product.name}</td>
+              <td>{product.code}</td>
+              {responseData?.shops?.map(
+                (shop: { name: string; id: string }) => (
+                  <td key={shop.id}>
+                    {
+                      responseData?.prices?.find(
+                        (price: { shop_id: string; product_id: any }) =>
+                          price.shop_id === shop.id &&
+                          price.product_id === product.id
+                      )?.sum
+                    }
+                  </td>
+                )
+              )}
+              <td>
+                <Button
+                  variant="primary"
+                  onClick={() => {
+                    setModal({ product });
+                  }}
+                  size="sm"
+                >
+                  Продать
+                </Button>
+              </td>
+            </tr>
+          )
+        )}
+        <tr></tr>
+      </tbody>
+    </Btable>
+  );
+
   return (
     <Template title={categories?.find((cat: any) => cat.id === id).name}>
-      <Btable striped bordered hover size="sm" className="table-striped w-auto">
-        <thead style={{ whiteSpace: "nowrap" }}>
-          <tr>
-            <th rowSpan={2}>Фото</th>
-            <th rowSpan={2}>Наименование</th>
-            <th rowSpan={2}>Код товара</th>
-            <th colSpan={responseData?.shops?.length}>Розничная цена</th>
-            <th rowSpan={2} />
-          </tr>
-          <tr>
-            {responseData?.shops?.map((shop: { name: string }) => (
-              <th key={shop.name}>{shop.name}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {products.map(
-            (
-              product: {
-                photo: string;
-                name: string;
-                code: string;
-                id: any;
-              },
-              i: number
-            ) => (
-              <tr key={i}>
-                <td>{product.photo}</td>
-                <td>{product.name}</td>
-                <td>{product.code}</td>
-                {responseData?.shops?.map(
-                  (shop: { name: string; id: string }) => (
-                    <td key={shop.id}>
-                      {
-                        responseData?.prices?.find(
-                          (price: { shop_id: string; product_id: any }) =>
-                            price.shop_id === shop.id &&
-                            price.product_id === product.id
-                        )?.sum
-                      }
-                    </td>
-                  )
-                )}
-                <td>
-                  <Button
-                    variant="primary"
-                    onClick={() => {
-                      setModal({ product });
-                    }}
-                    size="sm"
-                  >
-                    Продать
-                  </Button>
-                </td>
-              </tr>
-            )
-          )}
-          <tr></tr>
-        </tbody>
-      </Btable>
+      {loading ? (
+        <Spinner animation="border" role="status">
+          <span className="sr-only">Loading...</span>
+        </Spinner>
+      ) : (
+        <>{products.length ? table : "В этой категории нет товаров"}</>
+      )}
+
       <AddSale modal={modal} setModal={setModal} responseData={responseData} />
     </Template>
   );
