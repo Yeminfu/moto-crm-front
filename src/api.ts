@@ -2,6 +2,11 @@ import axios from "axios";
 
 const baseUrl = "http://birmotqe.beget.tech/api/?service=";
 
+export interface productType {
+  name: string;
+  asd: string;
+}
+
 export const API = {
   login: (login: string, password: string) =>
     axios.post(baseUrl + "login", { login, password }),
@@ -11,7 +16,7 @@ export const API = {
   get_categories: () => axios.get(baseUrl + "get_categories"),
   get_products: (params: { category: string }) =>
     axios.get(baseUrl + "get_products", { params: params }),
-  add_products: (params: any) =>
+  add_products: (params: productType) =>
     axios.post(baseUrl + "add_products", params, {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
     }),
