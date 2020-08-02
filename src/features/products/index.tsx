@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Template } from "../template";
+import { Template, categories as cats } from "../template";
 import { useParams } from "react-router-dom";
 import { API } from "../../api";
 import {
@@ -11,13 +11,14 @@ import {
 } from "react-bootstrap";
 import { OnChange } from "react-final-form-listeners";
 import { Form, Field } from "react-final-form";
+import { useStore } from "effector-react";
 
 export const Products = () => {
   const { id } = useParams();
   const [products, setProducts] = useState<any>([]);
   const [responseData, setResponseData] = useState<any>([]);
   const [modal, setModal] = useState<any>();
-
+  const categories = useStore(cats);
   useEffect(() => {
     API.get_products({ category: id }).then((response) => {
       setProducts(response.data.products);
@@ -25,7 +26,7 @@ export const Products = () => {
     });
   }, [id]);
   return (
-    <Template title={id}>
+    <Template title={categories?.find((cat: any) => cat.id === id).name}>
       <Btable striped bordered hover size="sm" className="table-striped w-auto">
         <thead style={{ whiteSpace: "nowrap" }}>
           <tr>
