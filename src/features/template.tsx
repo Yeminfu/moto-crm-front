@@ -75,6 +75,7 @@ export const Template = ({
             {[
               { text: "Годовой отчет", href: "/report" },
               { text: "Создать товар", href: "/create-product" },
+              { text: "Создать категорию", href: "/create-category" },
               // { text: "Товары", href: "/products" },
             ].map((x, i) => (
               <li className="nav-item" key={i}>

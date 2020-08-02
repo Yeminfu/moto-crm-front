@@ -5,6 +5,7 @@ import { YearReport } from "../features/year-report";
 import { ApiChecker } from "../features/ApiChecker";
 import { CreateProduct } from "../features/CreateProduct";
 import { Products } from "../features/products";
+import { CreateCategory } from "../features/CreateCategory";
 
 export const Routes = () => (
   <>
@@ -22,6 +23,9 @@ export const Routes = () => (
           </Route>
           <Route path="/create-product">
             <CreateProduct />
+          </Route>
+          <Route path="/create-category">
+            <CreateCategory />
           </Route>
           <Route path="/products/:id">
             <Products />
