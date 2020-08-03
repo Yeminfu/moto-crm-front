@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
 import { logout } from "./Login";
 
 const setCategories = createEvent<any>();
-export const categories = createStore<any>(null).on<any>(
+export const categories = createStore<any>([]).on<any>(
   setCategories,
   (_, v) => v
 );
@@ -48,11 +48,7 @@ const Menu = createComponent(categories, (props: any, state: any) => {
         defaultActiveKey="/home"
         className="flex-column navbar-inverse"
       >
-        {[
-          { text: "Главная", href: "/" },
-
-          // { text: "Товары", href: "/products" },
-        ].map((x: any, i: any) => (
+        {[{ text: "Главная", href: "/" }].map((x: any, i: any) => (
           <Nav.Item key={i}>
             <Link
               to={x.href}

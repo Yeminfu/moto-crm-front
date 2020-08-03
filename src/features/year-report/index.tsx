@@ -8,8 +8,6 @@ import { refactorReport } from "./refactor-report";
 import { Template } from "../template";
 
 export const YearReport = (props: any) => {
-  // const [category, setCategory] = useState("boats");
-
   const [reportData, setReportData] = useState<any[]>([]);
   const [disableMonth, setDisableMonth] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
@@ -24,7 +22,7 @@ export const YearReport = (props: any) => {
     });
   }, []);
 
-  const view = reportData.map((x, i) =>
+  const view = reportData?.map((x, i) =>
     x.filter((x: any, i: any) => {
       if (i === 6) {
         return disableMonth;
@@ -39,13 +37,10 @@ export const YearReport = (props: any) => {
       setReportData(refactorReport(x.data.data));
       setLoading(false);
     });
-    // alert(JSON.stringify(values));
   };
 
   return (
-    // <div className="container-fluid">
     <Template title="Годовой отчет">
-      {/* <h1>asd</h1> */}
       <Filter
         filterHandle={filterHandle}
         reportData={reportData}
@@ -65,10 +60,13 @@ export const YearReport = (props: any) => {
         </Spinner>
       ) : (
         <>
-          <Table reportData={view} />
+          {view ? (
+            <Table reportData={view} />
+          ) : (
+            "Нет данных (возможно в категории нет товаров)"
+          )}
         </>
       )}
     </Template>
-    // </div>
   );
 };

@@ -4,7 +4,8 @@ dayjs.locale("ru");
 
 export const refactorReport = (data: any) => {
   const { products, sales, shops, stock, prices } = data;
-  return products.map((product: any) => [
+
+  return products?.map((product: any) => [
     {
       head_rows: [
         [
