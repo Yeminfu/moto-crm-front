@@ -93,7 +93,7 @@ export const Products = () => {
   );
 
   return (
-    <Template title={categories?.find((cat: any) => cat.id === id).name}>
+    <Template title={categories?.find((cat: any) => cat.id === id)?.name}>
       {loading ? (
         <Spinner animation="border" role="status">
           <span className="sr-only">Loading...</span>

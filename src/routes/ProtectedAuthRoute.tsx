@@ -22,7 +22,7 @@ const ProtectedAuthRoute = ({ login, redirectTo, onRender }: any) => {
     return (
       <Redirect
         to={{
-          pathname: redirectTo ? redirectTo : "/",
+          pathname: "/",
         }}
       />
     );
