@@ -75,12 +75,14 @@ const onSubmit = ({ email, password }: any) => {
   API.login(email, password).then((response: any) => {
     const { success, token, user } = response.data;
     if (success) {
-      setAuth({
-        token,
-        user,
-      });
-      localStorage.setItem("token", token);
-      localStorage.setItem("user", JSON.stringify(user));
+      setTimeout(() => {
+        setAuth({
+          token,
+          user,
+        });
+        localStorage.setItem("token", token);
+        localStorage.setItem("user", JSON.stringify(user));
+      }, 1000);
     } else {
       Swal.fire({
         title: "Ошибка!",

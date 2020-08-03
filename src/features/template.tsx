@@ -15,9 +15,6 @@ export const categories = createStore<any>([]).on<any>(
 
 const setShops = createEvent<any>();
 export const shops = createStore<any>(null).on<any>(setShops, (_, v) => v);
-API.get_shops().then((response) => {
-  setShops(response.data.shops);
-});
 
 interface categoryType {
   id: string;
@@ -27,9 +24,12 @@ interface categoryType {
 const Menu = createComponent(categories, (props: any, state: any) => {
   let location = useLocation();
   useEffect(() => {
+    API.get_shops().then((response) => {
+      setShops(response.data?.shops);
+    });
     if (!state) {
       API.get_categories().then((response) => {
-        setCategories(response.data.categories);
+        setCategories(response.data?.categories);
       });
     }
   }, [state]);
@@ -91,6 +91,7 @@ const Menu = createComponent(categories, (props: any, state: any) => {
           { text: "Годовой отчет", href: "/report" },
           { text: "Создать товар", href: "/create-product" },
           { text: "Создать категорию", href: "/create-category" },
+          { text: "Создать магазин", href: "/create-shop" },
           { text: "Штат", href: "/staff" },
           // { text: "Товары", href: "/products" },
         ].map((x: any, i: any) => (
@@ -136,7 +137,7 @@ export const Template = ({
   // const [categories, setCategories] = useState<categoryType[]>([]);
   useEffect(() => {
     API.get_categories().then((response) => {
-      setCategories(response.data.categories);
+      setCategories(response.data?.categories);
     });
   }, []);
   return (

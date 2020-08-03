@@ -10,6 +10,7 @@ import { Staff } from "../features/Staff";
 import { ProtectedRoute } from "./ProtectedRoute";
 import ProtectedAuthRoute from "./ProtectedAuthRoute";
 import { Dashboard } from "../features/Dashboard";
+import { CreateShop } from "../features/CreateShop";
 
 export const Routes = () => (
   <>
@@ -35,6 +36,7 @@ export const Routes = () => (
             { path: "/api-checker", component: <ApiChecker /> },
             { path: "/create-product", component: <CreateProduct /> },
             { path: "/create-category", component: <CreateCategory /> },
+            { path: "/create-shop", component: <CreateShop /> },
             { path: "/products/:id", component: <Products /> },
             { path: "/staff", component: <Staff /> },
           ].map((route: any) => (
