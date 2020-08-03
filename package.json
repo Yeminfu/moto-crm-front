@@ -1,9 +1,8 @@
 {
   "name": "moto-crm-front",
-  "homepage": "/moto-crm-front/build",
+  "homepage": "/moto-crm-front/",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/moto-crm-front/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -35,6 +34,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "redux-thunk": "^2.3.0",
+    "sweetalert2": "^9.17.1",
     "typescript": "^3.9.7"
   },
   "scripts": {

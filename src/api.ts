@@ -9,7 +9,11 @@ export interface productType {
 
 export const API = {
   login: (login: string, password: string) =>
-    axios.post(baseUrl + "login", { login, password }),
+    axios.post(
+      baseUrl + "sign_in",
+      { login, password },
+      { headers: { "Content-Type": "application/x-www-form-urlencoded" } }
+    ),
   get_report: (params: any) =>
     axios.get(baseUrl + "report", { params: params }),
   get_staff: () => axios.get(baseUrl + "get_staff"),

@@ -8,6 +8,7 @@ import {
   Form as BForm,
   FormControl,
   Button,
+  Spinner,
 } from "react-bootstrap";
 import { Field, Form } from "react-final-form";
 import { useStore } from "effector-react";
@@ -16,58 +17,83 @@ export const Staff = () => {
   const [roles, setRoles] = useState<any>([]);
   const [modal, setModal] = useState<any>(false);
   const [staff, setStaff] = useState<any>([]);
+  const [loading, setoading] = useState<any>(false);
+
+  const reboot = () => {
+    setoading(true);
+    API.get_staff().then((response: any) => {
+      //   console.log("response", response.data.staff);
+      setStaff(response.data.staff);
+      setoading(false);
+    });
+  };
+
   useEffect(() => {
     API.get_staff().then((response: any) => setStaff(response.data.staff));
     API.get_roles().then((response: any) => setRoles(response.data.roles));
   }, []);
 
   useEffect(() => {
-    API.get_staff().then((response: any) => {
-      //   console.log("response", response.data.staff);
-      setStaff(response.data.staff);
-    });
+    reboot();
   }, []);
   return (
     <Template title="Штат">
-      <Table striped bordered hover size="sm" className="table-striped w-auto">
-        <thead style={{ whiteSpace: "nowrap" }}>
-          <tr>
-            <th>ФИО</th>
-            <th>Должность</th>
-            <th>Магазин</th>
-            <th />
-          </tr>
-        </thead>
-        <tbody>
-          {staff.map((user: any, i: number) => (
-            <tr key={i}>
-              <td>{user.name}</td>
-              <td>{roles.find((role: any) => role.id === user.role)?.role}</td>
-              <td>{user.shop_id}</td>
+      {loading ? (
+        <Spinner animation="border" role="status">
+          <span className="sr-only">Loading...</span>
+        </Spinner>
+      ) : (
+        <>
+          <Table
+            striped
+            bordered
+            hover
+            size="sm"
+            className="table-striped w-auto"
+          >
+            <thead style={{ whiteSpace: "nowrap" }}>
+              <tr>
+                <th>ФИО</th>
+                <th>Должность</th>
+                <th>Магазин</th>
+                <th />
+              </tr>
+            </thead>
+            <tbody>
+              {staff.map((user: any, i: number) => (
+                <tr key={i}>
+                  <td>{user.name}</td>
+                  <td>
+                    {roles.find((role: any) => role.id === user.role)?.role}
+                  </td>
+                  <td>{user.shop_id}</td>
 
-              <td>
-                <Button
-                  variant="primary"
-                  onClick={() => {
-                    //   setModal({ product });
-                  }}
-                  size="sm"
-                >
-                  Изменить
-                </Button>
-              </td>
-            </tr>
-          ))}
-          <tr></tr>
-        </tbody>
-      </Table>
-      <Button
-        onClick={() => {
-          setModal(true);
-        }}
-      >
-        Добавить сотрудника
-      </Button>
+                  <td>
+                    <Button
+                      variant="primary"
+                      onClick={() => {
+                        //   setModal({ product });
+                      }}
+                      size="sm"
+                    >
+                      Изменить
+                    </Button>
+                  </td>
+                </tr>
+              ))}
+              <tr></tr>
+            </tbody>
+          </Table>
+          <Button
+            onClick={() => {
+              setModal(true);
+            }}
+          >
+            Добавить сотрудника
+          </Button>
+        </>
+      )}
+
       <AddStaff modal={modal} setModal={setModal} roles={roles} />
     </Template>
   );
@@ -92,7 +118,6 @@ const AddStaff = ({ modal, setModal, roles }: any): any => {
           }}
           render={({ form, handleSubmit, values, touched, errors }) => (
             <form onSubmit={handleSubmit}>
-              {JSON.stringify(values)}
               <Modal.Header closeButton>
                 <Modal.Title>Добавить сотрудника</Modal.Title>
               </Modal.Header>
@@ -104,6 +129,19 @@ const AddStaff = ({ modal, setModal, roles }: any): any => {
                       <FormControl
                         isInvalid={touched?.name && errors.name}
                         placeholder="фио"
+                        aria-describedby="basic-addon1"
+                        {...props.input}
+                      />
+                    </BForm.Group>
+                  )}
+                </Field>
+                <Field name="email" validate={required}>
+                  {(props) => (
+                    <BForm.Group>
+                      <BForm.Label>Email</BForm.Label>
+                      <FormControl
+                        isInvalid={touched?.email && errors.email}
+                        placeholder="email"
                         aria-describedby="basic-addon1"
                         {...props.input}
                       />
