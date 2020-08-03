@@ -15,7 +15,6 @@ const setShops = createEvent<any>();
 export const shops = createStore<any>(null).on<any>(setShops, (_, v) => v);
 API.get_shops().then((response) => {
   setShops(response.data.shops);
-  // console.log("response", response);
 });
 
 interface categoryType {
@@ -76,6 +75,7 @@ export const Template = ({
               { text: "Годовой отчет", href: "/report" },
               { text: "Создать товар", href: "/create-product" },
               { text: "Создать категорию", href: "/create-category" },
+              { text: "Штат", href: "/staff" },
               // { text: "Товары", href: "/products" },
             ].map((x, i) => (
               <li className="nav-item" key={i}>

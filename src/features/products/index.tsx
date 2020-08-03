@@ -109,10 +109,7 @@ export const Products = () => {
 
 const AddSale = ({ modal, setModal, responseData }: any): any => {
   const onSubmit = (values: any) => {
-    API.add_sale(values).then((response) => {
-      console.log("response", response);
-    });
-    // alert(JSON.stringify( values));
+    API.add_sale(values).then((response) => {});
   };
   const city = "khv";
   return (

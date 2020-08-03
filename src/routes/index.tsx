@@ -6,6 +6,7 @@ import { ApiChecker } from "../features/ApiChecker";
 import { CreateProduct } from "../features/CreateProduct";
 import { Products } from "../features/products";
 import { CreateCategory } from "../features/CreateCategory";
+import { Staff } from "../features/Staff";
 
 export const Routes = () => (
   <>
@@ -29,6 +30,9 @@ export const Routes = () => (
           </Route>
           <Route path="/products/:id">
             <Products />
+          </Route>
+          <Route path="/staff">
+            <Staff />
           </Route>
         </Switch>
       </div>

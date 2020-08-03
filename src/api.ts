@@ -12,7 +12,9 @@ export const API = {
     axios.post(baseUrl + "login", { login, password }),
   get_report: (params: any) =>
     axios.get(baseUrl + "report", { params: params }),
+  get_staff: () => axios.get(baseUrl + "get_staff"),
   get_shops: () => axios.get(baseUrl + "get_shops"),
+  get_roles: () => axios.get(baseUrl + "get_roles"),
   get_categories: () => axios.get(baseUrl + "get_categories"),
   get_products: (params: { category: string }) =>
     axios.get(baseUrl + "get_products", { params: params }),
