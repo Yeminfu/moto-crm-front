@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
-import { Row, Col, Nav } from "react-bootstrap";
+import { Row, Col, Nav, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { API } from "../api";
 import { createStore, createEvent } from "effector";
 import { createComponent } from "effector-react";
 import { useLocation } from "react-router-dom";
+import { logout } from "./Login";
 
 const setCategories = createEvent<any>();
 export const categories = createStore<any>(null).on<any>(
@@ -34,6 +35,37 @@ const Menu = createComponent(categories, (props: any, state: any) => {
   }, [state]);
   return (
     <>
+      <Button
+        variant="outline-danger"
+        size="sm"
+        className="ml-3 mb-3 mt-2"
+        onClick={logout}
+      >
+        Выйти
+      </Button>
+      <Nav
+        variant="pills"
+        defaultActiveKey="/home"
+        className="flex-column navbar-inverse"
+      >
+        {[
+          { text: "Главная", href: "/" },
+
+          // { text: "Товары", href: "/products" },
+        ].map((x: any, i: any) => (
+          <Nav.Item key={i}>
+            <Link
+              to={x.href}
+              className={`nav-link text-white ${
+                location.pathname === x.href ? "active" : ""
+              }`}
+            >
+              {x.text}
+            </Link>
+          </Nav.Item>
+        ))}
+      </Nav>
+      <hr />
       <Nav variant="pills" defaultActiveKey="/home" className="flex-column">
         {state
           ?.map((category: categoryType, i: number) => ({
@@ -41,7 +73,7 @@ const Menu = createComponent(categories, (props: any, state: any) => {
             href: `/products/${category.id}`,
           }))
           ?.map((x: any, i: any) => (
-            <Nav.Item>
+            <Nav.Item key={i}>
               <Link
                 to={x.href}
                 className={`nav-link text-white ${
@@ -66,7 +98,7 @@ const Menu = createComponent(categories, (props: any, state: any) => {
           { text: "Штат", href: "/staff" },
           // { text: "Товары", href: "/products" },
         ].map((x: any, i: any) => (
-          <Nav.Item>
+          <Nav.Item key={i}>
             <Link
               to={x.href}
               className={`nav-link text-white ${

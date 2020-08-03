@@ -4,7 +4,6 @@ import {
   Row,
   Col,
   Button,
-  // InputGroup,
   FormControl,
   Form as BForm,
 } from "react-bootstrap";
@@ -12,17 +11,22 @@ import "./login.scss";
 import { Form as FinalForm, Field } from "react-final-form";
 import { API } from "../../api";
 import { createEvent, createStore } from "effector";
-import { useStore } from "effector-react";
+// import { useStore } from "effector-react";
 import Swal from "sweetalert2";
 
-const setUser = createEvent();
-const $user = createStore(null).on(setUser, (_, x: any) => x);
+export const setAuth = createEvent<any>();
+export const $auth = createStore({}).on(setAuth, (_, x: any) => x);
+export const logout = () => {
+  localStorage.removeItem("token");
+  localStorage.removeItem("user");
+  setAuth({});
+};
 
 export const Login = () => {
-  const user = useStore($user);
+  // const user = useStore($auth);
   return (
     <>
-      <pre>{JSON.stringify(user, null, " ")}</pre>
+      {/* <pre>{JSON.stringify(user, null, " ")}</pre> */}
       <div className="login d-flex flex-column justify-content-center">
         <Container className="rounded">
           <div className="login__inner rounded ">
@@ -71,8 +75,12 @@ const onSubmit = ({ email, password }: any) => {
   API.login(email, password).then((response: any) => {
     const { success, token, user } = response.data;
     if (success) {
-      setUser(user);
+      setAuth({
+        token,
+        user,
+      });
       localStorage.setItem("token", token);
+      localStorage.setItem("user", JSON.stringify(user));
     } else {
       Swal.fire({
         title: "Ошибка!",
@@ -89,12 +97,10 @@ const required = (value: any) => (value ? undefined : "Required");
 const MyForm = () => (
   <FinalForm
     onSubmit={onSubmit}
-    initialValues={
-      {
-        // email: "smet@mail.ru",
-        // password: "фывфыв",
-      }
-    }
+    initialValues={{
+      email: "smet@mail.ru",
+      password: "фывфыв",
+    }}
     render={({ handleSubmit, values, touched, errors }) => (
       <form onSubmit={handleSubmit}>
         <Field name="email" validate={required}>

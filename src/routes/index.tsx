@@ -7,33 +7,49 @@ import { CreateProduct } from "../features/CreateProduct";
 import { Products } from "../features/products";
 import { CreateCategory } from "../features/CreateCategory";
 import { Staff } from "../features/Staff";
+import { ProtectedRoute } from "./ProtectedRoute";
+import ProtectedAuthRoute from "./ProtectedAuthRoute";
+import { Dashboard } from "../features/Dashboard";
 
 export const Routes = () => (
   <>
     <Router basename={process.env.REACT_APP_ROUTER_BASE || ""}>
       <div>
         <Switch>
-          <Route exact path="/">
-            <Login />
-          </Route>
-          <Route path="/report">
-            <YearReport />
-          </Route>
-          <Route path="/api-checker">
-            <ApiChecker />
-          </Route>
-          <Route path="/create-product">
-            <CreateProduct />
-          </Route>
-          <Route path="/create-category">
-            <CreateCategory />
-          </Route>
-          <Route path="/products/:id">
-            <Products />
-          </Route>
-          <Route path="/staff">
-            <Staff />
-          </Route>
+          <Route
+            exact
+            path="/signin"
+            render={(props: any) => (
+              <>
+                <ProtectedAuthRoute
+                  redirectTo={props?.location?.state?.pathToGo}
+                  onRender={<Login />}
+                />
+              </>
+            )}
+          />
+
+          {[
+            { path: "/", component: <Dashboard /> },
+            { path: "/report", component: <YearReport /> },
+            { path: "/api-checker", component: <ApiChecker /> },
+            { path: "/create-product", component: <CreateProduct /> },
+            { path: "/create-category", component: <CreateCategory /> },
+            { path: "/products/:id", component: <Products /> },
+            { path: "/staff", component: <Staff /> },
+          ].map((route: any) => (
+            <Route
+              key={route.path}
+              exact
+              path={route.path}
+              render={() => (
+                <ProtectedRoute
+                  onRender={route.component}
+                  pathToGo={route.path}
+                />
+              )}
+            />
+          ))}
         </Switch>
       </div>
     </Router>
