@@ -14,6 +14,7 @@ import { Template, shops as sho, categories as cats } from "../template";
 import { useStore } from "effector-react";
 import { FieldArray } from "react-final-form-arrays";
 import arrayMutators from "final-form-arrays";
+import Swal from "sweetalert2";
 
 const required = (value: any) => (value ? undefined : "Required");
 
@@ -21,9 +22,16 @@ export const CreateProduct = () => {
   useEffect(() => {}, []);
   const shops = useStore(sho);
   const categories = useStore(cats);
-  const onSubmit = (values: productType) => {
-    console.log(values);
-    API.add_products(values);
+  const onSubmit = (values: productType, form: any) => {
+    console.log({ values, form });
+    API.add_products(values).then((response) => {
+      Swal.fire({
+        title: "Успех!",
+        // text: "Неправильный логин или пароль",
+        icon: "success",
+        confirmButtonText: "Ок",
+      }).then(() => form.reset());
+    });
   };
   return (
     <>
@@ -38,6 +46,7 @@ export const CreateProduct = () => {
             // category_id: "boats",
             // purchase_price: 1000,
             // note: "bla bla bla",
+            // at_store: "1",
             retail_prices: shops ? shops : [],
           }}
           mutators={{
@@ -52,6 +61,7 @@ export const CreateProduct = () => {
               noValidate
               className="needs-validation"
             >
+              {/* <pre>{JSON.stringify({ values, errors }, null, " ")}</pre> */}
               <Row>
                 <Col xs={6}>
                   <Row>
@@ -73,7 +83,6 @@ export const CreateProduct = () => {
                         {(props) => (
                           <FormControl
                             isInvalid={touched?.code && errors.code}
-                            placeholder="Код товара"
                             aria-describedby="basic-addon1"
                             {...props.input}
                           />
@@ -184,6 +193,19 @@ export const CreateProduct = () => {
                       }
                     </FieldArray>
                   </Row>
+                  <BForm.Group>
+                    <BForm.Label>Количество на складе</BForm.Label>
+                    <Field name="at_store" validate={required}>
+                      {(props) => (
+                        <FormControl
+                          isInvalid={touched?.at_store && errors.at_store}
+                          aria-describedby="basic-addon1"
+                          type="number"
+                          {...props.input}
+                        />
+                      )}
+                    </Field>
+                  </BForm.Group>
                   <BForm.Group>
                     <BForm.Label>Заметки</BForm.Label>
                     <Field name="note" validate={required}>
