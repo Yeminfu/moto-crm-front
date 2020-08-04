@@ -14,14 +14,19 @@ import { Template } from "../template";
 // import { useStore } from "effector-react";
 // import { FieldArray } from "react-final-form-arrays";
 import arrayMutators from "final-form-arrays";
+import Swal from "sweetalert2";
 
 const required = (value: any) => (value ? undefined : "Required");
 
 export const CreateCategory = () => {
   useEffect(() => {}, []);
   const onSubmit = (values: productType) => {
-    console.log(values);
     API.add_category(values);
+    Swal.fire({
+      title: "Успешно!",
+      icon: "success",
+      confirmButtonText: "Ок",
+    });
   };
   return (
     <>
@@ -56,7 +61,7 @@ export const CreateCategory = () => {
                     </Field>
                   </BForm.Group>
                   <BForm.Group>
-                    <BForm.Label>ID</BForm.Label>
+                    <BForm.Label>ID (например boats)</BForm.Label>
                     <Field name="id" validate={required}>
                       {(props: any) => (
                         <BForm.Control

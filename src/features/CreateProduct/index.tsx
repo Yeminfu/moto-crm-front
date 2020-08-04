@@ -31,13 +31,13 @@ export const CreateProduct = () => {
         <Form
           onSubmit={onSubmit}
           initialValues={{
-            name: "asd",
-            code: "asd",
-            cost_type: "percent",
-            cost_value: "1.3",
-            category_id: "boats",
-            purchase_price: 1000,
-            note: "bla bla bla",
+            // name: "asd",
+            // code: "asd",
+            // cost_type: "percent",
+            // cost_value: "1.3",
+            // category_id: "boats",
+            // purchase_price: 1000,
+            // note: "bla bla bla",
             retail_prices: shops ? shops : [],
           }}
           mutators={{

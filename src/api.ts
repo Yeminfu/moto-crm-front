@@ -11,7 +11,7 @@ export interface productType {
 const headers = () => {
   return {
     headers: {
-      Authorization: localStorage.getItem("token"),
+      // Authorization: localStorage.getItem("token"),
       "Content-Type": "application/x-www-form-urlencoded",
     },
   };

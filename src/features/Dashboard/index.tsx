@@ -4,7 +4,10 @@ import { Template } from "../template";
 
 export const Dashboard = () => (
   <Template title="Главная">
-    ...
+    <ol>
+      <li>Количество на складе (создание товара/категории))</li>
+      <li>Выручка в годовом отчете (кол-во/сумма)</li>
+    </ol>
     {/* <Card className="text-center">
       <Card.Header>Внимание!</Card.Header>
       <Card.Body>

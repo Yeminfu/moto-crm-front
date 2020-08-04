@@ -104,7 +104,7 @@ export const refactorReport = (data: any) => {
         ...shops.map((shop: any) => ({
           type: "text",
           data: (() => {
-            const stockplace = stock.find(
+            const stockplace = stock?.find(
               (stock_product: any) =>
                 stock_product.product_id === product.id &&
                 stock_product.shop_id === shop.id
@@ -313,9 +313,9 @@ export const refactorReport = (data: any) => {
           type: "text",
           data: (() => {
             const count = stock
-              .filter((item: any) => item.product_id === product.id)
+              ?.filter((item: any) => item.product_id === product.id)
               .map((item: any) => item.count);
-            const sum = count.length
+            const sum = count?.length
               ? count.reduce((partial_sum: any, a: any) => partial_sum + a)
               : 0;
             const cost = ((): number => {

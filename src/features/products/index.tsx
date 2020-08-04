@@ -79,9 +79,19 @@ export const Products = () => {
                   onClick={() => {
                     setModal({ product });
                   }}
+                  className="mr-2"
                   size="sm"
                 >
                   Продать
+                </Button>
+                <Button
+                  variant="primary"
+                  onClick={() => {
+                    setModal({ product });
+                  }}
+                  size="sm"
+                >
+                  Изменить
                 </Button>
               </td>
             </tr>
@@ -109,7 +119,11 @@ export const Products = () => {
 
 const AddSale = ({ modal, setModal, responseData }: any): any => {
   const onSubmit = (values: any) => {
-    API.add_sale(values).then((response) => {});
+    API.add_sale(values).then((response) => {
+      if (response?.data?.success) {
+        setModal(false);
+      }
+    });
   };
   const city = "khv";
   return (

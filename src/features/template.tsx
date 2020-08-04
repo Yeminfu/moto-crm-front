@@ -107,22 +107,6 @@ const Menu = createComponent(categories, (props: any, state: any) => {
           </Nav.Item>
         ))}
       </Nav>
-      {/* <ul className="nav flex-column navbar align-items-start">
-        {[
-          { text: "Годовой отчет", href: "/report" },
-          { text: "Создать товар", href: "/create-product" },
-          { text: "Создать категорию", href: "/create-category" },
-          { text: "Штат", href: "/staff" },
-          // { text: "Товары", href: "/products" },
-        ].map((x, i) => (
-          <li className="nav-item" key={i}>
-            <Link to={x.href} className="text-white bg-dark nav-link active">
-              {x.text}
-              {location.pathname === x.href ? "active" : "not active"}
-            </Link>
-          </li>
-        ))}
-      </ul> */}
     </>
   );
 });
