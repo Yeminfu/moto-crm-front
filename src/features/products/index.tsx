@@ -13,12 +13,14 @@ import {
 import { OnChange } from "react-final-form-listeners";
 import { Form, Field } from "react-final-form";
 import { useStore } from "effector-react";
+import { EditProduct } from "./EditProduct";
 
 export const Products = () => {
   const { id } = useParams();
   const [products, setProducts] = useState<any>([]);
   const [responseData, setResponseData] = useState<any>([]);
-  const [modal, setModal] = useState<any>();
+  const [modalAddSale, setModalAddSale] = useState<any>();
+  const [modalEditProduct, setModalEditProduct] = useState<any>();
   const [loading, setLoading] = useState<any>();
   const categories = useStore(cats);
   useEffect(() => {
@@ -77,7 +79,7 @@ export const Products = () => {
                 <Button
                   variant="primary"
                   onClick={() => {
-                    setModal({ product });
+                    setModalAddSale({ product });
                   }}
                   className="mr-2"
                   size="sm"
@@ -87,7 +89,8 @@ export const Products = () => {
                 <Button
                   variant="primary"
                   onClick={() => {
-                    setModal({ product });
+                    // alert();
+                    setModalEditProduct({ product });
                   }}
                   size="sm"
                 >
@@ -99,6 +102,8 @@ export const Products = () => {
         )}
         <tr></tr>
       </tbody>
+      {/* {JSON.stringify(modalEditProduct)} */}
+      {/* {setModalEditProduct(13123)} */}
     </Btable>
   );
 
@@ -112,34 +117,45 @@ export const Products = () => {
         <>{products.length ? table : "В этой категории нет товаров"}</>
       )}
 
-      <AddSale modal={modal} setModal={setModal} responseData={responseData} />
+      <AddSale
+        modalAddSale={modalAddSale}
+        setModalAddSale={setModalAddSale}
+        responseData={responseData}
+      />
+      <EditProduct
+        modalEditProduct={modalEditProduct}
+        setModalEditProduct={setModalEditProduct}
+        responseData={responseData}
+        aaa={modalEditProduct}
+      />
+      {/* {JSON.stringify(modalEditProduct)} */}
     </Template>
   );
 };
 
-const AddSale = ({ modal, setModal, responseData }: any): any => {
+const AddSale = ({ modalAddSale, setModalAddSale, responseData }: any): any => {
   const onSubmit = (values: any) => {
     API.add_sale(values).then((response) => {
       if (response?.data?.success) {
-        setModal(false);
+        setModalAddSale(false);
       }
     });
   };
   const city = "khv";
   return (
     <>
-      <Modal show={modal ? true : false} onHide={setModal}>
+      <Modal show={modalAddSale ? true : false} onHide={setModalAddSale}>
         <Form
           onSubmit={onSubmit}
           initialValues={{
-            product_id: modal?.product?.id,
+            product_id: modalAddSale?.product?.id,
             shop_id: city,
             saler_id: 1,
             count: 1,
             sum: (() => {
               const val = responseData?.prices?.find(
                 (price: { product_id: any; shop_id: any }) =>
-                  price.product_id === modal?.product?.id &&
+                  price.product_id === modalAddSale?.product?.id &&
                   price.shop_id === city
               )?.sum;
               if (true) {
@@ -155,10 +171,10 @@ const AddSale = ({ modal, setModal, responseData }: any): any => {
           render={({ form, handleSubmit, values }) => (
             <form onSubmit={handleSubmit}>
               <Modal.Header closeButton>
-                <Modal.Title>Продать {modal?.product?.name}</Modal.Title>
+                <Modal.Title>Продать {modalAddSale?.product?.name}</Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                {/* <pre>{JSON.stringify({ values, modal }, null, " ")}</pre> */}
+                {/* <pre>{JSON.stringify({ values, modalAddSale }, null, " ")}</pre> */}
                 <Field name="shop_id">
                   {(props) => (
                     <BForm.Group>
@@ -176,7 +192,7 @@ const AddSale = ({ modal, setModal, responseData }: any): any => {
                         {(shop_id) => {
                           const val = responseData?.prices?.find(
                             (price: { product_id: any; shop_id: any }) =>
-                              price.product_id === modal?.product?.id &&
+                              price.product_id === modalAddSale?.product?.id &&
                               price.shop_id === shop_id
                           )?.sum;
                           form.mutators.setPrice(
@@ -201,7 +217,7 @@ const AddSale = ({ modal, setModal, responseData }: any): any => {
                         {(value) => {
                           const price = responseData?.prices?.find(
                             (price: { product_id: any; shop_id: any }) =>
-                              price.product_id === modal?.product?.id &&
+                              price.product_id === modalAddSale?.product?.id &&
                               price.shop_id === values.shop_id
                           )?.sum;
                           form.mutators.setPrice(Number(price) * Number(value));
@@ -210,7 +226,7 @@ const AddSale = ({ modal, setModal, responseData }: any): any => {
                     </BForm.Group>
                   )}
                 </Field>
-                <Field name="sum">
+                {/* <Field name="sum">
                   {(props) => (
                     <BForm.Group>
                       <BForm.Label>Сумма</BForm.Label>
@@ -223,13 +239,13 @@ const AddSale = ({ modal, setModal, responseData }: any): any => {
                       />
                     </BForm.Group>
                   )}
-                </Field>
+                </Field> */}
               </Modal.Body>
               <Modal.Footer>
                 <Button
                   variant="secondary"
                   onClick={() => {
-                    setModal(null);
+                    setModalAddSale(null);
                   }}
                 >
                   Отмена
