@@ -30,7 +30,7 @@ export const EditProduct = ({
   const onSubmit = (values: any) => {
     API.edit_product(values).then((response) => {
       if (response?.data?.success) {
-        // setModalEditProduct(false);
+        setModalEditProduct(false);
       }
     });
   };
