@@ -30,7 +30,7 @@ export const EditProduct = ({
   const onSubmit = (values: any) => {
     API.edit_product(values).then((response) => {
       if (response?.data?.success) {
-        setModalEditProduct(false);
+        // setModalEditProduct(false);
       }
     });
   };
@@ -45,12 +45,25 @@ export const EditProduct = ({
         <Form
           onSubmit={onSubmit}
           initialValues={{
+            id: modalEditProduct?.product?.id,
             name: modalEditProduct?.product?.name,
             purchase_price: modalEditProduct?.product?.purchase_price,
             cost_type: modalEditProduct?.product?.cost_type,
             cost_value: modalEditProduct?.product?.cost_value,
             note: modalEditProduct?.product?.note,
-            retail_prices: shops ? shops : [],
+            retail_prices: shops
+              ? shops.map((shop: any) => ({
+                  ...shop,
+
+                  // price_type: stock.find(
+                  //   (stock_item: any) =>
+                  //     stock_item.shop_id === shop.id &&
+                  //     modalEditProduct?.product?.id === stock_item.product_id
+                  // )?.count,
+                  price_type: "fix",
+                  price_count: "123",
+                }))
+              : [],
             stock_counts: shops
               ? shops.map((shop: any) => ({
                   ...shop,
@@ -70,7 +83,7 @@ export const EditProduct = ({
           }}
           render={({ form, handleSubmit, values, errors }) => (
             <form onSubmit={handleSubmit}>
-              {/* <pre>{JSON.stringify(errors, null, " ")}</pre> */}
+              {/* <pre>{JSON.stringify(values, null, " ")}</pre> */}
               <Modal.Header closeButton>
                 <Modal.Title>
                   Редактировать {modalEditProduct?.product?.name}
@@ -125,7 +138,7 @@ export const EditProduct = ({
                         <Col>
                           <CustomSelect
                             lable={`Розн. цена ${shops[index].name}`}
-                            name={`${name}.type`}
+                            name={`${name}.price_type`}
                             options={markups}
                             placeholder="тип наценки"
                             validation={validation.required}
