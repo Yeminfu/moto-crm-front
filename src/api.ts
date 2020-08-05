@@ -32,6 +32,10 @@ export const API = {
     axios.post(baseUrl + "add_products", params, {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
     }),
+  edit_product: (params: productType) =>
+    axios.post(baseUrl + "edit_product", params, {
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    }),
   add_sale: (params: any) =>
     axios.post(baseUrl + "add_sale", params, {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },

@@ -12,7 +12,7 @@ export const CustomInput = (props: {
   return (
     <BForm.Group>
       <BForm.Label>{props.lable}</BForm.Label>
-      <Field name={props.name}>
+      <Field name={props.name} validate={props.validation} valid>
         {(fieldProps) => (
           <FormControl
             placeholder={props.placeholder}
@@ -33,7 +33,7 @@ export const CustomTextarea = (props: {
   return (
     <BForm.Group>
       <BForm.Label>{props.lable}</BForm.Label>
-      <Field name={props.name}>
+      <Field name={props.name} validate={props.validation}>
         {(fieldProps) => <FormControl as="textarea" {...fieldProps.input} />}
       </Field>
     </BForm.Group>
@@ -46,20 +46,22 @@ export const CustomSelect = (props: {
   options: { value: string; label: string }[];
   placeholder: string;
   validation: any;
-}) => (
-  <BForm.Group>
-    <BForm.Label>{props.lable}</BForm.Label>
-    <Field name={props.name}>
-      {(fieldProps) => (
-        <FormControl as="select" custom {...fieldProps.input}>
-          <option>{props.placeholder}</option>
-          {props.options.map((option, i) => (
-            <option value={option.value} key={i}>
-              {option.label}
-            </option>
-          ))}
-        </FormControl>
-      )}
-    </Field>
-  </BForm.Group>
-);
+}) => {
+  return (
+    <BForm.Group>
+      <BForm.Label>{props.lable}</BForm.Label>
+      <Field name={props.name} validate={props.validation}>
+        {(fieldProps) => (
+          <FormControl as="select" custom {...fieldProps.input}>
+            <option>{props.placeholder}</option>
+            {props.options.map((option, i) => (
+              <option value={option.value} key={i}>
+                {option.label}
+              </option>
+            ))}
+          </FormControl>
+        )}
+      </Field>
+    </BForm.Group>
+  );
+};

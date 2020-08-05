@@ -28,7 +28,7 @@ export const EditProduct = ({
   responseData,
 }: any): any => {
   const onSubmit = (values: any) => {
-    API.add_sale(values).then((response) => {
+    API.edit_product(values).then((response) => {
       if (response?.data?.success) {
         setModalEditProduct(false);
       }
@@ -68,9 +68,9 @@ export const EditProduct = ({
             },
             ...arrayMutators,
           }}
-          render={({ form, handleSubmit, values }) => (
+          render={({ form, handleSubmit, values, errors }) => (
             <form onSubmit={handleSubmit}>
-              {/* <pre>{JSON.stringify(values, null, " ")}</pre> */}
+              {/* <pre>{JSON.stringify(errors, null, " ")}</pre> */}
               <Modal.Header closeButton>
                 <Modal.Title>
                   Редактировать {modalEditProduct?.product?.name}
