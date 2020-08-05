@@ -1,17 +1,11 @@
 import { API } from "../../api";
 import React from "react";
-import {
-  Modal,
-  Form as BForm,
-  FormControl,
-  Row,
-  Col,
-  Button,
-} from "react-bootstrap";
-import { Form, Field } from "react-final-form";
+import { Modal, Row, Col, Button } from "react-bootstrap";
+import { Form } from "react-final-form";
 import { FieldArray } from "react-final-form-arrays";
 import arrayMutators from "final-form-arrays";
 import { validation } from "../helpers/validation";
+import { CustomInput, CustomTextarea, CustomSelect } from "./fields";
 
 const markups = [
   {
@@ -187,65 +181,3 @@ export const EditProduct = ({
     </>
   );
 };
-
-const CustomInput = (props: {
-  lable: string;
-  name: string;
-  type: "input" | "number" | "password";
-  placeholder?: string;
-  validation: any;
-}) => {
-  return (
-    <BForm.Group>
-      <BForm.Label>{props.lable}</BForm.Label>
-      <Field name={props.name}>
-        {(fieldProps) => (
-          <FormControl
-            placeholder={props.placeholder}
-            type={props.type}
-            {...fieldProps.input}
-          />
-        )}
-      </Field>
-    </BForm.Group>
-  );
-};
-
-const CustomTextarea = (props: {
-  lable: string;
-  name: string;
-  validation: any;
-}) => {
-  return (
-    <BForm.Group>
-      <BForm.Label>{props.lable}</BForm.Label>
-      <Field name={props.name}>
-        {(fieldProps) => <FormControl as="textarea" {...fieldProps.input} />}
-      </Field>
-    </BForm.Group>
-  );
-};
-
-const CustomSelect = (props: {
-  lable: string;
-  name: string;
-  options: { value: string; label: string }[];
-  placeholder: string;
-  validation: any;
-}) => (
-  <BForm.Group>
-    <BForm.Label>{props.lable}</BForm.Label>
-    <Field name={props.name}>
-      {(fieldProps) => (
-        <FormControl as="select" custom {...fieldProps.input}>
-          <option>{props.placeholder}</option>
-          {props.options.map((option, i) => (
-            <option value={option.value} key={i}>
-              {option.label}
-            </option>
-          ))}
-        </FormControl>
-      )}
-    </Field>
-  </BForm.Group>
-);
