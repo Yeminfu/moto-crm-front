@@ -39,9 +39,13 @@ export const Products = () => {
           <th rowSpan={2}>Наименование</th>
           <th rowSpan={2}>Код товара</th>
           <th colSpan={responseData?.shops?.length}>Розничная цена</th>
+          <th colSpan={responseData?.shops?.length}>К-во на складе</th>
           <th rowSpan={2} />
         </tr>
         <tr>
+          {responseData?.shops?.map((shop: { name: string }) => (
+            <th key={shop.name}>{shop.name}</th>
+          ))}
           {responseData?.shops?.map((shop: { name: string }) => (
             <th key={shop.name}>{shop.name}</th>
           ))}
@@ -55,6 +59,8 @@ export const Products = () => {
               name: string;
               code: string;
               id: any;
+              prices: any;
+              stock: any;
             },
             i: number
           ) => (
@@ -62,19 +68,24 @@ export const Products = () => {
               <td>{product.photo}</td>
               <td>{product.name}</td>
               <td>{product.code}</td>
-              {responseData?.shops?.map(
-                (shop: { name: string; id: string }) => (
-                  <td key={shop.id}>
-                    {
-                      responseData?.prices?.find(
-                        (price: { shop_id: string; product_id: any }) =>
-                          price.shop_id === shop.id &&
-                          price.product_id === product.id
-                      )?.sum
-                    }
-                  </td>
-                )
-              )}
+              {responseData?.shops?.map((shop: any) => (
+                <td key={shop.id}>
+                  {
+                    product.prices.find(
+                      (price_item: any) => price_item.shop_id === shop.id
+                    )?.sum
+                  }
+                </td>
+              ))}
+              {responseData?.shops?.map((shop: any) => (
+                <td key={shop.id}>
+                  {
+                    product.stock.find(
+                      (price_item: any) => price_item.shop_id === shop.id
+                    )?.count
+                  }
+                </td>
+              ))}
               <td>
                 <Button
                   variant="primary"
