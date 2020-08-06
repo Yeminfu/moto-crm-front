@@ -7,7 +7,7 @@ import arrayMutators from "final-form-arrays";
 import { validation } from "../helpers/validation";
 import { CustomInput, CustomTextarea, CustomSelect } from "./fields";
 
-const markups = [
+export const markups = [
   {
     label: "фиксированная",
     value: "fix",

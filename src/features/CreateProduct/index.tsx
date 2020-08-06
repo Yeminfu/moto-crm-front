@@ -15,6 +15,9 @@ import { useStore } from "effector-react";
 import { FieldArray } from "react-final-form-arrays";
 import arrayMutators from "final-form-arrays";
 import Swal from "sweetalert2";
+import { CustomInput, CustomSelect } from "../products/fields";
+import { validation } from "../helpers/validation";
+import { markups } from "../products/EditProduct";
 
 const required = (value: any) => (value ? undefined : "Required");
 
@@ -61,74 +64,67 @@ export const CreateProduct = () => {
               noValidate
               className="needs-validation"
             >
-              {/* <pre>{JSON.stringify({ values, errors }, null, " ")}</pre> */}
               <Row>
                 <Col xs={6}>
                   <Row>
-                    <BForm.Group as={Col}>
-                      <BForm.Label>Наименование</BForm.Label>
-                      <Field name="name" validate={required}>
-                        {(props: any) => (
-                          <BForm.Control
-                            isInvalid={touched?.name && errors.name}
-                            aria-describedby="basic-addon1"
-                            {...props.input}
-                          />
-                        )}
-                      </Field>
-                    </BForm.Group>
-                    <BForm.Group as={Col}>
-                      <BForm.Label>Код товара</BForm.Label>
-                      <Field name="code" validate={required}>
-                        {(props) => (
-                          <FormControl
-                            isInvalid={touched?.code && errors.code}
-                            aria-describedby="basic-addon1"
-                            {...props.input}
-                          />
-                        )}
-                      </Field>
-                    </BForm.Group>
-                    <BForm.Group controlId="exampleForm.SelectCustom" as={Col}>
-                      <BForm.Label>Категория товара</BForm.Label>
-                      <Field name="category_id" validate={required}>
-                        {(props) => (
-                          <BForm.Control
-                            as="select"
-                            custom
-                            {...props.input}
-                            isInvalid={
-                              touched?.category_id && errors.category_id
-                            }
-                          >
-                            <option />
-                            {categories?.map((category: any) => (
-                              <option value={category.id} key={category.id}>
-                                {category.name}
-                              </option>
-                            ))}
-                          </BForm.Control>
-                        )}
-                      </Field>
-                    </BForm.Group>
+                    <Col>
+                      <CustomInput
+                        name="name"
+                        lable="Наименование"
+                        validation={validation.required}
+                        type="input"
+                      />
+                    </Col>
+                    <Col>
+                      <CustomInput
+                        name="code"
+                        lable="Код товара"
+                        validation={validation.required}
+                        type="input"
+                      />
+                    </Col>
+                    <Col>
+                      <CustomSelect
+                        name="category_id"
+                        lable="Категория товара"
+                        validation={validation.required}
+                        placeholder="Категория"
+                        options={[
+                          ...categories?.map((category: any) => ({
+                            value: category.id,
+                            label: category.name,
+                          })),
+                        ]}
+                      />
+                    </Col>
                   </Row>
-                  <Field name="purchase_price" validate={required}>
-                    {(props) => (
-                      <BForm.Group>
-                        <BForm.Label>Закупочная цена</BForm.Label>
-                        <FormControl
-                          isInvalid={
-                            touched?.purchase_price && errors.purchase_price
-                          }
-                          aria-describedby="basic-addon1"
-                          type="number"
-                          {...props.input}
-                        />
-                      </BForm.Group>
-                    )}
-                  </Field>
+                  <CustomInput
+                    name="purchase_price"
+                    lable="Закупочная цена"
+                    type="number"
+                    validation={validation.required}
+                    placeholder=""
+                  />
                   <Row>
-                    <BForm.Group controlId="exampleForm.SelectCustom" as={Col}>
+                    <Col>
+                      <CustomSelect
+                        name="cost_type"
+                        lable="Себестоимость (тип)"
+                        options={markups}
+                        placeholder=""
+                        validation={validation.required}
+                      />
+                    </Col>
+                    <Col>
+                      <CustomInput
+                        name="cost_value"
+                        type="number"
+                        validation={validation.required}
+                        placeholder=""
+                        lable="Себестоимость (тип)"
+                      />
+                    </Col>
+                    {/* <BForm.Group controlId="exampleForm.SelectCustom" as={Col}>
                       <BForm.Label>Себестоимость (тип)</BForm.Label>
                       <Field name="cost_type" validate={required}>
                         {(props) => (
@@ -139,16 +135,7 @@ export const CreateProduct = () => {
                             isInvalid={touched?.cost_type && errors.cost_type}
                           >
                             <option />
-                            {[
-                              {
-                                label: "фиксированная",
-                                value: "fix",
-                              },
-                              {
-                                label: "процент",
-                                value: "percent",
-                              },
-                            ].map((x, i) => (
+                            {markups.map((x, i) => (
                               <option value={x.value} key={i}>
                                 {x.label}
                               </option>
@@ -156,8 +143,8 @@ export const CreateProduct = () => {
                           </BForm.Control>
                         )}
                       </Field>
-                    </BForm.Group>
-                    <BForm.Group as={Col}>
+                    </BForm.Group> */}
+                    {/* <BForm.Group as={Col}>
                       <BForm.Label>Себестоимость (значение)</BForm.Label>
                       <Field name="cost_value" validate={required}>
                         {(props) => (
@@ -169,30 +156,33 @@ export const CreateProduct = () => {
                           />
                         )}
                       </Field>
-                    </BForm.Group>
+                    </BForm.Group> */}
                   </Row>
-                  <Row>
-                    <FieldArray name="retail_prices">
-                      {({ fields }) =>
-                        fields.map((name, index) => (
-                          <BForm.Group as={Col} key={index}>
-                            <BForm.Label>
-                              Розн. цена {shops[index].name}
-                            </BForm.Label>
-                            <Field name={`${name}.price`} validate={required}>
-                              {(props) => (
-                                <FormControl
-                                  aria-describedby="basic-addon1"
-                                  type="number"
-                                  {...props.input}
-                                />
-                              )}
-                            </Field>
-                          </BForm.Group>
-                        ))
-                      }
-                    </FieldArray>
-                  </Row>
+                  <FieldArray name="retail_prices">
+                    {({ fields }) =>
+                      fields.map((name, index) => (
+                        <Row className="align-items-end" key={index}>
+                          <Col>
+                            <CustomSelect
+                              lable={`Розн. цена ${shops[index].name}`}
+                              name={`${name}.price_type`}
+                              options={markups}
+                              placeholder="тип наценки"
+                              validation={validation.required}
+                            />
+                          </Col>
+                          <Col>
+                            <CustomInput
+                              lable=""
+                              name={`${name}.count`}
+                              type="number"
+                              validation={validation.required}
+                            />
+                          </Col>
+                        </Row>
+                      ))
+                    }
+                  </FieldArray>
                   <BForm.Group>
                     <BForm.Label>Количество на складе</BForm.Label>
                     <Field name="at_store" validate={required}>

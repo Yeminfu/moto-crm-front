@@ -30,14 +30,38 @@ export const AddSale = ({
             saler_id: 1,
             count: 1,
             sum: (() => {
-              const val = responseData?.prices?.find(
+              const data = responseData?.prices?.find(
                 (price: { product_id: any; shop_id: any }) =>
                   price.product_id === modalAddSale?.product?.id &&
                   price.shop_id === city
-              )?.sum;
-              if (true) {
-                return val;
-              }
+              );
+              return data;
+              // return <pre>{JSON.stringify(data, null, " ")}</pre>;
+              // if (data) {
+              //   const { price_type, price_count } = data;
+              //   switch (price_type) {
+              //     case "percent":
+              //       return (
+              //         Number(product.purchase_price) *
+              //         Number(price_count)
+              //       );
+              //     case "fix":
+              //       return (
+              //         Number(product.purchase_price) +
+              //         Number(price_count)
+              //       );
+              //     case "handle":
+              //       return Number(price_count);
+              //   }
+
+              // const val = responseData?.prices?.find(
+              //   (price: { product_id: any; shop_id: any }) =>
+              //     price.product_id === modalAddSale?.product?.id &&
+              //     price.shop_id === city
+              // )?.sum;
+              // if (true) {
+              //   return val;
+              // }
             })(),
           }}
           mutators={{
@@ -51,7 +75,7 @@ export const AddSale = ({
                 <Modal.Title>Продать {modalAddSale?.product?.name}</Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                {/* <pre>{JSON.stringify({ values, modalAddSale }, null, " ")}</pre> */}
+                <pre>{JSON.stringify({ values }, null, " ")}</pre>
                 <CustomSelect
                   name="shop_id"
                   lable="Магазин"
@@ -142,6 +166,13 @@ export const AddSale = ({
                     </BForm.Group>
                   )}
                 </Field> */}
+                <CustomInput
+                  name="sum"
+                  type="number"
+                  lable="Сумма"
+                  placeholder=""
+                  validation={validation.required}
+                />
                 {/* <Field name="sum">
                     {(props) => (
                       <BForm.Group>

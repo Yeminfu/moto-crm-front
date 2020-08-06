@@ -15,21 +15,24 @@ export const YearReport = (props: any) => {
 
   useEffect(() => {
     setLoading(true);
-    API.get_report({ category: "boats", year: "2020" }).then((x) => {
-      setCategories(x.data.data.categories);
-      setReportData(refactorReport(x.data.data));
-      setLoading(false);
-    });
+    API.get_report({ category: "boats", year: "2020" }).then(
+      (response: any) => {
+        setReportData(response);
+        // setCategories(x.data.data.categories);
+        // setReportData(refactorReport(x.data.data));
+        setLoading(false);
+      }
+    );
   }, []);
 
-  const view = reportData?.map((x, i) =>
-    x.filter((x: any, i: any) => {
-      if (i === 6) {
-        return disableMonth;
-      }
-      return true;
-    })
-  );
+  // const view = reportData?.map((x, i) =>
+  //   x.filter((x: any, i: any) => {
+  //     if (i === 6) {
+  //       return disableMonth;
+  //     }
+  //     return true;
+  //   })
+  // );
 
   const filterHandle = (values: any) => {
     setLoading(true);
@@ -60,11 +63,12 @@ export const YearReport = (props: any) => {
         </Spinner>
       ) : (
         <>
-          {view ? (
+          <pre>{JSON.stringify(reportData, null, " ")}</pre>
+          {/* {view ? (
             <Table reportData={view} />
           ) : (
             "Нет данных (возможно в категории нет товаров)"
-          )}
+          )} */}
         </>
       )}
     </Template>

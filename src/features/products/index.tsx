@@ -53,6 +53,7 @@ export const Products = () => {
               id: any;
               prices: any;
               stock: any;
+              purchase_price: any;
             },
             i: number
           ) => (
@@ -62,11 +63,53 @@ export const Products = () => {
               <td>{product.code}</td>
               {responseData?.shops?.map((shop: any) => (
                 <td key={shop.id}>
-                  {
-                    product.prices.find(
-                      (price_item: any) => price_item.shop_id === shop.id
-                    )?.sum
-                  }
+                  <pre>
+                    {(() => {
+                      const data = product.prices.find(
+                        (price_item: any) => price_item.shop_id === shop.id
+                      );
+                      if (data) {
+                        const { price_type, price_count } = data;
+                        switch (price_type) {
+                          case "percent":
+                            return (
+                              Number(product.purchase_price) *
+                              Number(price_count)
+                            );
+                          case "fix":
+                            return (
+                              Number(product.purchase_price) +
+                              Number(price_count)
+                            );
+                          case "handle":
+                            return Number(price_count);
+                        }
+                      }
+
+                      // switch (key) {
+                      //   case value:
+                      //     break;
+
+                      //   default:
+                      //     break;
+                      // }
+
+                      return product.purchase_price;
+                    })()}
+                    {/* {
+                      JSON.stringify(
+                        {
+                          product,
+                          a: product.prices.find(
+                            (price_item: any) => price_item.shop_id === shop.id
+                          ),
+                        },
+                        null,
+                        " "
+                      )
+                      // ?.sum
+                    } */}
+                  </pre>
                 </td>
               ))}
               {responseData?.shops?.map((shop: any) => (
