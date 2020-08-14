@@ -1,5 +1,5 @@
 import { API } from "../../api";
-import React from "react";
+import React, { useEffect } from "react";
 import { Modal, Row, Col, Button } from "react-bootstrap";
 import { Form } from "react-final-form";
 import { FieldArray } from "react-final-form-arrays";
@@ -27,10 +27,17 @@ export const EditProduct = ({
   setModalEditProduct,
   responseData,
 }: any): any => {
+  // alert();
+  useEffect(() => {
+    API.get_product({ product_id: "123" });
+  }, []);
+  useEffect(() => {
+    modalEditProduct && alert();
+  }, [modalEditProduct]);
   const onSubmit = (values: any) => {
     API.edit_product(values).then((response) => {
       if (response?.data?.success) {
-        setModalEditProduct(false);
+        // setModalEditProduct(false);
       }
     });
   };
@@ -41,6 +48,7 @@ export const EditProduct = ({
         show={modalEditProduct ? true : false}
         onHide={setModalEditProduct}
       >
+        {/* {alert()} */}
         {/* <pre>{JSON.stringify({ modalEditProduct }, null, " ")}</pre> */}
         <Form
           onSubmit={onSubmit}
@@ -67,7 +75,7 @@ export const EditProduct = ({
             stock_counts: shops
               ? shops.map((shop: any) => ({
                   ...shop,
-                  count: stock.find(
+                  count: stock?.find(
                     (stock_item: any) =>
                       stock_item.shop_id === shop.id &&
                       modalEditProduct?.product?.id === stock_item.product_id

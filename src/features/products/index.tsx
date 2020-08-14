@@ -23,6 +23,10 @@ export const Products = () => {
       setLoading(false);
     });
   }, [id]);
+  console.log("responseData", responseData);
+
+  type dsa = "";
+
   const table = (
     <Btable striped bordered hover size="sm" className="table-striped w-auto">
       <thead style={{ whiteSpace: "nowrap" }}>
@@ -44,15 +48,22 @@ export const Products = () => {
         </tr>
       </thead>
       <tbody>
-        {products.map(
+        {products?.map(
           (
             product: {
               photo: string;
               name: string;
               code: string;
               id: any;
-              prices: any;
-              stock: any;
+              prices: {
+                shop_id: string;
+                price: string;
+              }[];
+              stock: {
+                count: string;
+                shop_id: string;
+              }[];
+              cost_type: "";
               purchase_price: any;
             },
             i: number
@@ -61,66 +72,40 @@ export const Products = () => {
               <td>{product.photo}</td>
               <td>{product.name}</td>
               <td>{product.code}</td>
-              {responseData?.shops?.map((shop: any) => (
-                <td key={shop.id}>
-                  <pre>
-                    {(() => {
-                      const data = product.prices.find(
-                        (price_item: any) => price_item.shop_id === shop.id
-                      );
-                      if (data) {
-                        const { price_type, price_count } = data;
-                        switch (price_type) {
-                          case "percent":
-                            return (
-                              Number(product.purchase_price) *
-                              Number(price_count)
-                            );
-                          case "fix":
-                            return (
-                              Number(product.purchase_price) +
-                              Number(price_count)
-                            );
-                          case "handle":
-                            return Number(price_count);
-                        }
-                      }
-
-                      // switch (key) {
-                      //   case value:
-                      //     break;
-
-                      //   default:
-                      //     break;
-                      // }
-
-                      return product.purchase_price;
-                    })()}
-                    {/* {
-                      JSON.stringify(
-                        {
-                          product,
-                          a: product.prices.find(
-                            (price_item: any) => price_item.shop_id === shop.id
-                          ),
-                        },
-                        null,
-                        " "
-                      )
-                      // ?.sum
-                    } */}
-                  </pre>
-                </td>
-              ))}
-              {responseData?.shops?.map((shop: any) => (
+              {responseData?.shops?.map((shop: { id: string }) => (
                 <td key={shop.id}>
                   {
-                    product.stock.find(
-                      (price_item: any) => price_item.shop_id === shop.id
-                    )?.count
+                    product.prices.find(
+                      (price_item: { shop_id: string; price: string }) =>
+                        price_item.shop_id === shop.id
+                    )?.price
                   }
                 </td>
               ))}
+              {responseData?.shops?.map(
+                (shop: { id: string | number | undefined }) => (
+                  <td key={shop.id} className="cell_prices">
+                    {
+                      product.stock.find(
+                        (stock_item: { shop_id: string; count: string }) =>
+                          stock_item.shop_id === shop.id
+                      )?.count
+                    }
+                  </td>
+                )
+              )}
+              {/* {responseData?.shops?.map(
+                (shop: { id: string | number | undefined }) => (
+                  <td key={shop.id}>
+                    {
+                      product.stock.find(
+                        (stock_item: { shop_id: string; count: string }) =>
+                          stock_item.shop_id === shop.id
+                      )?.count
+                    }
+                  </td>
+                )
+              )} */}
               <td>
                 <Button
                   variant="primary"
@@ -160,9 +145,9 @@ export const Products = () => {
           <span className="sr-only">Loading...</span>
         </Spinner>
       ) : (
-        <>{products.length ? table : "В этой категории нет товаров"}</>
+        <>{products?.length ? table : "В этой категории нет товаров"}</>
       )}
-
+      {products && <pre>{JSON.stringify(products, null, " ")}</pre>}
       <AddSale
         modalAddSale={modalAddSale}
         setModalAddSale={setModalAddSale}

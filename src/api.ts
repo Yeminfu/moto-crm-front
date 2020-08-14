@@ -28,6 +28,8 @@ export const API = {
   get_categories: () => axios.get(baseUrl + "get_categories", headers()),
   get_products: (params: { category: string }) =>
     axios.get(baseUrl + "get_products", { params: params, ...headers() }),
+  get_product: (params: { product_id: string }) =>
+    axios.get(baseUrl + "get_product", { params: params, ...headers() }),
   add_products: (params: productType) =>
     axios.post(baseUrl + "add_products", params, {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },

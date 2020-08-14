@@ -33,7 +33,8 @@ export const CreateProduct = () => {
         // text: "Неправильный логин или пароль",
         icon: "success",
         confirmButtonText: "Ок",
-      }).then(() => form.reset());
+      });
+      // .then(() => form.reset());
     });
   };
   return (
