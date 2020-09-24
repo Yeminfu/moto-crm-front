@@ -6,6 +6,7 @@ import { Table as Btable, Button, Spinner } from "react-bootstrap";
 import { useStore } from "effector-react";
 import { EditProduct } from "./EditProduct";
 import { AddSale } from "./AddSale";
+import styled from "styled-components";
 
 export const Products = () => {
   const { id } = useParams();
@@ -23,7 +24,6 @@ export const Products = () => {
       setLoading(false);
     });
   }, [id]);
-  console.log("responseData", responseData);
 
   type dsa = "";
 
@@ -31,11 +31,23 @@ export const Products = () => {
     <Btable striped bordered hover size="sm" className="table-striped w-auto">
       <thead style={{ whiteSpace: "nowrap" }}>
         <tr>
-          <th rowSpan={2}>Фото</th>
-          <th rowSpan={2}>Наименование</th>
-          <th rowSpan={2}>Код товара</th>
+          <th>id</th>
+          <th>Фото</th>
+          <th>Наименование</th>
+          <th>Код товара</th>
+          {responseData?.shops?.map((shop: { name: string }) => (
+            <th key={shop.name}>р.ц. {shop.name}</th>
+          ))}
+          {responseData?.shops?.map((shop: { name: string }) => (
+            <th key={shop.name}>Склад {shop.name}</th>
+          ))}
+          <th>Закупочная цена</th>
+          <th />
+        </tr>
+        {/* <tr>
           <th colSpan={responseData?.shops?.length}>Розничная цена</th>
           <th colSpan={responseData?.shops?.length}>К-во на складе</th>
+          <th>Закупочная цена</th>
           <th rowSpan={2} />
         </tr>
         <tr>
@@ -45,7 +57,7 @@ export const Products = () => {
           {responseData?.shops?.map((shop: { name: string }) => (
             <th key={shop.name}>{shop.name}</th>
           ))}
-        </tr>
+        </tr> */}
       </thead>
       <tbody>
         {products?.map(
@@ -54,7 +66,7 @@ export const Products = () => {
               photo: string;
               name: string;
               code: string;
-              id: any;
+              id: string;
               prices: {
                 shop_id: string;
                 price: string;
@@ -69,22 +81,30 @@ export const Products = () => {
             i: number
           ) => (
             <tr key={i}>
-              <td>{product.photo}</td>
-              <td>{product.name}</td>
-              <td>{product.code}</td>
+              <td title="id">{product.id}</td>
+              <td title="изображение товара">{product.photo}</td>
+              <td title="наименование товара">{product.name}</td>
+              <td title="код товара">{product.code}</td>
               {responseData?.shops?.map((shop: { id: string }) => (
-                <td key={shop.id}>
-                  {
-                    product.prices.find(
+                <td key={shop.id} title={`розничная цена ${shop.id}`}>
+                  {(() => {
+                    const val = product.prices.find(
                       (price_item: { shop_id: string; price: string }) =>
                         price_item.shop_id === shop.id
-                    )?.price
-                  }
+                    )?.price;
+                    return typeof val === "number"
+                      ? `${Math.round(val)} ₽`
+                      : "";
+                  })()}
                 </td>
               ))}
               {responseData?.shops?.map(
                 (shop: { id: string | number | undefined }) => (
-                  <td key={shop.id} className="cell_prices">
+                  <td
+                    key={shop.id}
+                    className="cell_prices"
+                    title={`количество на складе ${shop.id}`}
+                  >
                     {
                       product.stock.find(
                         (stock_item: { shop_id: string; count: string }) =>
@@ -106,6 +126,8 @@ export const Products = () => {
                   </td>
                 )
               )} */}
+              <td title="закупочная цена">{product.purchase_price}</td>
+              {/* <td title="id___">impty</td> */}
               <td>
                 <Button
                   variant="primary"
@@ -140,26 +162,40 @@ export const Products = () => {
 
   return (
     <Template title={categories?.find((cat: any) => cat.id === id)?.name}>
-      {loading ? (
-        <Spinner animation="border" role="status">
-          <span className="sr-only">Loading...</span>
-        </Spinner>
-      ) : (
-        <>{products?.length ? table : "В этой категории нет товаров"}</>
-      )}
-      {products && <pre>{JSON.stringify(products, null, " ")}</pre>}
-      <AddSale
-        modalAddSale={modalAddSale}
-        setModalAddSale={setModalAddSale}
-        responseData={responseData}
-      />
-      <EditProduct
-        modalEditProduct={modalEditProduct}
-        setModalEditProduct={setModalEditProduct}
-        responseData={responseData}
-        aaa={modalEditProduct}
-      />
-      {/* {JSON.stringify(modalEditProduct)} */}
+      <Styled>
+        {loading ? (
+          <Spinner animation="border" role="status">
+            <span className="sr-only">Loading...</span>
+          </Spinner>
+        ) : (
+          <>{products?.length ? table : "В этой категории нет товаров"}</>
+        )}
+        {/* {products && <pre>{JSON.stringify(products, null, " ")}</pre>} */}
+        <AddSale
+          modalAddSale={modalAddSale}
+          setModalAddSale={setModalAddSale}
+          responseData={responseData}
+        />
+        <EditProduct
+          modalEditProduct={modalEditProduct}
+          setModalEditProduct={setModalEditProduct}
+          responseData={responseData}
+          aaa={modalEditProduct}
+        />
+        {/* {JSON.stringify(modalEditProduct)} */}
+      </Styled>
     </Template>
   );
 };
+
+const Styled = styled.div`
+  thead {
+    overflow-y: auto;
+    height: 100px;
+  }
+  th {
+    position: sticky;
+    top: 0;
+    background: #fff;
+  }
+`;

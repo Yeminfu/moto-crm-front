@@ -6,6 +6,7 @@ import { FieldArray } from "react-final-form-arrays";
 import arrayMutators from "final-form-arrays";
 import { validation } from "../helpers/validation";
 import { CustomInput, CustomTextarea, CustomSelect } from "./fields";
+import Swal from "sweetalert2";
 
 export const markups = [
   {
@@ -27,17 +28,22 @@ export const EditProduct = ({
   setModalEditProduct,
   responseData,
 }: any): any => {
-  // alert();
   useEffect(() => {
     API.get_product({ product_id: "123" });
   }, []);
   useEffect(() => {
-    modalEditProduct && alert();
+    // modalEditProduct && alert();
   }, [modalEditProduct]);
   const onSubmit = (values: any) => {
     API.edit_product(values).then((response) => {
       if (response?.data?.success) {
-        // setModalEditProduct(false);
+        Swal.fire({
+          title: "Успешно!",
+          icon: "success",
+          confirmButtonText: "Ок",
+        }).then(() => {
+          setModalEditProduct(false);
+        });
       }
     });
   };
@@ -49,7 +55,6 @@ export const EditProduct = ({
         onHide={setModalEditProduct}
       >
         {/* {alert()} */}
-        {/* <pre>{JSON.stringify({ modalEditProduct }, null, " ")}</pre> */}
         <Form
           onSubmit={onSubmit}
           initialValues={{
@@ -62,24 +67,31 @@ export const EditProduct = ({
             retail_prices: shops
               ? shops.map((shop: any) => ({
                   ...shop,
-
                   // price_type: stock.find(
                   //   (stock_item: any) =>
                   //     stock_item.shop_id === shop.id &&
                   //     modalEditProduct?.product?.id === stock_item.product_id
                   // )?.count,
-                  price_type: "fix",
-                  price_count: "123",
+                  price_type: modalEditProduct?.product?.prices.find(
+                    (price_item: any) => price_item.shop_id === shop.id
+                  ).price_type,
+                  // price_type: "fix",
+                  price_count: modalEditProduct?.product?.prices.find(
+                    (price_item: any) => price_item.shop_id === shop.id
+                  ).price_count,
                 }))
               : [],
             stock_counts: shops
               ? shops.map((shop: any) => ({
                   ...shop,
-                  count: stock?.find(
-                    (stock_item: any) =>
-                      stock_item.shop_id === shop.id &&
-                      modalEditProduct?.product?.id === stock_item.product_id
-                  )?.count,
+                  count: (() => {
+                    const val = stock?.find(
+                      (stock_item: any) =>
+                        stock_item.shop_id === shop.id &&
+                        modalEditProduct?.product?.id === stock_item.product_id
+                    )?.count;
+                    return val ? val : 0;
+                  })(),
                 }))
               : [],
           }}
@@ -91,7 +103,6 @@ export const EditProduct = ({
           }}
           render={({ form, handleSubmit, values, errors }) => (
             <form onSubmit={handleSubmit}>
-              {/* <pre>{JSON.stringify(values, null, " ")}</pre> */}
               <Modal.Header closeButton>
                 <Modal.Title>
                   Редактировать {modalEditProduct?.product?.name}
@@ -155,7 +166,7 @@ export const EditProduct = ({
                         <Col>
                           <CustomInput
                             lable=""
-                            name={`${name}.count`}
+                            name={`${name}.price_count`}
                             type="number"
                             validation={validation.required}
                           />
@@ -174,7 +185,7 @@ export const EditProduct = ({
                             lable={`К-во в ${shops[index].id}`}
                             name={`${name}.count`}
                             type="number"
-                            validation={validation.required}
+                            // validation={validation.required}
                           />
                         </Col>
                       ))

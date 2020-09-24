@@ -2,10 +2,11 @@ import React from "react";
 import { Form as FinalForm, Field } from "react-final-form";
 import { Form as Bform, Button, Card } from "react-bootstrap";
 import { useStore } from "effector-react";
-import { categories } from "../template";
+import { categories as $categories } from "../template";
 
 export const Filter = ({ filterHandle }: any) => {
-  const cats = useStore(categories);
+  // const cats = useStore(categories);
+  const categories = useStore($categories);
   return (
     <>
       <Card className="bg-secondary mb-5">
@@ -14,7 +15,7 @@ export const Filter = ({ filterHandle }: any) => {
             onSubmit={filterHandle}
             initialValues={{
               year: 2020,
-              category: "boats",
+              category: categories[0]?.id,
             }}
             render={({ handleSubmit }) => (
               <Bform onSubmit={handleSubmit} inline>
@@ -53,7 +54,7 @@ export const Filter = ({ filterHandle }: any) => {
                         size="sm"
                       >
                         {[
-                          ...cats?.map((category: any, i: any) => ({
+                          ...categories?.map((category: any, i: any) => ({
                             label: category.name,
                             value: category.id,
                           })),

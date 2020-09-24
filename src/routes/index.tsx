@@ -11,6 +11,7 @@ import { ProtectedRoute } from "./ProtectedRoute";
 import ProtectedAuthRoute from "./ProtectedAuthRoute";
 import { Dashboard } from "../features/Dashboard";
 import { CreateShop } from "../features/CreateShop";
+import { ExcelImport } from "../features/excel/import";
 
 export const Routes = () => (
   <>
@@ -39,6 +40,7 @@ export const Routes = () => (
             { path: "/create-shop", component: <CreateShop /> },
             { path: "/products/:id", component: <Products /> },
             { path: "/staff", component: <Staff /> },
+            { path: "/excel", component: <ExcelImport /> },
           ].map((route: any) => (
             <Route
               key={route.path}

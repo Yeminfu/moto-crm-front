@@ -13,3 +13,13 @@
 pre {
   text-align: left;
 }
+
+thead {
+  overflow-y: auto;
+  height: 100px;
+}
+th {
+  position: sticky;
+  top: 0;
+  background: #fff;
+}

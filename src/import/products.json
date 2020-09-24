@@ -1,0 +1,9358 @@
+[
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C3",
+    "наименование": {
+      "type": "handle",
+      "value": "Angler 280XL"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 14800
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "Нужно 2"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C14",
+    "наименование": {
+      "type": "handle",
+      "value": "Angler 300XL"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 16100
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "Нужно 2"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C15",
+    "наименование": {
+      "type": "handle",
+      "value": "Angler 310XL"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 18200
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "Нужно 2"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C16",
+    "наименование": {
+      "type": "handle",
+      "value": "Reef 320KC"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 18500
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "Нужно 2"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C17",
+    "наименование": {
+      "type": "handle",
+      "value": "Angler 335XL"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 21900
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "Нужно 2"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C18",
+    "наименование": {
+      "type": "handle",
+      "value": "Angler 360XL"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 29000
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "Нужно 1"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C19",
+    "наименование": {
+      "type": "handle",
+      "value": "Reff 290L"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 14200
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "Нужно 2"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C20",
+    "наименование": {
+      "type": "handle",
+      "value": "Reff 290 НД"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 18300
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "Нужно 3"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C21",
+    "наименование": {
+      "type": "handle",
+      "value": "Reff 300НД"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 22700
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "Нужно 3"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C22",
+    "наименование": {
+      "type": "handle",
+      "value": "Reff 325 НД"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 24100
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "Нужно 3"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C23",
+    "наименование": {
+      "type": "handle",
+      "value": "Reff 335 НД"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 27500
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "Нужно 2"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C24",
+    "наименование": {
+      "type": "handle",
+      "value": "Reff 360 НД"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 29900
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "Нужно 3"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C25",
+    "наименование": {
+      "type": "handle",
+      "value": "Reff 390 НД"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 34900
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C26",
+    "наименование": {
+      "type": "handle",
+      "value": "Скат 370 пластиковый транец"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 51900
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "Нужно 1"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C27",
+    "наименование": {
+      "type": "handle",
+      "value": "Reff 340 тритон"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 31500
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "Нужно 1"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C28",
+    "наименование": {
+      "type": "handle",
+      "value": "Reff 360 тритон"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 37500
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "Нужно 2"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C30",
+    "наименование": {
+      "type": "handle",
+      "value": "Reff 390 тритон"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 40500
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "Нужно 1"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C31",
+    "наименование": {
+      "type": "handle",
+      "value": "Reff 390 тритон F"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 46000
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "Нужно 1"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C32",
+    "наименование": {
+      "type": "handle",
+      "value": "Reff 420 тритон"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 46500
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "Нужно 1"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C33",
+    "наименование": {
+      "type": "handle",
+      "value": "Reff 390 Jet"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 44500
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C34",
+    "наименование": {
+      "type": "handle",
+      "value": "Reff 420 Jet"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 51900
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C35",
+    "наименование": {
+      "type": "handle",
+      "value": "Reff 450 Jet"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 57200
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C36",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка «ФЛАГМАН – 450 нднд"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 42400
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "1шт в пути"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C37",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка «ФЛАГМАН – 330U"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 23200
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "2шт в пути"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C38",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка «ФЛАГМАН – 360U"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 31200
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "3шт в пути"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C39",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка «ФЛАГМАН – 400U"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 35200
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C40",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка «ФЛАГМАН – 370 DKiJ"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 40300
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C41",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка «ФЛАГМАН – 390 DKiJ"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 45600
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "1шт в пути"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C42",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка «ФЛАГМАН – 410 DKiJ"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 49600
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "2шт в пути"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C43",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка «ФЛАГМАН – 430 DKiJ"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 54400
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "1шт в пути"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C44",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка Флагман 380 ИГЛА "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 30400
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C45",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка Флагман 420 ИГЛА "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 34600
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "1шт в пути"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C46",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка Флагман 450 DKJ пиксель"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 70400
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "1шт в пути"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C47",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка Флагман 420 DKJ"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 57600
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C48",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка Флагман 500 DKJ"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 74400
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "1шт в пути"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C49",
+    "наименование": {
+      "type": "handle",
+      "value": "Orca нд 325"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 23340
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "нужно 2шт"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C50",
+    "наименование": {
+      "type": "handle",
+      "value": "Orca нд 340"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 27130
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "нужно 2шт"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C51",
+    "наименование": {
+      "type": "handle",
+      "value": "Orca нд 360"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 30900
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "нужно 2шт"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C52",
+    "наименование": {
+      "type": "handle",
+      "value": "Orca нд 380"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 33450
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "нужно 2шт"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C53",
+    "наименование": {
+      "type": "handle",
+      "value": "Orca нд 400"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 35500
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "нужно 2шт"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C54",
+    "наименование": {
+      "type": "handle",
+      "value": "Orca нд 420"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 38450
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "нужно 2шт"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C55",
+    "наименование": {
+      "type": "handle",
+      "value": "Orca нд 380 F"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 38350
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C56",
+    "наименование": {
+      "type": "handle",
+      "value": "Orca нд 360 пиксель"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 33900
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "нужно 2шт"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C57",
+    "наименование": {
+      "type": "handle",
+      "value": "Orca нд 380 пиксель"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 36600
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "нужно 2шт"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C58",
+    "наименование": {
+      "type": "handle",
+      "value": "Orca 360 нд GT"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 35200
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "нужно 2шт"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C59",
+    "наименование": {
+      "type": "handle",
+      "value": "Orca 380 нд GT"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 37400
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "нужно 2шт"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C60",
+    "наименование": {
+      "type": "handle",
+      "value": "Orca 400 нд GT"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 39800
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "нужно 2шт"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C61",
+    "наименование": {
+      "type": "handle",
+      "value": "Orca 420 нд GT"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 42400
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "нужно 2шт"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C63",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка ПВХ  skiff- 220 гребная"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 6395
+    },
+    "себестоимось": {
+      "value": "1.1",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C64",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка ПВХ  skiff- 240 гребная"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 7190
+    },
+    "себестоимось": {
+      "value": "1.1",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C65",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка ПВХ \"Skiff-260\" гребная"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 7250
+    },
+    "себестоимось": {
+      "value": "1.1",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C66",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка ПВХ  skiff- 280 гребная"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 8390
+    },
+    "себестоимось": {
+      "value": "1.1",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C67",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка ПВХ \"Skiff-260\" нд"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 8990
+    },
+    "себестоимось": {
+      "value": "1.1",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C68",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка ПВХ  skiff- 280 нд"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 9990
+    },
+    "себестоимось": {
+      "value": "1.1",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C69",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка Агул 275"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 10261
+    },
+    "себестоимось": {
+      "value": "1.1",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C70",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка Агул-300 гребная"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 10450
+    },
+    "себестоимось": {
+      "value": "1.1",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C71",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка ПВХ \"Мана-260\" гребная"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 6990
+    },
+    "себестоимось": {
+      "value": "1.1",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C72",
+    "наименование": {
+      "type": "handle",
+      "value": "Бахта-265\""
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 9940
+    },
+    "себестоимось": {
+      "value": "1.1",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C73",
+    "наименование": {
+      "type": "handle",
+      "value": "Бахта-265\"НД (Надувное дно)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 11490
+    },
+    "себестоимось": {
+      "value": "1.1",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C74",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка ПВХ \"Бахта-290\"ТС гребная 2-местная"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 14550
+    },
+    "себестоимось": {
+      "value": "1.1",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C75",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка ПВХ \"Бахта-290\"Т (надувное дно)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 12250
+    },
+    "себестоимось": {
+      "value": "1.1",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C76",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка ПВХ \"S-290 К\" "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 13890
+    },
+    "себестоимось": {
+      "value": "1.1",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C77",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка ПВХ \"S-320 К\" "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 14790
+    },
+    "себестоимось": {
+      "value": "1.1",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C78",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка ПВХ \"Таймыр-320 КС\""
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 18990
+    },
+    "себестоимось": {
+      "value": "1.1",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C79",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка Таймыр 350 КС"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 20990
+    },
+    "себестоимось": {
+      "value": "1.1",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C80",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка ПВХ \"Таймыр-340 Люкс\"  (серая) "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 23990
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C81",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка ПВХ \"Таймыр-360 Люкс\"  (зеленая) "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 24790
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C82",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка ПВХ \"Бирюса \"305\" надувное дно"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 16750
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C83",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодка ПВХ \"Бирюса \"325\" надувное дно"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 17950
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C84",
+    "наименование": {
+      "type": "handle",
+      "value": "Таймыр 290 НД "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 21450
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C85",
+    "наименование": {
+      "type": "handle",
+      "value": "Таймвр 320 НД"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 22350
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "lodki",
+    "address_of_cell": "C86",
+    "наименование": {
+      "type": "handle",
+      "value": "Таймыр 350 НД "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 25590
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.32",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-lodkm",
+    "address_of_cell": "C3",
+    "наименование": {
+      "type": "handle",
+      "value": "Транец навесной"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 700
+    }
+  },
+  {
+    "sheetName": "zip-lodkm",
+    "address_of_cell": "C4",
+    "наименование": {
+      "type": "handle",
+      "value": "Слань книжка Агул-275"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1873
+    }
+  },
+  {
+    "sheetName": "zip-lodkm",
+    "address_of_cell": "C5",
+    "наименование": {
+      "type": "handle",
+      "value": "Спасательный жилет 35кг"
+    }
+  },
+  {
+    "sheetName": "zip-lodkm",
+    "address_of_cell": "C6",
+    "наименование": {
+      "type": "handle",
+      "value": "Спасательный жилет 50кг"
+    }
+  },
+  {
+    "sheetName": "zip-lodkm",
+    "address_of_cell": "C7",
+    "наименование": {
+      "type": "handle",
+      "value": "Спасательный жилет 80кг"
+    }
+  },
+  {
+    "sheetName": "zip-lodkm",
+    "address_of_cell": "C8",
+    "наименование": {
+      "type": "handle",
+      "value": "Спасательный жилет 120кг"
+    }
+  },
+  {
+    "sheetName": "zip-lodkm",
+    "address_of_cell": "C9",
+    "наименование": {
+      "type": "handle",
+      "value": "Уключина"
+    },
+    "цена_бир": {
+      "type": "handle",
+      "value": 600
+    }
+  },
+  {
+    "sheetName": "zip-lodkm",
+    "address_of_cell": "C10",
+    "наименование": {
+      "type": "handle",
+      "value": "Ручка передняя"
+    },
+    "цена_бир": {
+      "type": "handle",
+      "value": 500
+    }
+  },
+  {
+    "sheetName": "zip-lodkm",
+    "address_of_cell": "C11",
+    "наименование": {
+      "type": "handle",
+      "value": "Крепление для вёсел"
+    },
+    "цена_бир": {
+      "type": "handle",
+      "value": 200
+    }
+  },
+  {
+    "sheetName": "zip-lodkm",
+    "address_of_cell": "C12",
+    "наименование": {
+      "type": "handle",
+      "value": "Клапан подрывной"
+    },
+    "цена_бир": {
+      "type": "handle",
+      "value": 500
+    }
+  },
+  {
+    "sheetName": "zip-lodkm",
+    "address_of_cell": "C13",
+    "наименование": {
+      "type": "handle",
+      "value": "Плавник"
+    },
+    "цена_бир": {
+      "type": "handle",
+      "value": 300
+    }
+  },
+  {
+    "sheetName": "zip-lodkm",
+    "address_of_cell": "C14",
+    "наименование": {
+      "type": "handle",
+      "value": "накладка на транец метал"
+    },
+    "цена_бир": {
+      "type": "handle",
+      "value": 1700
+    }
+  },
+  {
+    "sheetName": "zip-lodkm",
+    "address_of_cell": "C15",
+    "наименование": {
+      "type": "handle",
+      "value": "накладка на транец пластик"
+    },
+    "цена_бир": {
+      "type": "handle",
+      "value": 430
+    }
+  },
+  {
+    "sheetName": "zip-lodkm",
+    "address_of_cell": "C16",
+    "наименование": {
+      "type": "handle",
+      "value": "Сидушки мягкие + сумка-рундук"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1000
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C3",
+    "наименование": {
+      "type": "handle",
+      "value": "Насадка водометная  Sea Pro t40"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 48400
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C4",
+    "наименование": {
+      "type": "handle",
+      "value": "Насадка водометная Sea Pro t30"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 46800
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C5",
+    "наименование": {
+      "type": "handle",
+      "value": "Насадка водометная Tohatsu/Merkuri  40-50"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 51200
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C6",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотор SeaPro T 30 без сапога"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 72500
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C8",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотор  SeaPro T 40 без сапога Электро стартер"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 119100
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C9",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодочный мотор SeaPro T 18 (S)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 71700
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C10",
+    "наименование": {
+      "type": "handle",
+      "value": "OTH 9.9"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 57800
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C11",
+    "наименование": {
+      "type": "handle",
+      "value": "Лодочный мотор  SEA Pro F 9.8S Tohatsu"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 68800
+    },
+    "себестоимось": {
+      "value": "2500",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C12",
+    "наименование": {
+      "type": "handle",
+      "value": "Сапог на Т40/30"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 44000
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "неликвид"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C13",
+    "наименование": {
+      "type": "handle",
+      "value": "HDF15FHS 4т"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 97600
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C14",
+    "наименование": {
+      "type": "handle",
+      "value": "HD5FHS"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 36800
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C15",
+    "наименование": {
+      "type": "handle",
+      "value": "HIDEA 9.8"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 58300
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C16",
+    "наименование": {
+      "type": "handle",
+      "value": "HIDEA 9.9"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 66200
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C17",
+    "наименование": {
+      "type": "handle",
+      "value": "HIDEA 9.9 PRO 326cc"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 80000
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "4шт в пути Gladiator"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C18",
+    "наименование": {
+      "type": "handle",
+      "value": "HIDEA 30"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 109900
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C19",
+    "наименование": {
+      "type": "handle",
+      "value": "HIDEA 30 дистанция"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 134200
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C20",
+    "наименование": {
+      "type": "handle",
+      "value": "HIDEA 40 FES"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 157500
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C21",
+    "наименование": {
+      "type": "handle",
+      "value": "Hagkai 4.0"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 20300
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C22",
+    "наименование": {
+      "type": "handle",
+      "value": "Hagkai 6.0"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 26100
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C23",
+    "наименование": {
+      "type": "handle",
+      "value": "Hagkai 9.8"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 46200
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C24",
+    "наименование": {
+      "type": "handle",
+      "value": "Hagkai 9.9"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 55000
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C25",
+    "наименование": {
+      "type": "handle",
+      "value": "Parsun T 9,9BMS"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 73150
+    },
+    "себестоимось": {
+      "value": "1000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C26",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотор болтоход  20 - 18,5 лс эл стартер"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 53800
+    },
+    "себестоимось": {
+      "value": "6000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C27",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотор болтоход 15 лс"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 45100
+    },
+    "себестоимось": {
+      "value": "6000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "plm",
+    "address_of_cell": "C28",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотор болтоход 9 лс"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 38120
+    },
+    "себестоимось": {
+      "value": "6000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C3",
+    "наименование": {
+      "type": "handle",
+      "value": "Сеча NGK B7HS"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 150
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C4",
+    "наименование": {
+      "type": "handle",
+      "value": "Масло 2т лод мотор"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 230
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C5",
+    "наименование": {
+      "type": "handle",
+      "value": "Бак 12л"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1900
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C6",
+    "наименование": {
+      "type": "handle",
+      "value": "Бак 24 л"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 2100
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C7",
+    "наименование": {
+      "type": "handle",
+      "value": "Шланг с грушей"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 900
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C8",
+    "наименование": {
+      "type": "handle",
+      "value": "Винт Yamaha 25-30 (10-13)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 3000
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C9",
+    "наименование": {
+      "type": "handle",
+      "value": "Винт Yamaha 9.9-15 (9-10-11)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 2240
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C10",
+    "наименование": {
+      "type": "handle",
+      "value": "Винт Tohatsu 8-9.8 (8.5x8.5)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1820
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C11",
+    "наименование": {
+      "type": "handle",
+      "value": "Винт Tohatsu 4-6 (7.8x8)"
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C12",
+    "наименование": {
+      "type": "handle",
+      "value": "Винт Tohatsu 9.9-18"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1950
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C13",
+    "наименование": {
+      "type": "handle",
+      "value": "Винт Mercury 6-15"
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C14",
+    "наименование": {
+      "type": "handle",
+      "value": "Винт Ymaha 4-6лс"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1330
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C15",
+    "наименование": {
+      "type": "handle",
+      "value": "Винт 40лс"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 3000
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C16",
+    "наименование": {
+      "type": "handle",
+      "value": "Гребной вал Yamaha 9.9-15"
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C17",
+    "наименование": {
+      "type": "handle",
+      "value": "Стакан помпы Yamaha 9.9-15"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 96
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C18",
+    "наименование": {
+      "type": "handle",
+      "value": "Стакан помпы Yamaha 9.8"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 112
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C19",
+    "наименование": {
+      "type": "handle",
+      "value": "Корпус помпы Yamaha 9.9-15"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 144
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C20",
+    "наименование": {
+      "type": "handle",
+      "value": "Корпус помпы Yamaha 9.8"
+    },
+    "цена_бир": {
+      "type": "handle",
+      "value": 400
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C21",
+    "наименование": {
+      "type": "handle",
+      "value": "Основание помпы Yamaha 9.9-15"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 48
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C22",
+    "наименование": {
+      "type": "handle",
+      "value": "Крыльчатка помпы Yamaha 9.9-15"
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C23",
+    "наименование": {
+      "type": "handle",
+      "value": "Кольцо уплотнительное Yamaha 9.9-15"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 18
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C24",
+    "наименование": {
+      "type": "handle",
+      "value": "Уплотн. Трубопровода Yamaha 9.9-15"
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C25",
+    "наименование": {
+      "type": "handle",
+      "value": "Подшипник редуктора Yamaha 9.9-15"
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C26",
+    "наименование": {
+      "type": "handle",
+      "value": "Сальник гребного вала Yamaha 9.9-15"
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C27",
+    "наименование": {
+      "type": "handle",
+      "value": "Опора винта Yamaha 9.9-15"
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C28",
+    "наименование": {
+      "type": "handle",
+      "value": "Штифт Yamaha 9.9-15"
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C29",
+    "наименование": {
+      "type": "handle",
+      "value": "Переключатель передач Yamaha 9.9-15"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 173
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C30",
+    "наименование": {
+      "type": "handle",
+      "value": "Шпонка сегментная Yamaha 9.9-15"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 32
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C31",
+    "наименование": {
+      "type": "handle",
+      "value": "Чека выключ. Двигателя"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 192
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C32",
+    "наименование": {
+      "type": "handle",
+      "value": "Выключатель двигателя"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 192
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C33",
+    "наименование": {
+      "type": "handle",
+      "value": "Набор кноака двиг стом и чека безопасности"
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C34",
+    "наименование": {
+      "type": "handle",
+      "value": "15F-201005 Катушка световая (YP)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 960
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C35",
+    "наименование": {
+      "type": "handle",
+      "value": "Коннектор бензошланга (мама)"
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C36",
+    "наименование": {
+      "type": "handle",
+      "value": "15F-01.03.14 Высоковольтная катушка (А)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 516
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C37",
+    "наименование": {
+      "type": "handle",
+      "value": "15F-01.03.15 Высоковольтная катушка (В)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 516
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C38",
+    "наименование": {
+      "type": "handle",
+      "value": "Груша топлевная (YYM Тайвань) "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 500
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C39",
+    "наименование": {
+      "type": "handle",
+      "value": "15F-01.03.04 Катушка зажигания"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 620
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C40",
+    "наименование": {
+      "type": "handle",
+      "value": "Прокладка указателя топлевного бака"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 5
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C41",
+    "наименование": {
+      "type": "handle",
+      "value": "Тахометр универсальный"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 750
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C42",
+    "наименование": {
+      "type": "handle",
+      "value": "Чехол на капот 9.9-15"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 800
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C43",
+    "наименование": {
+      "type": "handle",
+      "value": "15F-01.02.08.00 Корбюратор"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 4500
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C44",
+    "наименование": {
+      "type": "handle",
+      "value": "Рем. Комплект карбюратора Т15"
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C45",
+    "наименование": {
+      "type": "handle",
+      "value": "15F-06.09 Шестерня переднего хода"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 2144
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C46",
+    "наименование": {
+      "type": "handle",
+      "value": "15F -06.01.10 Шестерня приводная"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 975
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C47",
+    "наименование": {
+      "type": "handle",
+      "value": "15F-01.06.24.00 Лепестковый клапан"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 743
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C48",
+    "наименование": {
+      "type": "handle",
+      "value": "Блок управления зажиганием Тайвань 9,9-15"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 3300
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C49",
+    "наименование": {
+      "type": "handle",
+      "value": "Чехол сумка 18-20"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1400
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C50",
+    "наименование": {
+      "type": "handle",
+      "value": "Пробка бака"
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C51",
+    "наименование": {
+      "type": "handle",
+      "value": "Стабидизатор выпрямитель тока "
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C52",
+    "наименование": {
+      "type": "handle",
+      "value": "Бабина высоковольтная Tohatsu 9.9-18"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 3000
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C53",
+    "наименование": {
+      "type": "handle",
+      "value": "Блок управления Tohatsu 9.9-18"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1500
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C54",
+    "наименование": {
+      "type": "handle",
+      "value": "Лепестки в пускные Ямаха 30"
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C55",
+    "наименование": {
+      "type": "handle",
+      "value": "Винт мотор Болотоход"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 4500
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C56",
+    "наименование": {
+      "type": "handle",
+      "value": "Решётка водозаборника 05А"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 70
+    },
+    "цена_бир": {
+      "value": "1.8",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-plm",
+    "address_of_cell": "C57",
+    "наименование": {
+      "type": "handle",
+      "value": "Блок CDI T-30"
+    },
+    "цена_бир": {
+      "type": "handle",
+      "value": 5000
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C3",
+    "наименование": {
+      "type": "handle",
+      "value": "APEX 10"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 39500
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C4",
+    "наименование": {
+      "type": "handle",
+      "value": "APEX 125"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 48300
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C5",
+    "наименование": {
+      "type": "handle",
+      "value": "Кросс TCX 125"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 49000
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C6",
+    "наименование": {
+      "type": "handle",
+      "value": "CRF125"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 51300
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C7",
+    "наименование": {
+      "type": "handle",
+      "value": "WRX125"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 49800
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C8",
+    "наименование": {
+      "type": "handle",
+      "value": "МХ125Е"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 56700
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C9",
+    "наименование": {
+      "type": "handle",
+      "value": "Кросс Enduro EX250 LT"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 73500
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "2шт в пути"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C10",
+    "наименование": {
+      "type": "handle",
+      "value": "Кросс Enduro EX250 ST"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 80300
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "2шт в пути"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C11",
+    "наименование": {
+      "type": "handle",
+      "value": "Forester 200 LITE птс"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 59300
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C12",
+    "наименование": {
+      "type": "handle",
+      "value": "Forester  200"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 69600
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C13",
+    "наименование": {
+      "type": "handle",
+      "value": "Кросс 250 CRF  Рама с прогресией 167 дас"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 80100
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C14",
+    "наименование": {
+      "type": "handle",
+      "value": "Кросс WRX 250 KT c ПТС 172 двс 21лс прогресия,"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 91200
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C15",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотоцикл Кросс FC250 (2020 г.) с ПТС"
+    },
+    "код_товара": {
+      "type": "handle",
+      "value": "0к"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 97000
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "2шт в пути"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C16",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотоцикл Кросс XR250 ENDURO (172FMM) (2020 г.)"
+    },
+    "код_товара": {
+      "type": "handle",
+      "value": "0к"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 93600
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "2шт в пути"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C17",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотоцикл Кросс TT250 (172FMM) (2020 г.) с ПТС"
+    },
+    "код_товара": {
+      "type": "handle",
+      "value": "0к"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 110500
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "1шт в пути"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C18",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотоцикл Кросс XT250 hs (172FMM) (2020 г.) с ПТС"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 97100
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "1шт в пути"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C19",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотоцикл FLASH 200 (2020 г.) дорожник"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 70600
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C20",
+    "наименование": {
+      "type": "handle",
+      "value": "APEX125E"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 50900
+    },
+    "себестоимось": {
+      "value": "2000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C21",
+    "наименование": {
+      "type": "handle",
+      "value": "TCX125E"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 52700
+    },
+    "себестоимось": {
+      "value": "2000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C22",
+    "наименование": {
+      "type": "handle",
+      "value": "Кросс Vtnto 50cc"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 22000
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "1шт в пути"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C23",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотоцикл Racer RC250GY-C2A Panther Lite "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 74500
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C24",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотоцикл Racer RC250GY-C2A Panther   "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 80900
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C25",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотоцикл Racer RC300GY-8X Panter"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 89000
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C26",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотоцикл Racer SR-X2 Cross X2"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 120000
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C27",
+    "наименование": {
+      "type": "handle",
+      "value": "RC150T-15F Flame"
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C28",
+    "наименование": {
+      "type": "handle",
+      "value": "Скутер Corsa - 150cc без птс"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 42900
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C29",
+    "наименование": {
+      "type": "handle",
+      "value": "Мопед Альфа 11"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 32000
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C30",
+    "наименование": {
+      "type": "handle",
+      "value": "Мопед Альфа RX11"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 36500
+    },
+    "себестоимось": {
+      "value": "2000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C31",
+    "наименование": {
+      "type": "handle",
+      "value": "Мопед Альфа RX LUX 11"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 40900
+    },
+    "себестоимось": {
+      "value": "2000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C32",
+    "наименование": {
+      "type": "handle",
+      "value": "Мопед Альфа Off road"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 44000
+    },
+    "себестоимось": {
+      "value": "2000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "4шт в пути"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C33",
+    "наименование": {
+      "type": "handle",
+      "value": "Мопед Альфа Турист"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 41500
+    },
+    "себестоимось": {
+      "value": "2000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.3",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C35",
+    "наименование": {
+      "type": "handle",
+      "value": "ATV 125 Fox"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 52600
+    },
+    "себестоимось": {
+      "value": "2000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C36",
+    "наименование": {
+      "type": "handle",
+      "value": "ATV 200 "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 89900
+    },
+    "себестоимось": {
+      "value": "2000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C38",
+    "наименование": {
+      "type": "handle",
+      "value": "Grizzly 800W "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 26000
+    },
+    "себестоимось": {
+      "value": "2000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C39",
+    "наименование": {
+      "type": "handle",
+      "value": "Raptor 110cc 4T"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 34500
+    },
+    "себестоимось": {
+      "value": "2000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C40",
+    "наименование": {
+      "type": "handle",
+      "value": "Raptor большой 110сс"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 43000
+    },
+    "себестоимось": {
+      "value": "2000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C41",
+    "наименование": {
+      "type": "handle",
+      "value": "D300"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 225000
+    },
+    "себестоимось": {
+      "value": "5000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C42",
+    "наименование": {
+      "type": "handle",
+      "value": "Grizzly 125cc 4T на литье"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 55000
+    },
+    "себестоимось": {
+      "value": "2000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C43",
+    "наименование": {
+      "type": "handle",
+      "value": "Grizzly 200cc 4T вариатор"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 92000
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C44",
+    "наименование": {
+      "type": "handle",
+      "value": "Grizzly 250cc 4T на цепи"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 93000
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C45",
+    "наименование": {
+      "type": "handle",
+      "value": "Grizzly 250cc 4T на кардане"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 133000
+    },
+    "себестоимось": {
+      "value": "3000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C46",
+    "наименование": {
+      "type": "handle",
+      "value": "D400 EFI"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 277000
+    },
+    "себестоимось": {
+      "value": "6000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "moto",
+    "address_of_cell": "C47",
+    "наименование": {
+      "type": "handle",
+      "value": "550L"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 340000
+    },
+    "себестоимось": {
+      "value": "6000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.2",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C3",
+    "наименование": {
+      "type": "handle",
+      "value": "АКБ  СТ 1204"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 857
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C4",
+    "наименование": {
+      "type": "handle",
+      "value": "АКБ  СТ 1208"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1512
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C5",
+    "наименование": {
+      "type": "handle",
+      "value": "АКБ  СТ 1209"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1699
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C6",
+    "наименование": {
+      "type": "handle",
+      "value": "АКБ  СТ 1205.1"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 939
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C7",
+    "наименование": {
+      "type": "handle",
+      "value": "Защита рук крас оранж син зел"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 351
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C8",
+    "наименование": {
+      "type": "handle",
+      "value": "Защита рук метал  CH--003 метал вставка"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1062
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C9",
+    "наименование": {
+      "type": "handle",
+      "value": "Защита рук  FG-SP-C 010"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 146
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C10",
+    "наименование": {
+      "type": "handle",
+      "value": "Защита рук FG-SP-C 015 метал вставка"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 940
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C11",
+    "наименование": {
+      "type": "handle",
+      "value": "Зеркало D10"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 210
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C12",
+    "наименование": {
+      "type": "handle",
+      "value": "Зеркало D8"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 140
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C13",
+    "наименование": {
+      "type": "handle",
+      "value": "Кофр JK2013"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 2158
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C14",
+    "наименование": {
+      "type": "handle",
+      "value": "Кофр JK2016 под два шлема"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 2995
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C15",
+    "наименование": {
+      "type": "handle",
+      "value": "Крепление для зеркал 10мм"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 176
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C16",
+    "наименование": {
+      "type": "handle",
+      "value": "Сетка багажная мото"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 89
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C17",
+    "наименование": {
+      "type": "handle",
+      "value": "Шлем Hizer 105 детский"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1273
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C18",
+    "наименование": {
+      "type": "handle",
+      "value": "Шлем Hizer 211 подростковый"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 2234
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C19",
+    "наименование": {
+      "type": "handle",
+      "value": "Шлем Hizer B208 "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 3326
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C20",
+    "наименование": {
+      "type": "handle",
+      "value": "Шлем Hizer J222"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1962
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C21",
+    "наименование": {
+      "type": "handle",
+      "value": "Шлем Hizer J5311"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1987
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C22",
+    "наименование": {
+      "type": "handle",
+      "value": "Шлем Hizer J6801"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 2260
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C23",
+    "наименование": {
+      "type": "handle",
+      "value": "Шлем Hizer J6802 ?"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 2493
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C24",
+    "наименование": {
+      "type": "handle",
+      "value": "Каска обычная эконом"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 650
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C25",
+    "наименование": {
+      "type": "handle",
+      "value": "Очьки мотокросс YH-16-51"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 785
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C26",
+    "наименование": {
+      "type": "handle",
+      "value": "Очьки мотокросс YH-67-94"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 796
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C27",
+    "наименование": {
+      "type": "handle",
+      "value": "Очьки мотокросс YH-90-42"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 806
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C28",
+    "наименование": {
+      "type": "handle",
+      "value": "Очьки мотокросс YH-137-08"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 781
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C29",
+    "наименование": {
+      "type": "handle",
+      "value": "Шлем Hizer 620 (xl)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 9284
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C30",
+    "наименование": {
+      "type": "handle",
+      "value": "Шлем Hizer B566"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 2952
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C31",
+    "наименование": {
+      "type": "handle",
+      "value": "Шлем Hizer B6196-1"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 3073
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C32",
+    "наименование": {
+      "type": "handle",
+      "value": "Шлем Hizer B6197"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 3024
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C33",
+    "наименование": {
+      "type": "handle",
+      "value": "Кофр JK2011"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1769
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C34",
+    "наименование": {
+      "type": "handle",
+      "value": "Очки мотокрос Nenki NK 1025"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1200
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C35",
+    "наименование": {
+      "type": "handle",
+      "value": "Очьки Мотокрос YH-06"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 600
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C36",
+    "наименование": {
+      "type": "handle",
+      "value": "Очьки Мотокрос YH- 09"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 600
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C37",
+    "наименование": {
+      "type": "handle",
+      "value": "Очьки Мотокрос YH-15-01"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 450
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C38",
+    "наименование": {
+      "type": "handle",
+      "value": "Очьки Мотокрос YH-20"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 550
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C39",
+    "наименование": {
+      "type": "handle",
+      "value": "Очьки Мотокрос YH-81-02"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 700
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C40",
+    "наименование": {
+      "type": "handle",
+      "value": "Перчатки Мото MSC -05"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1800
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C41",
+    "наименование": {
+      "type": "handle",
+      "value": "Фильтр воздушный нулевик"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 200
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C42",
+    "наименование": {
+      "type": "handle",
+      "value": "Фильтрующий Элемент"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 35
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C43",
+    "наименование": {
+      "type": "handle",
+      "value": "Шлем Hizer 212 (S,M, L)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1250
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C44",
+    "наименование": {
+      "type": "handle",
+      "value": "Шлем Hizer 219"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1450
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C45",
+    "наименование": {
+      "type": "handle",
+      "value": "Шлем Hizer 232"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1450
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C46",
+    "наименование": {
+      "type": "handle",
+      "value": "Шлем Hizer 523"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 2350
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C47",
+    "наименование": {
+      "type": "handle",
+      "value": "Шлем Hizer 615"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 2650
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "zip-moto",
+    "address_of_cell": "C48",
+    "наименование": {
+      "type": "handle",
+      "value": "Шлем Hizer B561"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 2300
+    },
+    "себестоимось": {
+      "value": "100",
+      "type": "fixed"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C3",
+    "наименование": {
+      "type": "handle",
+      "value": "Триммер бензиновый BRAIT BR-580 С  (3,4кВт, 3,6 л.с.0,58см, диск 40 Т; леска 2,4) , разъемная штанга"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 4000
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C4",
+    "наименование": {
+      "type": "handle",
+      "value": "Триммер бензиновый BRAIT BR-430 (2,2кВт, 2,8 л.с.0,43см, диск 40 Т; леска 2,4, штанга в разобранном виде"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 3100
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C5",
+    "наименование": {
+      "type": "handle",
+      "value": "Тример бензиновый 4х тактный"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 5300
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C6",
+    "наименование": {
+      "type": "handle",
+      "value": "Тример бензиновый 4х тактный Плюс"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 6650
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C7",
+    "наименование": {
+      "type": "handle",
+      "value": "FORZA 5200\" пила бензиновая цепная"
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C8",
+    "наименование": {
+      "type": "handle",
+      "value": "FORZA 62-20\" 0,325 1,3/1,5 3,1кВт пила бензиновая цепная (2шт/кор)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 3600
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C9",
+    "наименование": {
+      "type": "handle",
+      "value": "Б.п. BRAIT BR-5220 (20', 0,325 1,5 76зв., 3,3л.с.) (2шт/кор)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 3500
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C10",
+    "наименование": {
+      "type": "handle",
+      "value": "Б.п. BRAIT BR-4518 (18', 0,325 1,5 72з.в., 2,5л.с.) (2шт/кор)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 3150
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C11",
+    "наименование": {
+      "type": "handle",
+      "value": "Б.п. BRAIT BR-4515B "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 3800
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C12",
+    "наименование": {
+      "type": "handle",
+      "value": "Б.п. BRAIT BR-4518B "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 4100
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C13",
+    "наименование": {
+      "type": "handle",
+      "value": "Б.п. BRAIT BR-5220B "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 3900
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C14",
+    "наименование": {
+      "type": "handle",
+      "value": "Почвофрезы 9 шлицов 26 мм"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1950
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C17",
+    "наименование": {
+      "type": "handle",
+      "value": "Газонокосилка бензиновая BRAIT D3543"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 9800
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C18",
+    "наименование": {
+      "type": "handle",
+      "value": "Газонокосилка бензиновая BRAIT Z6553 SP"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 15800
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C19",
+    "наименование": {
+      "type": "handle",
+      "value": "Газонокосилка бензиновая BRAIT Z4548S"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 13600
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C20",
+    "наименование": {
+      "type": "handle",
+      "value": "Пила цепная Электрическая BR-220"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 2700
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C21",
+    "наименование": {
+      "type": "handle",
+      "value": "Пила цепная Электрическая BR-220S"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 4200
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C22",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотобур FORZA FZ-52cc"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 600
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C23",
+    "наименование": {
+      "type": "handle",
+      "value": "ДВС 6,5-7лс"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 4000
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C24",
+    "наименование": {
+      "type": "handle",
+      "value": "ДВС 7лс шлицевой"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 6500
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C25",
+    "наименование": {
+      "type": "handle",
+      "value": "ДВС 15лс"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 12800
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C27",
+    "наименование": {
+      "type": "handle",
+      "value": "Культиватор 65 А"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 14500
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C28",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотоблок 7лс ременный Дюралевый редуктор колеса на 8"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 16000
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C29",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотоблок 7лс ременный Чугунный редуктор колеса 10"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 16500
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C30",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотоблок 7лс ременный 3 скорости в пред PRO"
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C31",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотоблок 7лс шестяренчатый редуктор 105/7"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 21800
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C32",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотоблок 7лс шестяренчатый редуктор 3 скорости в пред 105/7 PRO"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 23000
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C33",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотоблок 9лс"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 30500
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C34",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотоблок 15лс 135 GD"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 32000
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C35",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотоблок 9лс PRO  (BR135GB pro)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 32400
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C36",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотоблок 17лс 3 скрости в пред (BR135 GR PRO) PRO"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 35000
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C37",
+    "наименование": {
+      "type": "handle",
+      "value": "Мтоблок 17лс фрикционы (15)"
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C38",
+    "наименование": {
+      "type": "handle",
+      "value": "Дизельный мотоблок 135 DEB"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 45500
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C39",
+    "наименование": {
+      "type": "handle",
+      "value": "Генератор BR3800-AL"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 10000
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C40",
+    "наименование": {
+      "type": "handle",
+      "value": "Aппорат моющий высокого давления BR-1800C"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 4760
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C41",
+    "наименование": {
+      "type": "handle",
+      "value": "Гениратор BR1500-AL"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 7580
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C42",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотопомпа BR-WP-20"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 5400
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C43",
+    "наименование": {
+      "type": "handle",
+      "value": "Дровокол BL525"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 13800
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "sadovaya-teh",
+    "address_of_cell": "C44",
+    "наименование": {
+      "type": "handle",
+      "value": "Дровокол BL525 S"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 14900
+    },
+    "себестоимось": {
+      "value": "1.05",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C3",
+    "наименование": {
+      "type": "handle",
+      "value": "Телега\"Forza-3М\" МБ Каскад,Ока,Нева  500кг  2-мест (тормоз, дышло разъемное, съемные оси, колесо 4*10 шоссе)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 10200
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C4",
+    "наименование": {
+      "type": "handle",
+      "value": "Телега\"Forza-4М\" МБ Каскад,Ока,Нева        1-мест. (тормоз, дышло цельное, несъемные оси, колесо 4*10 шоссе)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 9000
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C5",
+    "наименование": {
+      "type": "handle",
+      "value": "Телега\"Forza-5\" МБ Агро 650кг  1-мест. (тормоз, дышло V-образное, рамное, с осями, колесо 19*7*8 шоссе широкое)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 13700
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C6",
+    "наименование": {
+      "type": "handle",
+      "value": "Телега\"Квадро\"для квадроцикла  300кг   (сцепной автомобильный узел, колесо 19*7*8 шоссе широкое)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 11000
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C7",
+    "наименование": {
+      "type": "handle",
+      "value": "ЭКО Лопата-отвал со сцепкой"
+    },
+    "код_товара": {
+      "type": "handle",
+      "value": "ЭЛОМБ 30.350.800"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C8",
+    "наименование": {
+      "type": "handle",
+      "value": " Лопата-отвал МБ Форза, Ока, Каскад, Салют (обрезиненый нож)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 2200
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C9",
+    "наименование": {
+      "type": "handle",
+      "value": "Вибрационная картофелекопалка МБ под ременной привод (на пневматических колесах)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 10800
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C10",
+    "наименование": {
+      "type": "handle",
+      "value": "Вибрационная картофелекопалка Мб под вал отбора мощности(на пневматических колесах)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 12000
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C11",
+    "наименование": {
+      "type": "handle",
+      "value": "Картофелесажалка МБ на грунтозацепах"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 7250
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C12",
+    "наименование": {
+      "type": "handle",
+      "value": "Плуг"
+    },
+    "код_товара": {
+      "type": "handle",
+      "value": "ППМ.10.420.160"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 700
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C13",
+    "наименование": {
+      "type": "handle",
+      "value": "Плуг МК Кайман"
+    },
+    "код_товара": {
+      "type": "handle",
+      "value": "ПКВ.10.500.250"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 800
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C14",
+    "наименование": {
+      "type": "handle",
+      "value": "Плуг без сцепки (усиленный)"
+    },
+    "код_товара": {
+      "type": "handle",
+      "value": "ПМБК.12.500.220"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 950
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C15",
+    "наименование": {
+      "type": "handle",
+      "value": "Окучник регулируемый, распашной"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 700
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C16",
+    "наименование": {
+      "type": "handle",
+      "value": "ЭКО Окучник-пропольник МБ Форза, Ока, Каскад, Нева, дисковый, регулируемый, на траверсе, без сцепки"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1900
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C17",
+    "наименование": {
+      "type": "handle",
+      "value": "ЭКО Окучник МБ дисковый со сцепкой"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1300
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C18",
+    "наименование": {
+      "type": "handle",
+      "value": "Окучник 2-рядный регулируемый распашной без сцепки"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 2150
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C19",
+    "наименование": {
+      "type": "handle",
+      "value": "Окучник траверсный без сцепки"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1170
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C20",
+    "наименование": {
+      "type": "handle",
+      "value": "Окучник дисковый траверсный регулируемый со сцепкой"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1700
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C21",
+    "наименование": {
+      "type": "handle",
+      "value": "Адаптер задний МБ (колесо 4*10 шоссе)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 8500
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C22",
+    "наименование": {
+      "type": "handle",
+      "value": "Картофелекопалка со сцепкой"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 770
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C23",
+    "наименование": {
+      "type": "handle",
+      "value": "Пропольник МБ однорядный \"Еж\" без сцепки"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1520
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C24",
+    "наименование": {
+      "type": "handle",
+      "value": "Пропольник"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 330
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C25",
+    "наименование": {
+      "type": "handle",
+      "value": "Сцепка в сборе поворотная (кронштейн внутренний)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 614
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C26",
+    "наименование": {
+      "type": "handle",
+      "value": "Комплект для установки двигателя d19mm"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 550
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C27",
+    "наименование": {
+      "type": "handle",
+      "value": "Комплект для установки двигателя d20mm"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 580
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C28",
+    "наименование": {
+      "type": "handle",
+      "value": "Комплект для установки двигателя d25mm"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 550
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C29",
+    "наименование": {
+      "type": "handle",
+      "value": "Грунтозацепы S-24   самоочищающиеся"
+    },
+    "код_товара": {
+      "type": "handle",
+      "value": "ГМБ.S24.380.180"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1000
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C30",
+    "наименование": {
+      "type": "handle",
+      "value": " Грунтозацепы S-24   самоочищающиеся, сквозная втулка"
+    },
+    "код_товара": {
+      "type": "handle",
+      "value": "ГМБУ.S24.445.180"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1200
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C31",
+    "наименование": {
+      "type": "handle",
+      "value": "Грунтозацепы S-24 для окучивания, сплошной обод"
+    },
+    "код_товара": {
+      "type": "handle",
+      "value": "ГМБ.S24.585.120"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1700
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C32",
+    "наименование": {
+      "type": "handle",
+      "value": " Грунтозацепы S-32   самоочищающиеся"
+    },
+    "код_товара": {
+      "type": "handle",
+      "value": "ГМБ.S32.380.180."
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1100
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C33",
+    "наименование": {
+      "type": "handle",
+      "value": " Грунтозацепы S-32   самоочищающиеся, сквозная втулка 250 мм, усиленные спицы"
+    },
+    "код_товара": {
+      "type": "handle",
+      "value": "ГМБУ.S32.445.180.01"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1550
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C34",
+    "наименование": {
+      "type": "handle",
+      "value": "Грунтозацепы S-32 для окучивания, сплошной обод"
+    },
+    "код_товара": {
+      "type": "handle",
+      "value": "ГМБ.S32.585.120"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1770
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C35",
+    "наименование": {
+      "type": "handle",
+      "value": "Удлинители колесных осей S-24/24 "
+    },
+    "код_товара": {
+      "type": "handle",
+      "value": "пар"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 600
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C36",
+    "наименование": {
+      "type": "handle",
+      "value": "Удлинители колесных осей S-32 "
+    },
+    "код_товара": {
+      "type": "handle",
+      "value": "УМБ.S32/S32.475"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 700
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C37",
+    "наименование": {
+      "type": "handle",
+      "value": "Кронштейн МК 80 передний"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 250
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C38",
+    "наименование": {
+      "type": "handle",
+      "value": "Кронштейн МК 75 передний"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 210
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C39",
+    "наименование": {
+      "type": "handle",
+      "value": "Фреза-культиватор МК 75, 80, МБ-105М 7,0 разборная"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 2159
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C40",
+    "наименование": {
+      "type": "handle",
+      "value": "Фреза-культиватор МБ-105, МБ-105М 9.0-15.0, МБД  разборная"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 2200
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C41",
+    "наименование": {
+      "type": "handle",
+      "value": "Грунтозацепы (3 обода) самоочищающиеся"
+    },
+    "код_товара": {
+      "type": "handle",
+      "value": "ГМК.30.310.135"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 850
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C42",
+    "наименование": {
+      "type": "handle",
+      "value": "Сцепка Лили"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 150
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C43",
+    "наименование": {
+      "type": "handle",
+      "value": "Ступица колеса S24 МБ универсальная (4-5 отверстий)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 300
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C44",
+    "наименование": {
+      "type": "handle",
+      "value": "Ступица колеса S32МБ универсальная (4-5 отверстий)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 325
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C45",
+    "наименование": {
+      "type": "handle",
+      "value": "Роторная косилка под ремень"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C46",
+    "наименование": {
+      "type": "handle",
+      "value": "Роторная косилка под ВОМ"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C47",
+    "наименование": {
+      "type": "handle",
+      "value": "Шина на телегу"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C48",
+    "наименование": {
+      "type": "handle",
+      "value": "Шина на 8 мотоблок"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C49",
+    "наименование": {
+      "type": "handle",
+      "value": "Шина на 10 мотоблок"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C50",
+    "наименование": {
+      "type": "handle",
+      "value": "Шина на 12 мотоблок"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C51",
+    "наименование": {
+      "type": "handle",
+      "value": "Шина квадроциклетная мотоблок телга ф-5"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C52",
+    "наименование": {
+      "type": "handle",
+      "value": "Камера 8"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C53",
+    "наименование": {
+      "type": "handle",
+      "value": "камера 10"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 150
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C54",
+    "наименование": {
+      "type": "handle",
+      "value": "камера 12"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 300
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C55",
+    "наименование": {
+      "type": "handle",
+      "value": "Камера квадро"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C56",
+    "наименование": {
+      "type": "handle",
+      "value": "Свеча мотоблок"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C57",
+    "наименование": {
+      "type": "handle",
+      "value": "Масло ДВС мотоблок"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 110
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C58",
+    "наименование": {
+      "type": "handle",
+      "value": "Масло трансмисионное"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 115
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C59",
+    "наименование": {
+      "type": "handle",
+      "value": "Масло 2т"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 100
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C60",
+    "наименование": {
+      "type": "handle",
+      "value": "Трос"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C65",
+    "наименование": {
+      "type": "handle",
+      "value": "Ремень култиватор пер в перед "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 310
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C66",
+    "наименование": {
+      "type": "handle",
+      "value": "Ремень мотоблок ф-70-80 889"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 180
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C67",
+    "наименование": {
+      "type": "handle",
+      "value": "Ремень мотоблок ф-70-80 914"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 180
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C68",
+    "наименование": {
+      "type": "handle",
+      "value": "Рычаг газа кутиватор с тросом в сборе"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 311
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C69",
+    "наименование": {
+      "type": "handle",
+      "value": "Корбюратор 7лс"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C70",
+    "наименование": {
+      "type": "handle",
+      "value": "Корбюратор 9лс"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C71",
+    "наименование": {
+      "type": "handle",
+      "value": "Корбюратор 15лс"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C72",
+    "наименование": {
+      "type": "handle",
+      "value": "Корбюратор 17лс"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C73",
+    "наименование": {
+      "type": "handle",
+      "value": "фильтр 7лс элемент"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 95
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C74",
+    "наименование": {
+      "type": "handle",
+      "value": "фильтр 9лс"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C75",
+    "наименование": {
+      "type": "handle",
+      "value": "фильтр 15"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C76",
+    "наименование": {
+      "type": "handle",
+      "value": "корпус фильтра 7лс"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C77",
+    "наименование": {
+      "type": "handle",
+      "value": "корпус фильтра 9лс"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C78",
+    "наименование": {
+      "type": "handle",
+      "value": "корпус фильтра 15лс"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C79",
+    "наименование": {
+      "type": "handle",
+      "value": "Гусеничный модуль S-32"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 22000
+    },
+    "себестоимось": {
+      "value": "2000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C80",
+    "наименование": {
+      "type": "handle",
+      "value": "Гусеничный модуль S-24 Ремень"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 22000
+    },
+    "себестоимось": {
+      "value": "2000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C81",
+    "наименование": {
+      "type": "handle",
+      "value": "Гусеничный модуль S-24 ВОМ"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 22000
+    },
+    "себестоимось": {
+      "value": "2000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C82",
+    "наименование": {
+      "type": "handle",
+      "value": "Гусеничный модуль круглый вал 31"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 22000
+    },
+    "себестоимось": {
+      "value": "2000",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.6",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zip-sadovaya-teh",
+    "address_of_cell": "C83",
+    "наименование": {
+      "type": "handle",
+      "value": "Ступицы колесные в сборе с подшибникос"
+    }
+  },
+  {
+    "sheetName": "velosipedy",
+    "address_of_cell": "C3",
+    "наименование": {
+      "type": "handle",
+      "value": "Велосипеды КНР 20"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 6000
+    },
+    "себестоимось": {
+      "value": "200",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.35",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "velosipedy",
+    "address_of_cell": "C4",
+    "наименование": {
+      "type": "handle",
+      "value": "Велосипеды КНР 24"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 7500
+    },
+    "себестоимось": {
+      "value": "200",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.35",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "velosipedy",
+    "address_of_cell": "C5",
+    "наименование": {
+      "type": "handle",
+      "value": "Велосипеды КНР 26"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 7500
+    },
+    "себестоимось": {
+      "value": "200",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.35",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "velosipedy",
+    "address_of_cell": "C6",
+    "наименование": {
+      "type": "handle",
+      "value": "Десна Вояж Гент"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 0
+    },
+    "себестоимось": {
+      "value": "200",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.35",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "velosipedy",
+    "address_of_cell": "C7",
+    "наименование": {
+      "type": "handle",
+      "value": "Roliz 20-110"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 6611
+    },
+    "себестоимось": {
+      "value": "200",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.35",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "velosipedy",
+    "address_of_cell": "C8",
+    "наименование": {
+      "type": "handle",
+      "value": "Roliz 20-112"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 7535
+    },
+    "себестоимось": {
+      "value": "200",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.35",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "velosipedy",
+    "address_of_cell": "C9",
+    "наименование": {
+      "type": "handle",
+      "value": "Фет байк 26"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 8000
+    },
+    "себестоимось": {
+      "value": "200",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "velosipedy",
+    "address_of_cell": "C10",
+    "наименование": {
+      "type": "handle",
+      "value": "Двухподвес"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 8000
+    },
+    "себестоимось": {
+      "value": "200",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "velosipedy",
+    "address_of_cell": "C11",
+    "наименование": {
+      "type": "handle",
+      "value": "Горный с железными крыльями"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 7000
+    },
+    "себестоимось": {
+      "value": "200",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.5",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C3",
+    "наименование": {
+      "type": "handle",
+      "value": "Kugoo S3"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 12800
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C4",
+    "наименование": {
+      "type": "handle",
+      "value": "Kugoo S3 pro"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 16500
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C5",
+    "наименование": {
+      "type": "handle",
+      "value": "Kugoo S 1 черный"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 12800
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C6",
+    "наименование": {
+      "type": "handle",
+      "value": "Kugoo M2"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 17200
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C7",
+    "наименование": {
+      "type": "handle",
+      "value": "M4 pro 13ah"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 27700
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C8",
+    "наименование": {
+      "type": "handle",
+      "value": "Rugoo M4 pro 18ah"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 29900
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C9",
+    "наименование": {
+      "type": "handle",
+      "value": "Kugooo G2 pro"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 38900
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C10",
+    "наименование": {
+      "type": "handle",
+      "value": "Kugoo X1"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 27700
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C11",
+    "наименование": {
+      "type": "handle",
+      "value": "Kugoo M2 pro 9 ah ченый серый белый"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 22100
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C12",
+    "наименование": {
+      "type": "handle",
+      "value": "Kugoo G-max "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 31100
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C13",
+    "наименование": {
+      "type": "handle",
+      "value": "Kugoo V1"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 24900
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C14",
+    "наименование": {
+      "type": "handle",
+      "value": "Kugoo Es 3"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 28900
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C15",
+    "наименование": {
+      "type": "handle",
+      "value": "Kugoo HX pro 12,8 ah"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 27200
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C16",
+    "наименование": {
+      "type": "handle",
+      "value": "Kugoo C2"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 39300
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C17",
+    "наименование": {
+      "type": "handle",
+      "value": "Aovo s3 nev"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 12700
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C19",
+    "наименование": {
+      "type": "handle",
+      "value": "Joyor Y5-S"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 29300
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C20",
+    "наименование": {
+      "type": "handle",
+      "value": "Joyor X1"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 22300
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C21",
+    "наименование": {
+      "type": "handle",
+      "value": "joyor F1"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 18200
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C22",
+    "наименование": {
+      "type": "handle",
+      "value": "Joyor  A3"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 18200
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C23",
+    "наименование": {
+      "type": "handle",
+      "value": "Joyor M2"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 20200
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C24",
+    "наименование": {
+      "type": "handle",
+      "value": "joyor H1"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 13200
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C25",
+    "наименование": {
+      "type": "handle",
+      "value": "Joyor G1"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 28200
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C27",
+    "наименование": {
+      "type": "handle",
+      "value": "Kugoo s3 coolco"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 11500
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C29",
+    "наименование": {
+      "type": "handle",
+      "value": "Гироскутер  10,5"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 6900
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C31",
+    "наименование": {
+      "type": "handle",
+      "value": "Kogoo M4 11ah"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 22000
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "eektrotransport",
+    "address_of_cell": "C32",
+    "наименование": {
+      "type": "handle",
+      "value": "Kogoo maxspeed"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 23000
+    },
+    "себестоимось": {
+      "value": "700",
+      "type": "fixed"
+    },
+    "цена_хаб": {
+      "value": "1.33",
+      "type": "percent"
+    },
+    "цена_бир": {
+      "value": "1.4",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C3",
+    "наименование": {
+      "type": "handle",
+      "value": "Автономный отопитель Дизельный"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 8500
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C4",
+    "наименование": {
+      "type": "handle",
+      "value": "Лыжный модуль на мотобуксировщики FORZA 9,0-15 л.с. лыжи металл."
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 15000
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C5",
+    "наименование": {
+      "type": "handle",
+      "value": "Накладка на пластиковую лыжу №2  Yamaha"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 920
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C6",
+    "наименование": {
+      "type": "handle",
+      "value": "Накладка на пластиковую лыжу №3 300 мм Тайга"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 920
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C7",
+    "наименование": {
+      "type": "handle",
+      "value": "Накладка на пластиковую лыжу №12 \"Буран\" (широкая)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 680
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C9",
+    "наименование": {
+      "type": "handle",
+      "value": "Пластиковые накладки для дна саней \"Классика 220\"компл(ПНД.серый)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1200
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "10шт в пути"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C10",
+    "наименование": {
+      "type": "handle",
+      "value": "Сани рыбока Большие"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 620
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "8шт в пути"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C12",
+    "наименование": {
+      "type": "handle",
+      "value": "Сани \"Классика-Макси\""
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 12000
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C13",
+    "наименование": {
+      "type": "handle",
+      "value": "Сани \"Классика -След\""
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 6000
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "5шт в пути"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C14",
+    "наименование": {
+      "type": "handle",
+      "value": "Сани \"Классика 180\" с отбойником "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 7100
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C15",
+    "наименование": {
+      "type": "handle",
+      "value": "Сани \"Классика 220\" Улучшенные"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 10000
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "10шт в пути"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C16",
+    "наименование": {
+      "type": "handle",
+      "value": "Сидение для саней мотобуксировщика \"Средние\""
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 790
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C17",
+    "наименование": {
+      "type": "handle",
+      "value": "Сани класика 180"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 6810
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C18",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотобуксировщик FORZA 15,0 л.с. c электростартером+комплект светового оборудования"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 54201
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C19",
+    "наименование": {
+      "type": "handle",
+      "value": "СНЕГОХОД irbis Tungus 600L"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 200000
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C20",
+    "наименование": {
+      "type": "handle",
+      "value": "Комплект для установки колес на лыжный модуль"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1600
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C21",
+    "наименование": {
+      "type": "handle",
+      "value": "КОЛЕСА широкие Форза 19-7*8М"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 1800
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C22",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотобуксировщик FORZA 17,0 л.с. c электростартером+комплект светового оборудовани"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 61300
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C23",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотобуксировщик FORZA 9 лс укароченный с эл стартером, гусеница 500мм"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 50400
+    },
+    "себестоимось": {
+      "value": "1.07",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "3шт в пути"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C24",
+    "наименование": {
+      "type": "handle",
+      "value": "Снегоход Бурлак -М Егерь 20лс эл.зп, реверс, тормаз"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 122400
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "1шт в пути"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C25",
+    "наименование": {
+      "type": "handle",
+      "value": "Снегоход Бурлак-М Егерь (белый комуфляж)15лс с эл. Запуском. Реверс.Тормаз. Съемный богажник."
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 106400
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C26",
+    "наименование": {
+      "type": "handle",
+      "value": "Снегоход Бурлак-М HUNTER (в сборе с однолыжным модулем) 15лс"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 79600
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C29",
+    "наименование": {
+      "type": "handle",
+      "value": "Мотобуксировщики"
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C30",
+    "наименование": {
+      "type": "handle",
+      "value": "Буксировщик  Бурлак -М2 LFK 15 (Реверс)"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 88050
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "2шт в пути"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C32",
+    "наименование": {
+      "type": "handle",
+      "value": "Бурлак М Экспедитор 20лс  Макс комплект,катки"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 130000
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "4шт в пути"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C35",
+    "наименование": {
+      "type": "handle",
+      "value": "Санный модуль Бурлак-М Практик "
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 6300
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "3шт в пути"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C36",
+    "наименование": {
+      "type": "handle",
+      "value": "Лыжный модуль ЛМ-3 F педний привод"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 17400
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "4шт в пути"
+    }
+  },
+  {
+    "sheetName": "zima",
+    "address_of_cell": "C37",
+    "наименование": {
+      "type": "handle",
+      "value": "Модуль – толкач Экспедитор Стандарт"
+    },
+    "закупочная_цена": {
+      "type": "handle",
+      "value": 13125
+    },
+    "себестоимось": {
+      "value": "1.15",
+      "type": "percent"
+    }
+  },
+  {
+    "sheetName": "shiny",
+    "address_of_cell": "C1",
+    "наименование": {
+      "type": "handle",
+      "value": "Бренд"
+    },
+    "код_товара": {
+      "type": "handle",
+      "value": "Тип"
+    },
+    "цена_хаб": {
+      "type": "handle",
+      "value": "Сезон"
+    },
+    "цена_бир": {
+      "type": "handle",
+      "value": "Кол-во"
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "Модель"
+    }
+  },
+  {
+    "sheetName": "shiny",
+    "address_of_cell": "C2",
+    "наименование": {
+      "type": "handle",
+      "value": "FOMAN"
+    },
+    "код_товара": {
+      "type": "handle",
+      "value": "LT"
+    },
+    "цена_хаб": {
+      "type": "handle",
+      "value": "Зима"
+    },
+    "цена_бир": {
+      "type": "handle",
+      "value": 4
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "W705"
+    }
+  },
+  {
+    "sheetName": "shiny",
+    "address_of_cell": "C9",
+    "наименование": {
+      "type": "handle",
+      "value": "FARROAD"
+    },
+    "код_товара": {
+      "type": "handle",
+      "value": "LT"
+    },
+    "цена_хаб": {
+      "type": "handle",
+      "value": "Зима"
+    },
+    "цена_бир": {
+      "type": "handle",
+      "value": 4
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "FRD75"
+    }
+  },
+  {
+    "sheetName": "shiny",
+    "address_of_cell": "C18",
+    "наименование": {
+      "type": "handle",
+      "value": "FIREMAX"
+    },
+    "цена_хаб": {
+      "type": "handle",
+      "value": "Зима"
+    },
+    "цена_бир": {
+      "type": "handle",
+      "value": 4
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "FM806"
+    }
+  },
+  {
+    "sheetName": "shiny",
+    "address_of_cell": "C32",
+    "наименование": {
+      "type": "handle",
+      "value": "Toledo"
+    },
+    "цена_бир": {
+      "type": "handle",
+      "value": 0
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "BlueSnow"
+    }
+  },
+  {
+    "sheetName": "shiny",
+    "address_of_cell": "C33",
+    "наименование": {
+      "type": "handle",
+      "value": "Winrun"
+    },
+    "цена_бир": {
+      "type": "handle",
+      "value": 0
+    },
+    "заметка": {
+      "type": "handle",
+      "value": "WR12"
+    }
+  },
+  {
+    "sheetName": "shiny",
+    "address_of_cell": "C36",
+    "наименование": {
+      "type": "handle",
+      "value": "ZETA"
+    },
+    "цена_бир": {
+      "type": "handle",
+      "value": 0
+    }
+  }
+]

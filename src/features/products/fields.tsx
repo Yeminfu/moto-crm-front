@@ -7,7 +7,7 @@ export const CustomInput = (props: {
   name: string;
   type: "input" | "number" | "password";
   placeholder?: string;
-  validation: any;
+  validation?: any;
 }) => {
   return (
     <BForm.Group>

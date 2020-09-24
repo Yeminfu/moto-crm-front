@@ -22,7 +22,6 @@ export const Staff = () => {
   const reboot = () => {
     setoading(true);
     API.get_staff().then((response: any) => {
-      //   console.log("response", response.data.staff);
       setStaff(response.data.staff);
       setoading(false);
     });
@@ -101,9 +100,7 @@ export const Staff = () => {
 
 const AddStaff = ({ modal, setModal, roles }: any): any => {
   const shops = useStore(shopss);
-  const onSubmit = (values: any) => {
-    API.add_user(values).then(() => console.log("ok"));
-  };
+  const onSubmit = (values: any) => {};
   const required = (value: any) => (value ? undefined : "Required");
   return (
     <>

@@ -24,6 +24,7 @@ export const Table = ({ reportData }: any) => (
               ))
             )}
           </tr>
+
           <tr>
             {reportData[0].map((x: any) =>
               x.head_rows[2].map((y: any, i: number) => (

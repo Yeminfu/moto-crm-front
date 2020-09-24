@@ -20,7 +20,6 @@ const required = (value: any) => (value ? undefined : "Required");
 export const CreateShop = () => {
   useEffect(() => {}, []);
   const onSubmit = (values: productType) => {
-    console.log(values);
     API.add_shop(values);
   };
   return (

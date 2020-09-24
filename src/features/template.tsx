@@ -88,6 +88,7 @@ const Menu = createComponent(categories, (props: any, state: any) => {
         className="flex-column navbar-inverse"
       >
         {[
+          { text: "Excel импорт", href: "/excel" },
           { text: "Годовой отчет", href: "/report" },
           { text: "Создать товар", href: "/create-product" },
           { text: "Создать категорию", href: "/create-category" },

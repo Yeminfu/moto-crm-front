@@ -26,7 +26,6 @@ export const CreateProduct = () => {
   const shops = useStore(sho);
   const categories = useStore(cats);
   const onSubmit = (values: productType, form: any) => {
-    console.log({ values, form });
     API.add_products(values).then((response) => {
       Swal.fire({
         title: "Успех!",
