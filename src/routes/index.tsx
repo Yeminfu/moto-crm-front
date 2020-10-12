@@ -5,6 +5,7 @@ import { YearReport } from "../features/year-report";
 import { ApiChecker } from "../features/ApiChecker";
 import { CreateProduct } from "../features/CreateProduct";
 import { Products } from "../features/products";
+import { ArchiveProducts } from "../features/ArchiveProducts";
 import { CreateCategory } from "../features/CreateCategory";
 import { Staff } from "../features/Staff";
 import { ProtectedRoute } from "./ProtectedRoute";
@@ -12,6 +13,8 @@ import ProtectedAuthRoute from "./ProtectedAuthRoute";
 import { Dashboard } from "../features/Dashboard";
 import { CreateShop } from "../features/CreateShop";
 import { ExcelImport } from "../features/excel/import";
+
+import { SumInProducts } from "../features/SumInProducts";
 
 export const Routes = () => (
   <>
@@ -41,6 +44,8 @@ export const Routes = () => (
             { path: "/products/:id", component: <Products /> },
             { path: "/staff", component: <Staff /> },
             { path: "/excel", component: <ExcelImport /> },
+            { path: "/in-products", component: <SumInProducts /> },
+            { path: "/archive-products", component: <ArchiveProducts /> },
           ].map((route: any) => (
             <Route
               key={route.path}

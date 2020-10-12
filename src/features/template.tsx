@@ -6,6 +6,8 @@ import { createStore, createEvent } from "effector";
 import { createComponent } from "effector-react";
 import { useLocation } from "react-router-dom";
 import { logout } from "./Login";
+import { $auth } from "./Login";
+import { useStore } from "effector-react";
 
 const setCategories = createEvent<any>();
 export const categories = createStore<any>([]).on<any>(
@@ -23,6 +25,7 @@ interface categoryType {
 
 const Menu = createComponent(categories, (props: any, state: any) => {
   let location = useLocation();
+  const { user } = useStore<any>($auth);
   useEffect(() => {
     API.get_shops().then((response) => {
       setShops(response.data?.shops);
@@ -88,12 +91,21 @@ const Menu = createComponent(categories, (props: any, state: any) => {
         className="flex-column navbar-inverse"
       >
         {[
-          { text: "Excel импорт", href: "/excel" },
-          { text: "Годовой отчет", href: "/report" },
+          ...(() => {
+            if (user?.role === "1") {
+              return [
+                // { text: "Excel импорт", href: "/excel" },
+                { text: "Архив", href: "/archive-products" },
+                { text: "Сумма в товаре", href: "/in-products" },
+                { text: "Годовой отчет", href: "/report" },
+                { text: "Создать магазин", href: "/create-shop" },
+                { text: "Штат", href: "/staff" },
+              ];
+            }
+            return [];
+          })(),
           { text: "Создать товар", href: "/create-product" },
           { text: "Создать категорию", href: "/create-category" },
-          { text: "Создать магазин", href: "/create-shop" },
-          { text: "Штат", href: "/staff" },
           // { text: "Товары", href: "/products" },
         ].map((x: any, i: any) => (
           <Nav.Item key={i}>

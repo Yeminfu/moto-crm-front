@@ -11,9 +11,5 @@ export const convertXLSXToJSON = (wb: fnType) => {
     name_en: slugify(sheetName),
     data: sheetWorker(wb.Sheets[sheetName]),
   }));
-  //   console.log(1, sheets);
-  //   console.log(2, Array.from(wb.Sheets));
-
-  //   const convertedSHeets = sheets.map((sheet) => sheetWorker(sheet));
   return sheets;
 };

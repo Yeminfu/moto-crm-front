@@ -41,9 +41,6 @@ export const Products = () => {
   return (
     <div>
       <Button onClick={() => addProducts(0)}>import </Button>
-      {console.log(
-        JSON.stringify(Array.from(new Set(products.map((x) => x.sheetName))))
-      )}
     </div>
   );
 };

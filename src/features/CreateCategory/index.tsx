@@ -50,8 +50,6 @@ export const CreateCategory = () => {
           mutators={{
             setPrice: (args, state, utils) => {
               utils.changeValue(state, "id", () => {
-                // console.log(args[0]);
-
                 return slugify(args);
               });
             },

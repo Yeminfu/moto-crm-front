@@ -122,9 +122,6 @@ export const ExcelImport = () => {
                         ...v,
                         data: convert(v),
                       }));
-                      console.log(data);
-
-                      // setSheetsJSON(data);
                       API.update_sheets(JSON.stringify(data));
                     });
                   }}

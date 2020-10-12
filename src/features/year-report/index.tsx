@@ -87,9 +87,11 @@ export const YearReport = (props: any) => {
                   <th> склад {shop.id}</th>
                 ))}
                 <th rowSpan={3}>Сумма в товаре</th>
-                {more?.shops.map((shop) => (
+                <th rowSpan={3}>Закупочная цена</th>
+                <th rowSpan={3}>Себестоимость</th>
+                {/* {more?.shops.map((shop) => (
                   <th> Розничная цена {shop.id}</th>
-                ))}
+                ))} */}
                 {more?.shops.map((shop) => (
                   <th> Продано за год {shop.id}</th>
                 ))}
@@ -99,7 +101,7 @@ export const YearReport = (props: any) => {
                       <>
                         {more?.shops?.map((shop) => (
                           <th>
-                            Продано в {dayjs(i + 1, "M").format("MMM")}{" "}
+                            Продано в {dayjs(`${i + 1}`, "M").format("MMM")}{" "}
                             {shop.id}
                           </th>
                         ))}
@@ -107,60 +109,8 @@ export const YearReport = (props: any) => {
                     ))}
                   </>
                 )}
-                {/* {disableMonth && (
-                  <th
-                    rowSpan={1}
-                    colSpan={
-                      12 *
-                      (() => {
-                        const val = more?.shops.length;
-                        return typeof val === "number" ? val : 1;
-                      })()
-                    }
-                  >
-                    Продано по месяцам
-                    {JSON.stringify(more?.shops, null, 2)}
-                  </th>
-                )} */}
-                {/* udo */}
-                {/* <th rowSpan={1}>Продано за год</th> */}
               </tr>
-              <tr>
-                {/*                 
-                {reportData[0]?.retail_prices.map(
-                  (price_item: any, i: number) => (
-                    <th>{price_item.shop_id}</th>
-                  )
-                )}
-                {disableMonth && (
-                  <>
-                    {reportData[0]?.sales.map(
-                      (
-                        sales_item: {
-                          month: number;
-                          data: {
-                            id: string;
-                          }[];
-                        },
-                        i: number
-                      ) => (
-                        <>
-                          {sales_item.data.map((shop, i: number) => (
-                            <th>
-                              {dayjs(`${sales_item.month}`, "M").format("MMM")}
-                              <br />
-                              {shop.id}
-                            </th>
-                          ))}
-                        </>
-                      )
-                    )}
-                  </>
-                )}
-                {reportData[0]?.sales_per_year.map((shop: any, i: number) => (
-                  <th>{shop.id}</th>
-                ))} */}
-              </tr>
+              <tr></tr>
             </thead>
             <tbody>
               {reportData.map(
@@ -169,7 +119,7 @@ export const YearReport = (props: any) => {
                   category_id: string;
                   name: string;
                   code: string;
-                  purchase_price: string;
+                  purchase_price: number;
                   image: string;
                   cost_type: string;
                   cost_value: string;
@@ -200,6 +150,7 @@ export const YearReport = (props: any) => {
                     sales_sum: number;
                   }[];
                   sum_in_product: string | number;
+                  cost_price: number;
                 }) => (
                   <tr>
                     <td title="id">{product.id}</td>
@@ -225,20 +176,24 @@ export const YearReport = (props: any) => {
 
                     <td title="сумма в товаре">
                       {typeof product.sum_in_product === "number" &&
-                        Math.round(product.sum_in_product)}{" "}
+                        Math.round(
+                          product.sum_in_product
+                        ).toLocaleString()}{" "}
                       ₽
                     </td>
-                    {product.retail_prices.map((price_item) => (
-                      <td title={`розничная цена ${price_item.shop_id}`}>
-                        {Math.round(price_item.retail_price)} ₽
-                      </td>
-                    ))}
+                    <td title="Закупочная цена">
+                      {Math.round(product.purchase_price).toLocaleString()}
+                    </td>
+                    <td title="Себестоимость">
+                      {Math.round(product.cost_price).toLocaleString()}
+                    </td>
                     {product.sales_per_year.map((shop, i: number) => (
                       <td
                         style={{ whiteSpace: "nowrap" }}
                         title={`продаж за год в ${shop.name}`}
                       >
-                        {shop.sales_count} / {shop.sales_count} ₽
+                        {shop.sales_count} /{" "}
+                        {shop.sales_sum ? shop.sales_sum.toLocaleString() : 0} ₽
                       </td>
                     ))}
                     {disableMonth &&
@@ -248,9 +203,12 @@ export const YearReport = (props: any) => {
                             <td
                               style={{ whiteSpace: "nowrap" }}
                               key={i}
-                              title={`продано за ${month} в ${shop.name}`}
+                              title={`продано за ${dayjs(
+                                `${month.month}`,
+                                "M"
+                              ).format("MMM")} в ${shop.name}`}
                             >
-                              {shop.counts} / {shop.sums} ₽
+                              {shop.counts} / {shop.sums.toLocaleString()} ₽
                             </td>
                           ))}
                         </>
@@ -271,27 +229,22 @@ export const YearReport = (props: any) => {
                 <td>
                   {(() => {
                     const val = more?.sum_in_all_products;
-                    return typeof val === "number" ? Math.round(val) : "";
+                    return typeof val === "number"
+                      ? Math.round(val).toLocaleString()
+                      : "";
                   })()}
                 </td>
               </tr>
             </tbody>
           </Table>
-          {/* {view ? (
-            <Table reportData={view} />
-          ) : (
-            "Нет данных (возможно в категории нет товаров)"
-          )} */}
         </Styled>
       )}
-      {/* <pre>{JSON.stringify(reportData, null, " ")}</pre> */}
     </Template>
   );
 };
 
 const Styled = styled.div`
   width: 100%;
-  overflow-x: scroll;
   .table_more {
     width: auto;
     white-space: nowrap;
@@ -299,6 +252,9 @@ const Styled = styled.div`
   thead {
     overflow-y: auto;
     height: 100px;
+  }
+  tbody {
+    overflow-x: scroll;
   }
   th {
     position: sticky;

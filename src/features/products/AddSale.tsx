@@ -5,16 +5,32 @@ import { CustomInput, CustomSelect } from "./fields";
 import { validation } from "../helpers/validation";
 import { OnChange } from "react-final-form-listeners";
 import { API } from "../../api";
+import Swal from "sweetalert2";
 
 export const AddSale = ({
   modalAddSale,
   setModalAddSale,
   responseData,
+  reload,
 }: any): any => {
   const onSubmit = (values: any) => {
     API.add_sale(values).then((response) => {
       if (response?.data?.success) {
-        setModalAddSale(false);
+        Swal.fire({
+          title: "Успешно!",
+          icon: "success",
+          confirmButtonText: "Ок",
+        }).then(() => {
+          setModalAddSale(false);
+          reload();
+        });
+      } else {
+        Swal.fire({
+          title: "Ошибка!",
+          icon: "error",
+          text: JSON.stringify(response?.data?.errors),
+          confirmButtonText: "Ок",
+        });
       }
     });
   };
@@ -30,43 +46,16 @@ export const AddSale = ({
             saler_id: 1,
             count: 1,
             sum: (() => {
-              const data = responseData?.prices?.find(
+              const sum = modalAddSale?.product?.prices?.find(
                 (price: { product_id: any; shop_id: any }) =>
-                  price.product_id === modalAddSale?.product?.id &&
                   price.shop_id === city
-              );
-              return data;
-              // return <pre>{JSON.stringify(data, null, " ")}</pre>;
-              // if (data) {
-              //   const { price_type, price_count } = data;
-              //   switch (price_type) {
-              //     case "percent":
-              //       return (
-              //         Number(product.purchase_price) *
-              //         Number(price_count)
-              //       );
-              //     case "fix":
-              //       return (
-              //         Number(product.purchase_price) +
-              //         Number(price_count)
-              //       );
-              //     case "handle":
-              //       return Number(price_count);
-              //   }
-
-              // const val = responseData?.prices?.find(
-              //   (price: { product_id: any; shop_id: any }) =>
-              //     price.product_id === modalAddSale?.product?.id &&
-              //     price.shop_id === city
-              // )?.sum;
-              // if (true) {
-              //   return val;
-              // }
+              )?.price;
+              return sum ? Math.round(sum) : 0;
             })(),
           }}
           mutators={{
             setPrice: (args, state, utils) => {
-              utils.changeValue(state, "sum", () => args);
+              utils.changeValue(state, "sum", () => args[0]);
             },
           }}
           render={({ form, handleSubmit, values }) => (
@@ -75,7 +64,6 @@ export const AddSale = ({
                 <Modal.Title>Продать {modalAddSale?.product?.name}</Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                <pre>{JSON.stringify({ values }, null, " ")}</pre>
                 <CustomSelect
                   name="shop_id"
                   lable="Магазин"
@@ -88,44 +76,18 @@ export const AddSale = ({
                 />
                 <OnChange name="shop_id">
                   {(shop_id) => {
-                    const val = responseData?.prices?.find(
+                    const price = modalAddSale?.product?.prices?.find(
                       (price: { product_id: any; shop_id: any }) =>
-                        price.product_id === modalAddSale?.product?.id &&
                         price.shop_id === shop_id
-                    )?.sum;
-                    form.mutators.setPrice(
-                      val ? Number(val) * Number(values.count) : 0
-                    );
+                    )?.price;
+                    const count = values.count;
+                    const val = price
+                      ? Math.round(price) * Math.round(count)
+                      : 0;
+
+                    form.mutators.setPrice(val);
                   }}
                 </OnChange>
-                {/* <Field name="shop_id">
-                  {(props) => (
-                    <BForm.Group>
-                      <BForm.Label>Магазин</BForm.Label>
-                      <BForm.Control as="select" {...props.input}>
-                        {responseData?.shops?.map(
-                          (shop: { name: string; id: string }) => (
-                            <option key={shop.name} value={shop.id}>
-                              {shop.name}
-                            </option>
-                          )
-                        )}
-                      </BForm.Control>
-                      <OnChange name="shop_id">
-                        {(shop_id) => {
-                          const val = responseData?.prices?.find(
-                            (price: { product_id: any; shop_id: any }) =>
-                              price.product_id === modalAddSale?.product?.id &&
-                              price.shop_id === shop_id
-                          )?.sum;
-                          form.mutators.setPrice(
-                            val ? Number(val) * Number(values.count) : 0
-                          );
-                        }}
-                      </OnChange>
-                    </BForm.Group>
-                  )}
-                </Field> */}
                 <CustomInput
                   name="count"
                   type="number"
@@ -135,37 +97,17 @@ export const AddSale = ({
                 />
                 <OnChange name="count">
                   {(value) => {
-                    const price = responseData?.prices?.find(
-                      (price: { product_id: any; shop_id: any }) =>
-                        price.product_id === modalAddSale?.product?.id &&
-                        price.shop_id === values.shop_id
-                    )?.sum;
-                    form.mutators.setPrice(Number(price) * Number(value));
+                    const prices = modalAddSale?.product?.prices;
+                    const shop_id = values.shop_id;
+                    const found = prices?.find(
+                      (price_item: { shop_id: string }) =>
+                        price_item.shop_id === shop_id
+                    );
+                    const found_price = found ? Math.round(found.price) : 0;
+                    const newPrice = found_price * Number(value);
+                    form.mutators.setPrice(newPrice);
                   }}
                 </OnChange>
-                {/* <Field name="count">
-                  {(props) => (
-                    <BForm.Group>
-                      <BForm.Label>Количество</BForm.Label>
-                      <FormControl
-                        placeholder="shop_id"
-                        aria-describedby="basic-addon1"
-                        type="number"
-                        {...props.input}
-                      />
-                      <OnChange name="count">
-                        {(value) => {
-                          const price = responseData?.prices?.find(
-                            (price: { product_id: any; shop_id: any }) =>
-                              price.product_id === modalAddSale?.product?.id &&
-                              price.shop_id === values.shop_id
-                          )?.sum;
-                          form.mutators.setPrice(Number(price) * Number(value));
-                        }}
-                      </OnChange>
-                    </BForm.Group>
-                  )}
-                </Field> */}
                 <CustomInput
                   name="sum"
                   type="number"
@@ -173,20 +115,6 @@ export const AddSale = ({
                   placeholder=""
                   validation={validation.required}
                 />
-                {/* <Field name="sum">
-                    {(props) => (
-                      <BForm.Group>
-                        <BForm.Label>Сумма</BForm.Label>
-                        <FormControl
-                          placeholder="shop_id"
-                          aria-describedby="basic-addon1"
-                          type="number"
-                          {...props.input}
-                          readOnly
-                        />
-                      </BForm.Group>
-                    )}
-                  </Field> */}
               </Modal.Body>
               <Modal.Footer>
                 <Button

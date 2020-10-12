@@ -68,7 +68,7 @@ export const Filter = ({ filterHandle }: any) => {
                   )}
                 </Field>
                 <Button type="submit" size="sm">
-                  Отправить
+                  Сформировать
                 </Button>
               </Bform>
             )}

@@ -1,45 +1,43 @@
 import React, { useState, useEffect } from "react";
-import { Template, categories as cats } from "../template";
+import { Template  } from "../template";
 import { useParams } from "react-router-dom";
 import { API } from "../../api";
 import { Table as Btable, Button, Spinner } from "react-bootstrap";
-import { useStore } from "effector-react";
-import { EditProduct } from "./EditProduct";
-import { AddSale } from "./AddSale";
+// import { useStore } from "effector-react";
+// import { EditProduct } from "./EditProduct";
+// import { AddSale } from "./AddSale";
 import styled from "styled-components";
-import { FilterInProducts } from "../FilterInProducts";
-import { $auth } from "../Login";
+// import { FilterInProducts } from "../FilterInProducts";
+// import { $auth } from "../Login";
 
-export const Products = () => {
+export const ArchiveProducts = () => {
   const { id } = useParams();
   const [products, setProducts] = useState<any>([]);
   const [responseData, setResponseData] = useState<any>([]);
-  const [modalAddSale, setModalAddSale] = useState<any>();
-  const [parameters, setParameters] = useState<{ product_name: string }>();
-  const [modalEditProduct, setModalEditProduct] = useState<any>();
+  // const [modalAddSale, setModalAddSale] = useState<any>();
+  // const [parameters, setParameters] = useState<{ product_name: string }>();
+  // const [modalEditProduct, setModalEditProduct] = useState<any>();
   const [loading, setLoading] = useState<any>();
-  const categories = useStore(cats);
-  const auth = useStore<any>($auth);
+  // const categories = useStore(cats);
+  // const auth = useStore<any>($auth);
 
-  const get_products = (product_name?: string) => {
+  const get_products = () => {
     setLoading(true);
-    API.get_products({ category: id, product_name }).then((response) => {
+    API.get_archive_products().then((response) => {
       setProducts(response.data.products);
       setResponseData(response.data);
       setLoading(false);
     });
   };
 
-  useEffect(() => {
-    if (parameters) {
-      get_products(parameters.product_name);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [parameters]);
+  // useEffect(() => {
+  //   if (parameters) {
+  //     get_products();
+  //   }
+  // }, [parameters]);
 
   useEffect(() => {
     get_products();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   type dsa = "";
@@ -131,14 +129,18 @@ export const Products = () => {
                   <Button
                     variant="primary"
                     onClick={() => {
-                      setModalAddSale({ product });
+                      API.remove_from_archive({product_id:product.id}).then((resp:any)=>{
+                          if(resp?.data?.success){
+                            get_products()
+                          }
+                      })
                     }}
                     className="mr-2"
                     size="sm"
                   >
-                    Продать
+                    Вернуть в оборот
                 </Button>
-                  {auth?.user?.role === "1" && (
+                  {/* {auth?.user?.role === "1" && (
                     <>
                       <Button
                         variant="primary"
@@ -173,7 +175,7 @@ export const Products = () => {
                         В архив
                     </Button>
                     </>
-                  )}
+                  )} */}
                 </td>
               </tr>
             )
@@ -184,13 +186,13 @@ export const Products = () => {
   );
 
   return (
-    <Template title={categories?.find((cat: any) => cat.id === id)?.name}>
+    <Template title="Товары в архиве">
       {/* <Mail /> */}
-      <FilterInProducts
+      {/* <FilterInProducts
         filterHandle={(pamparams: { product_name: string }) => {
           setParameters(pamparams);
         }}
-      />
+      /> */}
       <Styled>
         {loading ? (
           <Spinner animation="border" role="status">
@@ -204,7 +206,7 @@ export const Products = () => {
             </>
           )}
         {/* {products && <pre>{JSON.stringify(products, null, " ")}</pre>} */}
-        <AddSale
+        {/* <AddSale
           modalAddSale={modalAddSale}
           setModalAddSale={setModalAddSale}
           responseData={responseData}
@@ -216,7 +218,7 @@ export const Products = () => {
           responseData={responseData}
           aaa={modalEditProduct}
           reload={() => get_products(parameters?.product_name)}
-        />
+        /> */}
         {/* {JSON.stringify(modalEditProduct)} */}
       </Styled>
     </Template>

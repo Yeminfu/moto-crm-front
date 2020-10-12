@@ -1,5 +1,6 @@
+// @ts-nocheck
 import { Form as BForm, FormControl } from "react-bootstrap";
-import { Field } from "react-final-form";
+import { Field, FieldProps } from "react-final-form";
 import React from "react";
 
 export const CustomInput = (props: {
@@ -25,6 +26,8 @@ export const CustomInput = (props: {
   );
 };
 
+// import { Field, FieldProps } from "react-final-form"
+
 export const CustomTextarea = (props: {
   lable: string;
   name: string;
@@ -39,6 +42,42 @@ export const CustomTextarea = (props: {
     </BForm.Group>
   );
 };
+
+// export const CustomFileInput = (props: {
+//   lable: string;
+//   name: string;
+//   validation?: any;
+// }) => {
+//   return (
+//     <BForm.Group>
+//       <BForm.Label>{props.lable}</BForm.Label>
+//       <Field name={props.name} validate={props.validation}>
+//         {(fieldProps) => <BForm.File {...fieldProps.input} />}
+//       </Field>
+//     </BForm.Group>
+//   );
+// };
+
+export const CustomFileInput: React.FC<FieldProps<
+  FileList,
+  HTMLInputElement
+>> = ({ name, lable, ...props }) => (
+  <BForm.Group>
+    <BForm.Label>{lable}</BForm.Label>
+    <Field name={name}>
+      {({ input: { value, onChange, ...input } }) => {
+        const handleChange = ({
+          target,
+        }: React.ChangeEvent<HTMLInputElement>) => {
+          onChange(target.files); // instead of the default target.value
+        };
+        return (
+          <input {...input} type="file" onChange={handleChange} {...props} />
+        );
+      }}
+    </Field>
+  </BForm.Group>
+);
 
 export const CustomSelect = (props: {
   lable: string;

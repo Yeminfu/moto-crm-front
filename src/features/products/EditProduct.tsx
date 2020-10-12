@@ -27,6 +27,7 @@ export const EditProduct = ({
   modalEditProduct,
   setModalEditProduct,
   responseData,
+  reload,
 }: any): any => {
   useEffect(() => {
     API.get_product({ product_id: "123" });
@@ -43,18 +44,18 @@ export const EditProduct = ({
           confirmButtonText: "Ок",
         }).then(() => {
           setModalEditProduct(false);
+          reload();
         });
       }
     });
   };
-  const { shops, stock } = responseData;
+  const { shops } = responseData;
   return (
     <>
       <Modal
         show={modalEditProduct ? true : false}
         onHide={setModalEditProduct}
       >
-        {/* {alert()} */}
         <Form
           onSubmit={onSubmit}
           initialValues={{
@@ -82,13 +83,13 @@ export const EditProduct = ({
                 }))
               : [],
             stock_counts: shops
-              ? shops.map((shop: any) => ({
+              ? shops.map((shop: { id: string; name: string }) => ({
                   ...shop,
                   count: (() => {
-                    const val = stock?.find(
-                      (stock_item: any) =>
-                        stock_item.shop_id === shop.id &&
-                        modalEditProduct?.product?.id === stock_item.product_id
+                    const val = modalEditProduct?.product?.stock?.find(
+                      (stock_item: { shop_id: string; count: string }) => {
+                        return stock_item.shop_id === shop.id;
+                      }
                     )?.count;
                     return val ? val : 0;
                   })(),

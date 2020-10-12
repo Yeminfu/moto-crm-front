@@ -11,11 +11,11 @@ import "./login.scss";
 import { Form as FinalForm, Field } from "react-final-form";
 import { API } from "../../api";
 import { createEvent, createStore } from "effector";
-// import { useStore } from "effector-react";
 import Swal from "sweetalert2";
 
 export const setAuth = createEvent<any>();
 export const $auth = createStore({}).on(setAuth, (_, x: any) => x);
+
 export const logout = () => {
   localStorage.removeItem("token");
   localStorage.removeItem("user");
@@ -23,10 +23,8 @@ export const logout = () => {
 };
 
 export const Login = () => {
-  // const user = useStore($auth);
   return (
     <>
-      {/* <pre>{JSON.stringify(user, null, " ")}</pre> */}
       <div className="login d-flex flex-column justify-content-center">
         <Container className="rounded">
           <div className="login__inner rounded ">

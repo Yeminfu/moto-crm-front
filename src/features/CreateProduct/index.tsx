@@ -15,208 +15,249 @@ import { useStore } from "effector-react";
 import { FieldArray } from "react-final-form-arrays";
 import arrayMutators from "final-form-arrays";
 import Swal from "sweetalert2";
-import { CustomInput, CustomSelect } from "../products/fields";
+import { CustomInput, CustomSelect, CustomFileInput } from "../products/fields";
 import { validation } from "../helpers/validation";
 import { markups } from "../products/EditProduct";
+import { OnChange } from "react-final-form-listeners";
+import { slugify } from "transliteration";
+import styled from "styled-components";
+import { $auth } from "../Login";
 
-const required = (value: any) => (value ? undefined : "Required");
+// const required = (value: any) => (value ? undefined : "Required");
 
 export const CreateProduct = () => {
   useEffect(() => {}, []);
   const shops = useStore(sho);
   const categories = useStore(cats);
+  const auth = useStore<any>($auth);
+
   const onSubmit = (values: productType, form: any) => {
-    API.add_products(values).then((response) => {
-      Swal.fire({
-        title: "Успех!",
-        // text: "Неправильный логин или пароль",
-        icon: "success",
-        confirmButtonText: "Ок",
-      });
+    // var bodyFormData = new FormData();
+
+    const formData = new FormData();
+
+    formData.append("file", values?.product_image[0]);
+
+    for (const key in values) {
+      formData.append(
+        key,
+        (() => {
+          if (key === "retail_prices") {
+            return JSON.stringify(values[key]);
+          } else {
+            return values[key];
+          }
+        })()
+      );
+    }
+
+    API.add_products(formData).then((response) => {
+      if (response?.data?.success) {
+        Swal.fire({
+          title: "Успех!",
+          icon: "success",
+          confirmButtonText: "Ок",
+        });
+      } else {
+        Swal.fire({
+          title: "Что-то пошло не так!",
+          icon: "error",
+          confirmButtonText: "Ок",
+        });
+      }
+
       // .then(() => form.reset());
     });
   };
   return (
     <>
       <Template title="Создать товар">
-        <Form
-          onSubmit={onSubmit}
-          initialValues={{
-            // name: "asd",
-            // code: "asd",
-            // cost_type: "percent",
-            // cost_value: "1.3",
-            // category_id: "boats",
-            // purchase_price: 1000,
-            // note: "bla bla bla",
-            // at_store: "1",
-            retail_prices: shops ? shops : [],
-          }}
-          mutators={{
-            setPrice: (args, state, utils) => {
-              utils.changeValue(state, "sum", () => args);
-            },
-            ...arrayMutators,
-          }}
-          render={({ form, handleSubmit, values, errors, touched }) => (
-            <BForm
-              onSubmit={handleSubmit}
-              noValidate
-              className="needs-validation"
-            >
-              <Row>
-                <Col xs={6}>
-                  <Row>
-                    <Col>
-                      <CustomInput
-                        name="name"
-                        lable="Наименование"
-                        validation={validation.required}
-                        type="input"
-                      />
-                    </Col>
-                    <Col>
-                      <CustomInput
-                        name="code"
-                        lable="Код товара"
-                        validation={validation.required}
-                        type="input"
-                      />
-                    </Col>
-                    <Col>
-                      <CustomSelect
-                        name="category_id"
-                        lable="Категория товара"
-                        validation={validation.required}
-                        placeholder="Категория"
-                        options={[
-                          ...categories?.map((category: any) => ({
-                            value: category.id,
-                            label: category.name,
-                          })),
-                        ]}
-                      />
-                    </Col>
-                  </Row>
-                  <CustomInput
-                    name="purchase_price"
-                    lable="Закупочная цена"
-                    type="number"
-                    validation={validation.required}
-                    placeholder=""
-                  />
-                  <Row>
-                    <Col>
-                      <CustomSelect
-                        name="cost_type"
-                        lable="Себестоимость (тип)"
-                        options={markups}
-                        placeholder=""
-                        validation={validation.required}
-                      />
-                    </Col>
-                    <Col>
-                      <CustomInput
-                        name="cost_value"
-                        type="number"
-                        validation={validation.required}
-                        placeholder=""
-                        lable="Себестоимость (тип)"
-                      />
-                    </Col>
-                    {/* <BForm.Group controlId="exampleForm.SelectCustom" as={Col}>
-                      <BForm.Label>Себестоимость (тип)</BForm.Label>
-                      <Field name="cost_type" validate={required}>
-                        {(props) => (
-                          <BForm.Control
-                            as="select"
-                            custom
-                            {...props.input}
-                            isInvalid={touched?.cost_type && errors.cost_type}
-                          >
-                            <option />
-                            {markups.map((x, i) => (
-                              <option value={x.value} key={i}>
-                                {x.label}
-                              </option>
-                            ))}
-                          </BForm.Control>
-                        )}
-                      </Field>
-                    </BForm.Group> */}
-                    {/* <BForm.Group as={Col}>
-                      <BForm.Label>Себестоимость (значение)</BForm.Label>
-                      <Field name="cost_value" validate={required}>
+        <Styled>
+          <Form
+            onSubmit={onSubmit}
+            initialValues={{
+              retail_prices: shops ? shops : [],
+
+              // retail_prices: shops
+              //   ? shops.map((x: any) => ({
+              //       ...x,
+              //       id: "khv",
+              //       name: "Хабаровск",
+              //       price_type: "fix",
+              //       count: "234",
+              //     }))
+              //   : [],
+
+              // category_id: "lodki",
+              // name: "ТестШмест",
+              // purchase_price: "1234",
+              // cost_type: "fix",
+              // cost_value: "234",
+            }}
+            mutators={{
+              setPrice: (args, state, utils) => {
+                utils.changeValue(state, "sum", () => args);
+              },
+              setProductID: (args, state, utils) => {
+                utils.changeValue(state, "id", () => args[0]);
+              },
+              ...arrayMutators,
+            }}
+            render={({ form, handleSubmit, values, errors, touched }) => (
+              <BForm
+                onSubmit={handleSubmit}
+                noValidate
+                className="needs-validation"
+              >
+                <Row>
+                  <Col xs={6}>
+                    <Row>
+                      <Col>
+                        <CustomInput
+                          name="name"
+                          lable="Наименование"
+                          validation={validation.required}
+                          type="input"
+                        />
+                        <OnChange name="name">
+                          {(name) => {
+                            form.mutators.setProductID(slugify(name));
+                          }}
+                        </OnChange>
+                      </Col>
+                      <Col>
+                        <CustomInput
+                          name="code"
+                          lable="Код товара"
+                          // validation={validation.required}
+                          type="input"
+                        />
+                      </Col>
+                      <Col>
+                        <CustomSelect
+                          name="category_id"
+                          lable="Категория товара"
+                          validation={validation.required}
+                          placeholder="Категория"
+                          options={[
+                            ...categories?.map((category: any) => ({
+                              value: category.id,
+                              label: category.name,
+                            })),
+                          ]}
+                        />
+                      </Col>
+                    </Row>
+
+                    <CustomFileInput
+                      lable="Изображение товара"
+                      name="product_image"
+                      // validation=any;
+                    />
+
+                    <CustomInput
+                      name="purchase_price"
+                      lable="Закупочная цена"
+                      type="number"
+                      validation={validation.required}
+                      placeholder=""
+                    />
+                    <Row>
+                      <Col>
+                        <CustomSelect
+                          name="cost_type"
+                          lable="Себестоимость (тип)"
+                          options={markups}
+                          placeholder=""
+                          validation={validation.required}
+                        />
+                      </Col>
+                      <Col>
+                        <CustomInput
+                          name="cost_value"
+                          type="number"
+                          validation={validation.required}
+                          placeholder=""
+                          lable="Себестоимость (значение)"
+                        />
+                      </Col>
+                    </Row>
+                    <FieldArray name="retail_prices">
+                      {({ fields }) =>
+                        fields.map((name, index) => (
+                          <Row className="align-items-end" key={index}>
+                            <Col>
+                              <CustomSelect
+                                lable={`Розн. цена ${shops[index].name}`}
+                                name={`${name}.price_type`}
+                                options={markups}
+                                placeholder="тип наценки"
+                                validation={validation.required}
+                              />
+                            </Col>
+                            <Col>
+                              <CustomInput
+                                lable=""
+                                name={`${name}.count`}
+                                type="number"
+                                validation={validation.required}
+                              />
+                            </Col>
+                          </Row>
+                        ))
+                      }
+                    </FieldArray>
+
+                    {auth?.user?.role === "1" && (
+                      <BForm.Group>
+                        <BForm.Label>Количество на складе</BForm.Label>
+                        <Field
+                          name="at_store"
+                          // validate={required}
+                        >
+                          {(props) => (
+                            <FormControl
+                              isInvalid={touched?.at_store && errors.at_store}
+                              aria-describedby="basic-addon1"
+                              type="number"
+                              {...props.input}
+                            />
+                          )}
+                        </Field>
+                      </BForm.Group>
+                    )}
+
+                    <BForm.Group>
+                      <BForm.Label>Заметки</BForm.Label>
+                      <Field
+                        name="note"
+                        // validate={required}
+                      >
                         {(props) => (
                           <FormControl
-                            isInvalid={touched?.cost_value && errors.cost_value}
                             aria-describedby="basic-addon1"
-                            type="number"
+                            as="textarea"
                             {...props.input}
                           />
                         )}
                       </Field>
-                    </BForm.Group> */}
-                  </Row>
-                  <FieldArray name="retail_prices">
-                    {({ fields }) =>
-                      fields.map((name, index) => (
-                        <Row className="align-items-end" key={index}>
-                          <Col>
-                            <CustomSelect
-                              lable={`Розн. цена ${shops[index].name}`}
-                              name={`${name}.price_type`}
-                              options={markups}
-                              placeholder="тип наценки"
-                              validation={validation.required}
-                            />
-                          </Col>
-                          <Col>
-                            <CustomInput
-                              lable=""
-                              name={`${name}.count`}
-                              type="number"
-                              validation={validation.required}
-                            />
-                          </Col>
-                        </Row>
-                      ))
-                    }
-                  </FieldArray>
-                  <BForm.Group>
-                    <BForm.Label>Количество на складе</BForm.Label>
-                    <Field name="at_store" validate={required}>
-                      {(props) => (
-                        <FormControl
-                          isInvalid={touched?.at_store && errors.at_store}
-                          aria-describedby="basic-addon1"
-                          type="number"
-                          {...props.input}
-                        />
-                      )}
-                    </Field>
-                  </BForm.Group>
-                  <BForm.Group>
-                    <BForm.Label>Заметки</BForm.Label>
-                    <Field name="note" validate={required}>
-                      {(props) => (
-                        <FormControl
-                          aria-describedby="basic-addon1"
-                          as="textarea"
-                          {...props.input}
-                        />
-                      )}
-                    </Field>
-                  </BForm.Group>
-                  <Button variant="primary" type="submit">
-                    Сохранить
-                  </Button>
-                </Col>
-              </Row>
-            </BForm>
-          )}
-        />
+                    </BForm.Group>
+                    <Button variant="primary" type="submit">
+                      Сохранить
+                    </Button>
+                  </Col>
+                </Row>
+              </BForm>
+            )}
+          />
+        </Styled>
       </Template>
     </>
   );
 };
+
+const Styled = styled.div`
+  label {
+    display: block;
+  }
+`;
