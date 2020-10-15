@@ -94,7 +94,7 @@ const Menu = createComponent(categories, (props: any, state: any) => {
           ...(() => {
             if (user?.role === "1") {
               return [
-                // { text: "Excel импорт", href: "/excel" },
+                { text: "Excel импорт", href: "/excel" },
                 { text: "Архив", href: "/archive-products" },
                 { text: "Сумма в товаре", href: "/in-products" },
                 { text: "Годовой отчет", href: "/report" },

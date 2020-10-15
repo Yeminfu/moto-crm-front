@@ -12,7 +12,9 @@ export const CustomInput = (props: {
 }) => {
   return (
     <BForm.Group>
-      <BForm.Label>{props.lable}</BForm.Label>
+      <BForm.Label>{`${props.lable} ${
+        props.validation ? "*" : ""
+      }`}</BForm.Label>
       <Field name={props.name} validate={props.validation} valid>
         {(fieldProps) => (
           <FormControl
@@ -31,11 +33,13 @@ export const CustomInput = (props: {
 export const CustomTextarea = (props: {
   lable: string;
   name: string;
-  validation: any;
+  validation?: any;
 }) => {
   return (
     <BForm.Group>
-      <BForm.Label>{props.lable}</BForm.Label>
+      <BForm.Label>{`${props.lable} ${
+        props.validation ? "*" : ""
+      }`}</BForm.Label>
       <Field name={props.name} validate={props.validation}>
         {(fieldProps) => <FormControl as="textarea" {...fieldProps.input} />}
       </Field>
@@ -43,27 +47,15 @@ export const CustomTextarea = (props: {
   );
 };
 
-// export const CustomFileInput = (props: {
-//   lable: string;
-//   name: string;
-//   validation?: any;
-// }) => {
-//   return (
-//     <BForm.Group>
-//       <BForm.Label>{props.lable}</BForm.Label>
-//       <Field name={props.name} validate={props.validation}>
-//         {(fieldProps) => <BForm.File {...fieldProps.input} />}
-//       </Field>
-//     </BForm.Group>
-//   );
-// };
-
 export const CustomFileInput: React.FC<FieldProps<
   FileList,
   HTMLInputElement
 >> = ({ name, lable, ...props }) => (
   <BForm.Group>
-    <BForm.Label>{lable}</BForm.Label>
+    <BForm.Label>
+      {/* <pre>{JSON.stringify(props, null, " ")}</pre> */}
+      Изображение товара
+    </BForm.Label>
     <Field name={name}>
       {({ input: { value, onChange, ...input } }) => {
         const handleChange = ({
@@ -84,17 +76,26 @@ export const CustomSelect = (props: {
   name: string;
   options: { value: string; label: string }[];
   placeholder: string;
-  validation: any;
+  validation?: any;
+  color?: boolean;
 }) => {
   return (
     <BForm.Group>
-      <BForm.Label>{props.lable}</BForm.Label>
+      <BForm.Label>{`${props.lable} ${
+        props.validation ? "*" : ""
+      }`}</BForm.Label>
       <Field name={props.name} validate={props.validation}>
         {(fieldProps) => (
           <FormControl as="select" custom {...fieldProps.input}>
             <option>{props.placeholder}</option>
             {props.options.map((option, i) => (
-              <option value={option.value} key={i}>
+              <option
+                value={option.value}
+                key={i}
+                style={{
+                  color: props.color && option.value,
+                }}
+              >
                 {option.label}
               </option>
             ))}

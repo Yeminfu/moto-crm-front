@@ -7,6 +7,7 @@ import { convertXLSXToJSON } from "./convertXLSXToJSON";
 import { constants } from "./constants";
 // import { Table } from "react-bootstrap";
 import { API } from "../../api";
+import { slugify } from "transliteration";
 // import { Template } from "../template";
 
 const onSubmit = () => {};
@@ -83,11 +84,12 @@ const convert = (sheet) => {
             value: getval(sheet.data[constants.stock_count_bir.cell + i]?.v),
           },
         ],
-        cost_type: getType(sheet.data[constants.cost_value.cell + i])?.type,
-        cost_value: getType(sheet.data[constants.cost_value.cell + i])?.value,
+        cost_type: getType(sheet.data[constants.cost_value.cell + i])?.type?getType(sheet.data[constants.cost_value.cell + i])?.type:"handle",
+        cost_value: getval(getType(sheet.data[constants.cost_value.cell + i])?.value),
         purchase_price: getval(
           sheet.data[constants.purchase_price.cell + i]?.v
         ),
+        id: slugify(getval(sheet.data[constants.name.cell + i]?.v)),
         name: getval(sheet.data[constants.name.cell + i]?.v),
         code: getval(sheet.data[constants.code.cell + i]?.v),
         category_id: sheet.name_en,
@@ -97,7 +99,7 @@ const convert = (sheet) => {
     } else {
       return null;
     }
-  });
+  }).filter(x=>x);
 
   return rows;
 };

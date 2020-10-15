@@ -7,6 +7,7 @@ import arrayMutators from "final-form-arrays";
 import { validation } from "../helpers/validation";
 import { CustomInput, CustomTextarea, CustomSelect } from "./fields";
 import Swal from "sweetalert2";
+import { constants } from "../../constants";
 
 export const markups = [
   {
@@ -29,9 +30,9 @@ export const EditProduct = ({
   responseData,
   reload,
 }: any): any => {
-  useEffect(() => {
-    API.get_product({ product_id: "123" });
-  }, []);
+  // useEffect(() => {
+  //   API.get_product({ product_id: "123" });
+  // }, []);
   useEffect(() => {
     // modalEditProduct && alert();
   }, [modalEditProduct]);
@@ -45,6 +46,13 @@ export const EditProduct = ({
         }).then(() => {
           setModalEditProduct(false);
           reload();
+        });
+      } else if (response?.data?.errors) {
+        Swal.fire({
+          title: "Ошибка!",
+          icon: "error",
+          text: response?.data?.errors.join(", "),
+          confirmButtonText: "Ок",
         });
       }
     });
@@ -60,6 +68,7 @@ export const EditProduct = ({
           onSubmit={onSubmit}
           initialValues={{
             id: modalEditProduct?.product?.id,
+            title_color: modalEditProduct?.product?.title_color,
             name: modalEditProduct?.product?.name,
             purchase_price: modalEditProduct?.product?.purchase_price,
             cost_type: modalEditProduct?.product?.cost_type,
@@ -75,11 +84,11 @@ export const EditProduct = ({
                   // )?.count,
                   price_type: modalEditProduct?.product?.prices.find(
                     (price_item: any) => price_item.shop_id === shop.id
-                  ).price_type,
+                  )?.price_type,
                   // price_type: "fix",
                   price_count: modalEditProduct?.product?.prices.find(
                     (price_item: any) => price_item.shop_id === shop.id
-                  ).price_count,
+                  )?.price_count,
                 }))
               : [],
             stock_counts: shops
@@ -104,6 +113,7 @@ export const EditProduct = ({
           }}
           render={({ form, handleSubmit, values, errors }) => (
             <form onSubmit={handleSubmit}>
+              {/* {console.log("errors", errors)} */}
               <Modal.Header closeButton>
                 <Modal.Title>
                   Редактировать {modalEditProduct?.product?.name}
@@ -120,7 +130,7 @@ export const EditProduct = ({
                 <CustomTextarea
                   lable="Заметки"
                   name="note"
-                  validation={validation.required}
+                  // validation={validation.required}
                 />
 
                 <CustomInput
@@ -130,6 +140,18 @@ export const EditProduct = ({
                   placeholder="Закупочная цена"
                   validation={validation.required}
                 />
+                <Row className="align-items-end">
+                  <Col>
+                    <CustomSelect
+                      lable="Цвет"
+                      name="title_color"
+                      color={true}
+                      options={[...constants.product_title_colors]}
+                      placeholder="цвет"
+                      // validation={validation.required}
+                    />
+                  </Col>
+                </Row>
                 <Row className="align-items-end">
                   <Col>
                     <CustomSelect

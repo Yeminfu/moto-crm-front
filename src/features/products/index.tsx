@@ -49,6 +49,7 @@ export const Products = () => {
       <thead style={{ whiteSpace: "nowrap" }}>
         <tr>
           <th>id</th>
+          <th>Заметки</th>
           <th>Фото</th>
           <th>Наименование</th>
           <th>Код товара</th>
@@ -82,101 +83,109 @@ export const Products = () => {
               cost_type: "";
               purchase_price: any;
               cost_price: number;
+              note: string;
+              title_color: string;
             },
             i: number
           ) => (
-              <tr key={i}>
-                <td title="id">{product.id}</td>
-                <td title="изображение товара">{product.photo}</td>
-                <td title="наименование товара">{product.name}</td>
-                <td title="код товара">{product.code}</td>
-                {responseData?.shops?.map((shop: { id: string }) => (
-                  <td key={shop.id} title={`розничная цена ${shop.id}`}>
+            <tr key={i}>
+              <td title="id">{product.id}</td>
+              <td title="Заметки">{product.note}</td>
+              <td title="изображение товара">{product.photo}</td>
+              <td
+                title="наименование товара"
+                style={{ color: product.title_color }}
+              >
+                {product.name}
+              </td>
+              <td title="код товара">{product.code}</td>
+              {responseData?.shops?.map((shop: { id: string }) => (
+                <td key={shop.id} title={`розничная цена ${shop.id}`}>
+                  {(() => {
+                    const val = product.prices.find(
+                      (price_item: { shop_id: string; price: string }) =>
+                        price_item.shop_id === shop.id
+                    )?.price;
+                    const output =
+                      Math.round(Number(val)) && Math.round(Number(val));
+                    return output ? `${output} ₽` : "0";
+                  })()}
+                </td>
+              ))}
+              {responseData?.shops?.map(
+                (shop: { id: string | number | undefined }) => (
+                  <td
+                    key={shop.id}
+                    className="cell_prices"
+                    title={`количество на складе ${shop.id}`}
+                  >
                     {(() => {
-                      const val = product.prices.find(
-                        (price_item: { shop_id: string; price: string }) =>
-                          price_item.shop_id === shop.id
-                      )?.price;
-                      return typeof val === "number"
-                        ? `${Math.round(val)} ₽`
-                        : "";
+                      const count = product.stock.find(
+                        (stock_item: { shop_id: string; count: string }) =>
+                          stock_item.shop_id === shop.id
+                      )?.count;
+                      return count ? count : 0;
                     })()}
                   </td>
-                ))}
-                {responseData?.shops?.map(
-                  (shop: { id: string | number | undefined }) => (
-                    <td
-                      key={shop.id}
-                      className="cell_prices"
-                      title={`количество на складе ${shop.id}`}
-                    >
-                      {(() => {
-                        const count = product.stock.find(
-                          (stock_item: { shop_id: string; count: string }) =>
-                            stock_item.shop_id === shop.id
-                        )?.count;
-                        return count ? count : 0;
-                      })()}
-                    </td>
-                  )
-                )}
-                <td title="закупочная цена">{product.purchase_price}</td>
-                <td title="cost_price">{Math.round(product.cost_price)}</td>
-                {/* <td title="id___">impty</td> */}
-                <td
-                  style={{
-                    whiteSpace: "nowrap",
+                )
+              )}
+              <td title="закупочная цена">{product.purchase_price}</td>
+              <td title="cost_price">{Math.round(product.cost_price)}</td>
+              {/* <td title="id___">impty</td> */}
+              <td
+                style={{
+                  whiteSpace: "nowrap",
+                }}
+              >
+                <Button
+                  variant="primary"
+                  onClick={() => {
+                    setModalAddSale({ product });
                   }}
+                  className="mr-2"
+                  size="sm"
                 >
-                  <Button
-                    variant="primary"
-                    onClick={() => {
-                      setModalAddSale({ product });
-                    }}
-                    className="mr-2"
-                    size="sm"
-                  >
-                    Продать
+                  Продать
                 </Button>
-                  {auth?.user?.role === "1" && (
-                    <>
-                      <Button
-                        variant="primary"
-                        className="mr-2"
-                        onClick={() => {
-                          setModalEditProduct({ product });
-                        }}
-                        size="sm"
-                      >
-                        Изменить
+                {auth?.user?.role === "1" && (
+                  <>
+                    <Button
+                      variant="primary"
+                      className="mr-2"
+                      onClick={() => {
+                        setModalEditProduct({ product });
+                      }}
+                      size="sm"
+                    >
+                      Изменить
                     </Button>
-                      <Button
-                        variant="danger"
-                        onClick={() => {
-                          API.send_to_archive({ product_id: product.id }).then(
-                            ({
-                              data,
-                            }: {
-                              data: { success: boolean; errors: any };
-                            }) => {
-                              // get_products()
-                              if (data.success) {
-                                get_products();
-                              } else {
-                                alert(JSON.stringify(data.errors));
-                              }
+                    <Button
+                      variant="danger"
+                      onClick={() => {
+                        API.send_to_archive({ product_id: product.id }).then(
+                          ({
+                            data,
+                          }: {
+                            data: { success: boolean; errors: any };
+                          }) => {
+                            // get_products()
+                            if (data.success) {
+                              get_products();
+                            } else {
+                              alert(JSON.stringify(data.errors));
                             }
-                          );
-                        }}
-                        size="sm"
-                      >
-                        В архив
+                          }
+                        );
+                      }}
+                      size="sm"
+                    >
+                      В архив
                     </Button>
-                    </>
-                  )}
-                </td>
-              </tr>
-            )
+                  </>
+                )}
+              </td>
+            </tr>
+          )
         )}
         <tr></tr>
       </tbody>
@@ -197,12 +206,12 @@ export const Products = () => {
             <span className="sr-only">Loading...</span>
           </Spinner>
         ) : (
-            <>
-              {products?.length
-                ? table
-                : "Товары по заданным критериям не найдены"}
-            </>
-          )}
+          <>
+            {products?.length
+              ? table
+              : "Товары по заданным критериям не найдены"}
+          </>
+        )}
         {/* {products && <pre>{JSON.stringify(products, null, " ")}</pre>} */}
         <AddSale
           modalAddSale={modalAddSale}

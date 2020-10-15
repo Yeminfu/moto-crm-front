@@ -21,28 +21,27 @@ import { markups } from "../products/EditProduct";
 import { OnChange } from "react-final-form-listeners";
 import { slugify } from "transliteration";
 import styled from "styled-components";
-import { $auth } from "../Login";
-
-// const required = (value: any) => (value ? undefined : "Required");
+// import { $auth } from "../Login";
+import { constants } from "../../constants";
 
 export const CreateProduct = () => {
   useEffect(() => {}, []);
   const shops = useStore(sho);
   const categories = useStore(cats);
-  const auth = useStore<any>($auth);
+  // const auth = useStore<any>($auth);
 
   const onSubmit = (values: productType, form: any) => {
     // var bodyFormData = new FormData();
 
     const formData = new FormData();
-
-    formData.append("file", values?.product_image[0]);
+    if (values?.product_image)
+      formData.append("file", values?.product_image[0]);
 
     for (const key in values) {
       formData.append(
         key,
         (() => {
-          if (key === "retail_prices") {
+          if (["stock_items", "retail_prices"].indexOf(key) !== -1) {
             return JSON.stringify(values[key]);
           } else {
             return values[key];
@@ -62,6 +61,7 @@ export const CreateProduct = () => {
         Swal.fire({
           title: "Что-то пошло не так!",
           icon: "error",
+          text: response?.data?.errors && response?.data?.errors.join(","),
           confirmButtonText: "Ок",
         });
       }
@@ -77,6 +77,7 @@ export const CreateProduct = () => {
             onSubmit={onSubmit}
             initialValues={{
               retail_prices: shops ? shops : [],
+              stock_items: shops ? shops : [],
 
               // retail_prices: shops
               //   ? shops.map((x: any) => ({
@@ -118,12 +119,23 @@ export const CreateProduct = () => {
                           lable="Наименование"
                           validation={validation.required}
                           type="input"
+                          // required
                         />
                         <OnChange name="name">
                           {(name) => {
                             form.mutators.setProductID(slugify(name));
                           }}
                         </OnChange>
+                      </Col>
+                      <Col>
+                        <CustomSelect
+                          lable="Цвет"
+                          name="title_color"
+                          color={true}
+                          options={[...constants.product_title_colors]}
+                          placeholder="цвет"
+                          // validation={validation.required}
+                        />
                       </Col>
                       <Col>
                         <CustomInput
@@ -208,24 +220,24 @@ export const CreateProduct = () => {
                       }
                     </FieldArray>
 
-                    {auth?.user?.role === "1" && (
-                      <BForm.Group>
-                        <BForm.Label>Количество на складе</BForm.Label>
-                        <Field
-                          name="at_store"
-                          // validate={required}
-                        >
-                          {(props) => (
-                            <FormControl
-                              isInvalid={touched?.at_store && errors.at_store}
-                              aria-describedby="basic-addon1"
-                              type="number"
-                              {...props.input}
-                            />
-                          )}
-                        </Field>
-                      </BForm.Group>
-                    )}
+                    {/* {auth?.user?.role === "1" && (
+                      <Row className="align-items-end">
+                        <FieldArray name="stock_items">
+                          {({ fields }) =>
+                            fields.map((name, index) => (
+                              <Col>
+                                <CustomInput
+                                  lable={`Количество в ${shops[index].name}`}
+                                  name={`${name}.count`}
+                                  type="number"
+                                  validation={validation.required}
+                                />
+                              </Col>
+                            ))
+                          }
+                        </FieldArray>
+                      </Row>
+                    )} */}
 
                     <BForm.Group>
                       <BForm.Label>Заметки</BForm.Label>
