@@ -65,8 +65,6 @@ export const API = {
     
   }) =>
     axios.post(baseUrl + "add_user", params, headers()),
-  add_to_stock: (params: any) =>
-    axios.post(baseUrl + "add_to_stock", params, headers()),
   update_sheets: (params: any) =>
     axios.post(baseUrl + "update_sheets", params, headers()),
   send_to_archive: (params: { product_id: string }) =>

@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Login } from "../features/Login";
 import { YearReport } from "../features/year-report";
-import { ApiChecker } from "../features/ApiChecker";
 import { CreateProduct } from "../features/CreateProduct";
 import { Products } from "../features/products";
 import { ArchiveProducts } from "../features/ArchiveProducts";
@@ -12,7 +11,7 @@ import { ProtectedRoute } from "./ProtectedRoute";
 import ProtectedAuthRoute from "./ProtectedAuthRoute";
 import { Dashboard } from "../features/Dashboard";
 import { CreateShop } from "../features/CreateShop";
-import { ExcelImport } from "../features/excel/import";
+// import { ExcelImport } from "../features/excel/import";
 
 import { SumInProducts } from "../features/SumInProducts";
 
@@ -37,13 +36,12 @@ export const Routes = () => (
           {[
             { path: "/", component: <Dashboard /> },
             { path: "/report", component: <YearReport /> },
-            { path: "/api-checker", component: <ApiChecker /> },
             { path: "/create-product", component: <CreateProduct /> },
             { path: "/create-category", component: <CreateCategory /> },
             { path: "/create-shop", component: <CreateShop /> },
             { path: "/products/:id", component: <Products /> },
             { path: "/staff", component: <Staff /> },
-            { path: "/excel", component: <ExcelImport /> },
+            // { path: "/excel", component: <ExcelImport /> },
             { path: "/in-products", component: <SumInProducts /> },
             { path: "/archive-products", component: <ArchiveProducts /> },
           ].map((route: any) => (
